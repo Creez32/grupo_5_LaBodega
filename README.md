@@ -2,9 +2,12 @@
 
 # Integrantes:
 
-Cristian Elias.
-Leila Jara.
-Leandro Avendaño.
+Cristian Elias.   
+
+Leila Jara.   
+
+ Leandro Avendaño.  
+ 
 Melany Lopez .
 
 
