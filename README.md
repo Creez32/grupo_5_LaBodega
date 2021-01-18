@@ -2,13 +2,13 @@
 
 # Integrantes:
 
-Cristian Elias.   
+● Cristian Elias.   
 
-Leila Jara.   
+● Leila Jara.   
 
-Leandro Daniel Avendaño: 22 años , estudiante de Administración de empresas y Contador Público en Facultas de Cs. Economicas UBA Y Desarrollo Web Full Stack en Digital House y Fundación Formar.
+● Leandro Daniel Avendaño: 22 años , estudiante de Contador Público y Lic. en Administración en Facultas de Cs. Economicas UBA Y Desarrollo Web Full Stack en Digital House y Fundación Formar.
  
-Melany Lopez .
+● Melany Lopez .
 
 
 ## La Bodega 
