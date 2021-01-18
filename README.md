@@ -6,7 +6,7 @@ Cristian Elias.
 
 Leila Jara.   
 
- Leandro Avendaño.  
+Leandro Daniel Avendaño: 22 años , estudiante de Administración de empresas y Contador Público en Facultas de Cs. Economicas UBA Y Desarrollo Web Full Stack en Digital House y Fundación Formar.
  
 Melany Lopez .
 
