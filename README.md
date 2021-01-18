@@ -4,14 +4,17 @@
 
 ● Cristian Elias.   
 
-● Leila Jara.   
+● Leila Jara: 26 años, estudiante en Fundacion Formar Desarrollo Web en Digital House -    
 
 ● Leandro Daniel Avendaño: 22 años , estudiante de Contador Público y Lic. en Administración en Facultas de Cs. Economicas UBA Y Desarrollo Web Full Stack en Digital House y Fundación Formar.
  
-● Melany Lopez .
+● Melany Lopez: 21 años, estudiante de Tecnicatura en Cosmetologia Facial y Corporal en Facultad de Cs Medicas UBA y Desarrollo Web en Digital House y Fundacion Formar.
 
 
-## La Bodega 
+
+
+## La Bodega  
+
 
 En esta ocasion les ofrecemos una pagina pensada y realizada especialmente para los amantes del vino.
 Contamos con una gran variedad de vinos de alta calidad y al mejor precio del mercado, junto con una fina seleccion de vinos tintos y blancos.
