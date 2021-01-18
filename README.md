@@ -2,7 +2,7 @@
 
 # Integrantes:
 
-● Cristian Elias.   
+● Cristian Elias: 23 años, Tecnico en electronica. Programador FullStack con Digital House y Fundacion Formar.     
 
 ● Leila Jara: 26 años, estudiante en Fundacion Formar Desarrollo Web en Digital House -    
 
