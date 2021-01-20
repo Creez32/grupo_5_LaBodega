@@ -30,3 +30,16 @@ En nuestros servicios incluimos un carrito de compras para que puedan selecciona
 ## ***Tipografias***
 ![Cinzel](https://fonts.google.com/specimen/Cinzel?query=cinzel&preview.text=La%20Bodega&preview.text_type=custom)
 ![Montserrat](https://fonts.google.com/specimen/Montserrat?preview.text=La%20Bodega&preview.text_type=custom&query=mont)
+
+##  ***Paginas Referentes***
+1.  ● Por los productos o servicios que ofrecen: 
+[Lagarde] (https://www.lagarde.com.ar/inicio)
+
+2.  ● Por los clientes a los que apuntan: 
+[Wines  of Argentina] (https://www.winesofargentina.org/es)
+
+3.  ● Por las funcionalidades implementadas:
+ [Familia Zuccardi] (https://familiazuccardi.com/)
+
+4.  ● Por la estética que presentan : [Bodegas Salentein]
+ (https://www.bodegasalentein.com/es/home.html)
