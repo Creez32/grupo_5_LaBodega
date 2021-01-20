@@ -28,9 +28,9 @@ Contamos con una gran variedad de vinos de alta calidad y al mejor precio del me
 En nuestros servicios incluimos un carrito de compras para que puedan seleccionar a gusto nuestros productos y poder adquirirlos desde la comodidad de sus hogares.
 
 ## ***Tipografias***
-![Cinzel](https://fonts.google.com/specimen/Cinzel?query=cinzel)
+![Cinzel](https://github.com/Creez32/grupo_5_LaBodega/blob/main/Extras/Fuente-Cinzel.png?raw=true "Cinzel")
 
-![Montserrat](https://fonts.google.com/specimen/Montserrat?query=mon)
+![Montserrat](https://github.com/Creez32/grupo_5_LaBodega/blob/main/Extras/Fuente-Montserrat.png?raw=true "Montserrat")
 
 ## ***¡Colores!***
 ![Colores](https://github.com/Creez32/grupo_5_LaBodega/blob/main/Extras/ColoresLabodega.jpeg?raw=true "Colores")
