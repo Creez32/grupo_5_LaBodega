@@ -27,3 +27,8 @@ En nuestros servicios incluimos un carrito de compras para que puedan selecciona
 2.  ● Por los clientes a los que apuntan: [Wines  of Argentina] (https://www.winesofargentina.org/es)
 3.  ● Por las funcionalidades implementadas: [Familia Zuccardi] (https://familiazuccardi.com/)
 4.  ● Por la estética que presentan : [Bodegas Salentein] (https://www.bodegasalentein.com/es/home.html)
+
+
+# Logotipo, Colores y Tipografias de La Bodega 
+
+[La Bodega] (https://github.com/Creez32/grupo_5_LaBodega/tree/main/Extras)
