@@ -32,8 +32,8 @@ En nuestros servicios incluimos un carrito de compras para que puedan selecciona
 
 ![Montserrat](https://fonts.google.com/specimen/Montserrat?preview.text=La%20Bodega&preview.text_type=custom&query=mont)
 
-## ***¡Extras!***
-![Extras](https://github.com/Creez32/grupo_5_LaBodega/tree/main/Extras)
+## ***¡Colores!***
+![Colores](https://github.com/Creez32/grupo_5_LaBodega/blob/main/Extras/ColoresLabodega.jpeg?raw=true "Colores")
 
 
 ##  ***Paginas Referentes***
