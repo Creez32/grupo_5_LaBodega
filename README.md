@@ -29,6 +29,8 @@ En nuestros servicios incluimos un carrito de compras para que puedan selecciona
 
 ## ***Tipografias***
 ![Cinzel](https://fonts.google.com/specimen/Cinzel?query=cinzel&preview.text=La%20Bodega&preview.text_type=custom)
+
+
 ![Montserrat](https://fonts.google.com/specimen/Montserrat?preview.text=La%20Bodega&preview.text_type=custom&query=mont)
 
 ##  ***Paginas Referentes***
