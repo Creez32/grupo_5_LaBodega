@@ -27,7 +27,7 @@ En esta ocasión les ofrecemos una página pensada y realizada especialmente par
 Contamos con una gran variedad de vinos de alta calidad y al mejor precio del mercado, junto con una fina selección de vinos tintos y blancos.
 En nuestros servicios incluimos un carrito de compras para que puedan seleccionar a gusto nuestros productos y poder adquirirlos desde la comodidad de sus hogares.
 
-## ***Tipografias***
+## ***¡Tipografias!***
 ![Cinzel](https://github.com/Creez32/grupo_5_LaBodega/blob/main/Extras/Fuente-Cinzel.png?raw=true "Cinzel")
 
 ![Montserrat](https://github.com/Creez32/grupo_5_LaBodega/blob/main/Extras/Fuente-Montserrat.png?raw=true "Montserrat")
@@ -36,7 +36,7 @@ En nuestros servicios incluimos un carrito de compras para que puedan selecciona
 ![Colores](https://github.com/Creez32/grupo_5_LaBodega/blob/main/Extras/ColoresLabodega.jpeg?raw=true "Colores")
 
 
-##  ***Paginas Referentes***
+##  ***¡Paginas Referentes!***
 1.  ● Por los productos o servicios que ofrecen: 
 [Lagarde] (https://www.lagarde.com.ar/inicio)
 
@@ -48,3 +48,8 @@ En nuestros servicios incluimos un carrito de compras para que puedan selecciona
 
 4.  ● Por la estética que presentan : [Bodegas Salentein]
  (https://www.bodegasalentein.com/es/home.html)
+
+
+## ***Tablero Del Trabajo***
+
+[Trello](https://trello.com/b/BewEHWBz/proyectogrupo5labodega)
