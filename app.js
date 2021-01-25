@@ -9,6 +9,10 @@ app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views'); 
 app.use(express.static(__dirname + '/public'));
 
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var productsRouter = require('./routes/products')
+
 
 app.use('/',indexRouter);
 app.use('/detalle',detalleRouter);
