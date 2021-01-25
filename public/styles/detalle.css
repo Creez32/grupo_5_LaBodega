@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+}
+header{
+    width: 100%;
+    background-color: grey;
+    height: 100px;
+    text-align: center;
+}
+img{
+    width: 80%;
+}
+.productosRelacionados{
+    background-color: grey;
+    width: 80%;
+
+}
+
+footer{
+    width: 100%;
+    background-color: grey;
+    height: 100px;
+    text-align: center;
+}
+
