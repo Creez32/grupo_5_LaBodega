@@ -1,18 +1,17 @@
-const fs = require('fs')
-const path = require('path')
-const dbProducts = require(path.join(__dirname, '..','data', 'dbProducts'))
+const products = require('../data/products')
 
-let productos = fs.readFileSync(path.join(__dirname, '..', 'data', 'products.json'), 'utf-8')
-productos = JSON.parse(productos)
 
 module.exports={
-    listar: (req,res)=>{
-        res.render('products', 
-        {title : 'Nuestra Carta',
-         css : 'carta.css',
-         listaDeProductos : dbProducts})
+    list: (req,res)=>{
+        res.render('products')
     },
-    detalle: (req, res)=>{
+    detail: (req, res)=>{
+        res.render('detail')
+    },
+    charge:(req,res)=>{
+
+    },
+    cart:(req,res)=>{
         
     }
 }

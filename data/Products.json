@@ -1,0 +1,9 @@
+[
+	{
+		"id": 1,
+		"name": "Vino Especial",
+		"description": "Vino Rojo de Mendoza. Proveniente de una de las regiones más frías del Valle de Uco. Vinculado a la identidad de los suelos aluviales de nuestra provincia, Fósil es algo inerte, antiguo, algo a explorar o redescubrir.",
+		"price": 12000,
+		"image": "botella sin etiqueta 1"
+    }
+]
