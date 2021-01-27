@@ -1,21 +1,48 @@
 <!DOCTYPE html>
-<h1>Registro</h1>
-<div class="formulario">
-<h2>Datos</h2> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/styles/login.css">
+</head>
+<title>Registro</title>
+<body>
+  <header>
+    <a href="login.ejs"><img src="/Extras/Logotipo.jpeg" alt=""></a>
+    <nav>
+      <ul class="secciones">
+          <li><a href="">Nosotros</a></li>
+          <li><a href="">Tienda</a></li>
+          <li><a href="">Contactos</a></li>
+          <li><a href="">Vinos</a></li>
+          <li><a href="">Bodega</a></li>
 
-<form action="">
-  <label for="nombre">Nombre</label>
-  <input type="text" name="nombre"><br><br>
-  <label for="apellido">Apellido</label>
-  <input type="text" name = "apellido"><br><br>
-    <label for="email">Correo Electronico</label>
-  <input type="email" name = "correo electronico"><br><br>
-  <label for="password">Contraseña</label>
-  <input type="password" name = "contrasenia"><br><br>
-    <input class="boton" type="submit" value="Enviar">
-
+      </ul>
+  
+  </nav>
+  </header>
+  <form action="submit">
+    <h1>REGISTRATE AQUI</h1>
+    <label for="login">
+        <p>Nombre</p>
+        <input class="campo" type="text" placeholder="Ingresa tu nombre">
+        
+        <p>Email</p>
+        <input class="campo" type="email" placeholder="Ingresa tu email">
+        
+        <p>Contraseña</p>
+        <input class="campo" type="password" placeholder="Ingresa tu contraseña"><br>
+        
+        <p> Repetir Contraseña</p>
+        <input class="campo" type="password" placeholder="Repetir contraseña"><br>
+        <input type="checkbox" value="ok">Acepto los términos y condiciones.
+    </div>
+    </label>
+    <button type="submit">Registrarme</button>
+    <button class="return" type="reset">Cancelar</button>
 </form>
-</div>
 
+
+
+</body>
 </html>
-

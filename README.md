@@ -53,3 +53,6 @@ En nuestros servicios incluimos un carrito de compras para que puedan selecciona
 ## ***Tablero Del Trabajo***
 
 [Trello](https://trello.com/b/BewEHWBz/proyectogrupo5labodega)
+
+## ***Retrospectiva***
+![Retrospectiva](C:\Users\User\Desktop\grupo_5_LaBodega\Extras\retrospectiva.jpeg?raw=true)
