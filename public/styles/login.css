@@ -1,0 +1,60 @@
+.form-register {
+    width: 1000px;
+    background-image: url(https://images5.alphacoders.com/443/thumb-1920-443997.jpg); 
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: "montserrat";
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+
+}
+
+.form-register h4 {
+
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "montserrat"
+
+}
+ .campo{
+
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #965d62;
+    font-family: "montserrat";
+    font-size: 18px;
+    color: #917dc9;
+ }
+
+ .form-register p {
+     height: 30px;
+     text-align: center;
+     font-size: 25px;
+     background-color: transparent;
+     color: #917dc9;
+    
+
+
+ }
+
+ .form-register .botons {
+     width: 100%;
+     background: #84142d;
+     border: none;
+     padding:10px;
+     color: black;
+     margin: 16px 0;
+     font-size: 25px;
+     font-family: "montserrat";
+           
+    }
+    
+
+  
+    

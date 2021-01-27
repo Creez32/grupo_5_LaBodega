@@ -1,48 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/public/styles/login.css">
-</head>
-<title>Registro</title>
-<body>
-  <header>
-    <a href="login.ejs"><img src="/Extras/Logotipo.jpeg" alt=""></a>
-    <nav>
-      <ul class="secciones">
-          <li><a href="">Nosotros</a></li>
-          <li><a href="">Tienda</a></li>
-          <li><a href="">Contactos</a></li>
-          <li><a href="">Vinos</a></li>
-          <li><a href="">Bodega</a></li>
-
-      </ul>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/login.css">
   
-  </nav>
-  </header>
-  <form action="submit">
-    <h1>REGISTRATE AQUI</h1>
-    <label for="login">
-        <p>Nombre</p>
-        <input class="campo" type="text" placeholder="Ingresa tu nombre">
-        
-        <p>Email</p>
-        <input class="campo" type="email" placeholder="Ingresa tu email">
-        
-        <p>Contraseña</p>
-        <input class="campo" type="password" placeholder="Ingresa tu contraseña"><br>
-        
-        <p> Repetir Contraseña</p>
-        <input class="campo" type="password" placeholder="Repetir contraseña"><br>
-        <input type="checkbox" value="ok">Acepto los términos y condiciones.
-    </div>
-    </label>
-    <button type="submit">Registrarme</button>
-    <button class="return" type="reset">Cancelar</button>
-</form>
+    <title>Registro</title>
+    <link rel="icon" type="image/jpg" href="/Extras/Logotipo.jpeg">
+    <link href="https://fonts.google.com/specimen/Roboto+Mono?query=mon" rel="stylesheet">
+</head>
+<body>
 
-
+    
+       
+    <section class="form-register">
+        <h4>Formulario Registro</h4>
+        <p>Nombres:</p>
+        <input class="campo" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+        <p>Apellidos:</p>
+        <input class="campo" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+        <p>Correo Electronico:</p>
+        <input class="campo" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+        <p>Contraseña:</p>
+        <input class="campo" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña"> 
+        <p>Repetir Contraseña:</p>  
+        <input class="campo" type="password" name=" repetir contraseña" id=" repetir contraseña" placeholder="Repita su Contraseña"> 
+        
+         <input class="botons" type="submit" value="Registrar">
+         
+        
+    </section>
 
 </body>
 </html>
