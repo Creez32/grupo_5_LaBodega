@@ -55,4 +55,4 @@ En nuestros servicios incluimos un carrito de compras para que puedan selecciona
 [Trello](https://trello.com/b/BewEHWBz/proyectogrupo5labodega)
 
 ## ***Retrospectiva***
-![Retrospectiva](C:\Users\User\Desktop\grupo_5_LaBodega\Extras\retrospectiva.jpeg?raw=true)
+![Retrospectiva](https://github.com/Creez32/grupo_5_LaBodega/blob/main/Extras/retrospectiva.jpeg?raw=true "Retro")
