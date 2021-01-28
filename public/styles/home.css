@@ -65,13 +65,18 @@ header .logo {
     border-radius: 50%;
 }
 
-header nav.nav {
-    float: left;
+header nav.navbar
+{float: right;
+margin: 30px;
+}
+.navbar-dark .navbar-toggler{
+    color: black;
 }
 
 header nav.login {
     float: right;
     margin-right: 10px;
+    display: none;
 }
 
 /* PPRODUCTO */
