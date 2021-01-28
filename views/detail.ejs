@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle de producto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3f21023fe6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/products.css">
 </head>
 
@@ -17,77 +19,196 @@
     </header>
 
     <main>
-        <section >
-            <div>
-                <div>
-                    <img src="/images/Botella con copas.jpg" alt="">
+        <section>
+            <div class="product">
+                <div class="first">
+                    <div class="image">
+                        <img src="/images/botellavino.png" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="name">
+                            <h2>LaBodega Cabernet</h2>
+                        </div>
+                        <div class="price">
+                            <div class="box">
+                                <h3>$3000</h3>
+                                <p>precio por caja 6 botellas</p>
+                                <button class="cart">
+                                    agregar al carrito
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="box">
+                                <h3>$500</h3>
+                                <p>precio por botella</p>
+                                <button class="cart">
+                                    agregar al carrito
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h2>Nombre de Producto</h2>
+                <div class="box">
+                    <div class="description">
+                        <p>Somos unos de los orgullosos centros elaboradores a nivel nacional de este mágico y cada vez
+                            más famoso producto. Numerosas son las firmas que lo ofrecen creándose un consorcio.
+                            Las bodegas deleitan a un público de cada más vez más adeptos a esta alegre y deliciosa
+                            bebida. Se trata de un vino blanco espumante (obtenido de manera natural) aunque también
+                            tiene su variedad en rosado. Se elabora principalmente de 3 tipos de uva: Chardonay, Pinot
+                            Noire y Pinot Meunier y las variedades más elaboradas son: Extra Brut, Brut, Extra Sec, Sec
+                            y Demi Sec.
+                            Caminos del espumante Suma otro atractivo a la oferta de turismo aventura y naturaleza que
+                            atrae numerosos visitantes al sur de Mendoza.</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Precio</h3>
-                </div>
-                <div>
-                    <h3>Cantidad</h3>
-                    <input id="demo3" type="text" value="" name="demo3">
-                </div>
-                <div>
-                    <button>
-                        agregar al carrito
-                    </button>
-                </div>
-                <div>
-                    <p>Descripcion del producto</p>
-                </div>
-                <div>
-                    <p>Servicios que se brindan</p>
+                <div class="services">
+                    <div class="item">
+                        <h4>Envío sin cargo a todo el pais</h4>
+                        <p>Según monto de compra</p>
+                    </div>
+                    <div class="item">
+                        <h4>Aceptamos todas las tarjetas</h4>
+                        <p>¡Cuotas sin interes!</p>
+                    </div>
+                    <div class="item">
+                        <h4>Seguimiento de pedido</h4>
+                        <p>En el despacho de todos nuestros paquetes</p>
+                    </div>
+                    <div class="item">
+                        <h4>Devolución gratis</h4>
+                        <p>Tenés 30 días desde que lo recibís</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                Menu
+        <section class="extra">
+            <div class="opinions">
+                <h3>
+                    Opiniones
+                </h3>
+                <ul>
+                    <li>
+                        Color muy atractivo, profundo con destacados tonos violáceos.
+                    </li>
+                    <li>
+                        Al destapar una botella, nos deleita con una complejidad de aromas que entremezclan notas
+                        frescas, frutos rojos como ciruelas maduras, frutos negros y una delicada mineralidad que
+                        favorece aún más la frescura. Muy bien acomplejadas por dejos de vainilla provenientes de su
+                        paso por roble
+                    </li>
+                    <li>
+                        De taninos suaves y maduros, con muy buen equilibrio ácido en boca, refrescante, encontrándose
+                        las mismas notas de frutas que en nariz. Muy buen final de boca, equilibrado y elegante.
+                    </li>
+                </ul>
             </div>
-            <div>
-                <p>
-                    Detalles
-                </p>
+            <div class="tecnic">
+                <h3>
+                    Detalles tecnicos
+                </h3>
+                <div class="items">
+                    <ul>
+                        <li>Varietal</li>
+                        <li>Color</li>
+                        <li>Año</li>
+                        <li>Tiempo en Botella</li>
+                        <li>Origen</li>
+                    </ul>
+                    <ul>
+                        <li>100% malbec</li>
+                        <li>Rojo</li>
+                        <li>2019</li>
+                        <li>4 meses</li>
+                        <li>Valle de uco</li>
+                    </ul>
+
+                </div>
             </div>
         </section>
-        <section>
-            <div class="productosRelacionados">
-                <img src="/images/botella sin etiqueta 1.jpg" alt="">
-                <h4>Nombre de producto</h4>
-                <h4>Precio</h4>
-            </div>
-            <div class="productosRelacionados">
-                <img src="/images/botella sin etiqueta 2.jpg" alt="">
-                <h4>Nombre de producto</h4>
-                <h4>Precio</h4>
-            </div>
-            <div class="productosRelacionados">
-                <img src="/images/botella sin etiqueta 1.jpg" alt="">
-                <h4>Nombre de producto</h4>
-                <h4>Precio</h4>
-            </div>
-            <div class="productosRelacionados">
-                <img src="/images/botella sin etiqueta 2.jpg" alt="">
-                <h4>Nombre de producto</h4>
-                <h4>Precio</h4>
+        <section class="relacionated">
+            <h3>Productos Relacionados</h2>
+            <div class="cards">
+
+                <a href="">
+                    <div class="productosRelacionados">
+                        <img src="/images/botella sin etiqueta 1.jpg" alt="">
+                        <h4>Nombre de producto</h4>
+                        <h4>Precio</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="productosRelacionados">
+                        <img src="/images/botella sin etiqueta 2.jpg" alt="">
+                        <h4>Nombre de producto</h4>
+                        <h4>Precio</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="productosRelacionados">
+                        <img src="/images/botella sin etiqueta 1.jpg" alt="">
+                        <h4>Nombre de producto</h4>
+                        <h4>Precio</h4>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="productosRelacionados">
+                        <img src="/images/botella sin etiqueta 2.jpg" alt="">
+                        <h4>Nombre de producto</h4>
+                        <h4>Precio</h4>
+                    </div>
+                </a>
+
             </div>
         </section>
     </main>
 
     <footer>
-        <div>
-            Footer
+        <div class="ubication">
+            <h4>LaBodega</h4>
+            <p>Ruta 60 y Canal Pescara (5517), Maipú Mendoza, Argentina</p>
+            <h4>Ubicación</h4>
+            <a href="https://goo.gl/maps/84D9DdwhyqKosVPX7">Ver en el mapa</a>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44579.59822603437!2d-68.79201386692151!3d-33.018253329468074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x78070c076c77e1a6!2sTRIVENTO!5e0!3m2!1ses-419!2sar!4v1611807108640!5m2!1ses-419!2sar"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+        
+        <div class="contacto">
+            
+            <h4>Oficina Comercial</h4>
+            <p>Av. Del Libertador 5936 piso 6 (1428) Capital Federal, Buenos Aires, Argentina</p>
+            <h4>Puedes contactarte con nosotros por nuestro mail</h4>
+            <a href="info@labodega.com">info@labodega.com</a>
+            <h4>O a través de nuestro numero</h4>
+            <a href="tel:+5491123627220">+54 9 11 2362-7220</a>
+            <p>Nuestra secretaria Melany estara dispuesta a contestar a toda hora</p>
+            
+        </div>
+        
+        <div class="redes">
+            <h4>Reservas</h4>
+            <a href="https://api.whatsapp.com/send?phone=5491123627220">Envíanos un mensaje de WhatsApp</a>
+            <h4>Horarios de visita</h4>
+            <p>De 8:00 Am a 20:00 Pm</p>
+            <h4>Te dejamos nuestras redes para que puedas seguirnos</h4>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5491123627220"><i class="fab fa-whatsapp"></i></a>
+            
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
