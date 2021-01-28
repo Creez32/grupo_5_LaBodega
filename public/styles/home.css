@@ -1,0 +1,177 @@
+/*====== Fonts ======*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@200;400;600&display=swap');
+/*====== Variables ======*/
+
+:root {
+    --rose: #84142d;
+    --dark-rose: #44000d;
+    --light-purple: #917dc9;
+    --purple: #644e9b;
+    --light-gray: #ebebeb;
+    --ligth-rose: #965d62;
+    --base-font-family: 'Montserrat';
+    --other-font-family: 'Cinzel'
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: var(--base-font-family);
+    background-image: url("/images/bodega.jpg");
+    background-size: 260%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: -40vh 27vw;
+}
+
+header {
+    box-sizing: border-box;
+    background-color: rgb(106, 20, 41);
+    width: 100%;
+    text-decoration: none;
+    overflow: hidden;
+    margin: 0;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+header nav {
+    overflow: hidden;
+}
+
+header .logo {
+    margin: 15px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    width: 90px;
+    float: left;
+}
+
+header nav.nav {
+    float: left;
+}
+
+header nav.login {
+    float: right;
+    margin-right: 10px;
+}
+
+/* PPRODUCTO */
+
+main .main {
+    margin-top: 300px;
+}
+
+.producto1 {
+    background-color: rgba(255, 248, 220, 80%);
+    width: 85%;
+    margin: 200px 7.5% 30px 7.5%;
+    padding: 4%;
+    overflow: hidden;
+    color: white;
+}
+
+.producto1 img {
+    width: 50%;
+    float: left;
+}
+
+.producto1 p {
+    width: 45%;
+    margin-top: 10px;
+    float: right;
+    background-color: var(--ligth-rose);
+    padding: 2%;
+}
+
+.producto1 h3 {
+    width: 45%;
+    float: right;
+    background-color: var(--ligth-rose); 
+    text-align: center;
+}
+
+/* PRODUCTO 2 */
+
+.producto2 {
+    background-color: rgba(255, 248, 220, 80%);
+    width: 85%;
+    margin: 20px 7.5% 30px 7.5%;
+    padding: 4%;
+    overflow: hidden;
+    color: white;
+}
+
+.producto2 img {
+    width:50%;
+    float: right;
+}
+
+.producto2 h3 {
+    width: 45%;
+    float: left;
+    background-color: var(--ligth-rose);
+    text-align: center;
+}
+
+.producto2 p {
+    width: 45%;
+    margin-top: 10px;
+    float: left;
+    background-color: var(--ligth-rose);
+    padding: 2%;
+}
+
+/* BANNER */
+
+.banner p {
+    background-color: rgba(255, 248, 220, 80%);
+    width: 90%;
+    margin: 0 5% 0  5%;
+    text-align: center;
+}
+.banner div .ban{
+    background-color: white;
+box-sizing: 50px;}
+/* FOOTER */
+
+footer {
+    background-color: rgb(106, 20, 41);
+    width: 100%;
+    margin-top: 500px;
+    color: white;
+    bottom: 0vw;
+
+}
+
+footer nav ul li {
+    list-style: none;
+    display: inline;
+}
+footer .mas p{
+text-align: center;
+}
+
+footer .copyright p{
+    font-size: 10px;
+    text-align: start;
+    padding: 5%;
+}
