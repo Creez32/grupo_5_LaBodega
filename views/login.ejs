@@ -1,30 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/login.css">
+  
+    <title>Registro</title>
+    <link rel="icon" type="image/jpg" href="/Extras/Logotipo.jpeg">
+    <link href="https://fonts.google.com/specimen/Roboto+Mono?query=mon" rel="stylesheet">
 </head>
 <body>
-  
-  <h1>Registro</h1>
-  <div class="formulario">
-  <h2>Datos</h2> 
-  
-  <form action="">
-    <label for="nombre">Nombre</label>
-    <input type="text" name="nombre"><br><br>
-    <label for="apellido">Apellido</label>
-    <input type="text" name = "apellido"><br><br>
-      <label for="email">Correo Electronico</label>
-    <input type="email" name = "correo electronico"><br><br>
-    <label for="password">Contraseña</label>
-    <input type="password" name = "contrasenia"><br><br>
-      <input class="boton" type="submit" value="Enviar">
-  
-  </form>
-  </div>
+
+    
+       
+    <section class="form-register">
+        <h4>Formulario Registro</h4>
+        <p>Nombres:</p>
+        <input class="campo" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+        <p>Apellidos:</p>
+        <input class="campo" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+        <p>Correo Electronico:</p>
+        <input class="campo" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+        <p>Contraseña:</p>
+        <input class="campo" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña"> 
+        <p>Repetir Contraseña:</p>  
+        <input class="campo" type="password" name=" repetir contraseña" id=" repetir contraseña" placeholder="Repita su Contraseña"> 
+        
+         <input class="botons" type="submit" value="Registrar">
+         
+        
+    </section>
 
 </body>
 </html>
