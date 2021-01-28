@@ -4,7 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@200;400;600&display=swap');
 /*====== Variables ======*/
 
-:root {
+:root
+{
     --rose: #84142d;
     --dark-rose: #44000d;
     --light-purple: #917dc9;
@@ -12,166 +13,225 @@
     --light-gray: #ebebeb;
     --ligth-rose: #965d62;
     --base-font-family: 'Montserrat';
-    --other-font-family: 'Cinzel'
+    --other-font-family: 'Cinzel';
 }
 
-* {
+*
+{
     box-sizing: border-box;
     margin: 0;
 }
 
-body {
+body
+{
     font-family: var(--base-font-family);
-    background-image: url("/images/bodega.jpg");
-    background-size: 260%;
+
+    background-image: url('/images/bodega.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: -40vh 27vw;
+    background-size: 260%;
 }
 
-header {
-    box-sizing: border-box;
-    background-color: rgb(106, 20, 41);
-    width: 100%;
-    text-decoration: none;
-    overflow: hidden;
-    margin: 0;
+header
+{
     position: fixed;
-    top: 0px;
     z-index: 1;
-}
+    top: 0;
 
-header nav ul li {
-    list-style: none;
-    display: inline;
-}
+    overflow: hidden;
 
-header nav ul li a {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+
     text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 10px;
+
+    background-color:black;
 }
 
-header nav {
+header nav ul li
+{
+    display: inline;
+
+    list-style: none;
+}
+
+header nav ul li a
+{
+    font-size: 10px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: white;
+}
+
+header nav
+{
     overflow: hidden;
 }
 
-header .logo {
-    margin: 15px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
+header .logo
+{
+    float: left;
+
     width: 90px;
+    margin: 15px;
+
+    border: 2px solid #ccc;
+    border-radius: 50%;
+}
+
+header nav.nav
+{
     float: left;
 }
 
-header nav.nav {
-    float: left;
-}
-
-header nav.login {
+header nav.login
+{
     float: right;
+
     margin-right: 10px;
 }
 
 /* PPRODUCTO */
 
-main .main {
+main .main
+{
     margin-top: 300px;
 }
 
-.producto1 {
-    background-color: rgba(255, 248, 220, 80%);
+.producto1
+{
+    overflow: hidden;
+
     width: 85%;
     margin: 200px 7.5% 30px 7.5%;
     padding: 4%;
-    overflow: hidden;
+
     color: white;
+    background-color: rgba(255, 248, 220, 80%);
 }
 
-.producto1 img {
-    width: 50%;
+.producto1 img
+{
     float: left;
+
+    width: 50%;
 }
 
-.producto1 p {
+.producto1 p
+{
+    float: right;
+
     width: 45%;
     margin-top: 10px;
-    float: right;
-    background-color: var(--ligth-rose);
     padding: 2%;
+
+    background-color: var(--ligth-rose);
 }
 
-.producto1 h3 {
-    width: 45%;
+.producto1 h3
+{
     float: right;
-    background-color: var(--ligth-rose); 
+
+    width: 45%;
+
     text-align: center;
+
+    background-color: var(--ligth-rose);
 }
 
 /* PRODUCTO 2 */
 
-.producto2 {
-    background-color: rgba(255, 248, 220, 80%);
+.producto2
+{
+    overflow: hidden;
+
     width: 85%;
     margin: 20px 7.5% 30px 7.5%;
     padding: 4%;
-    overflow: hidden;
+
     color: white;
+    background-color: rgba(255, 248, 220, 80%);
 }
 
-.producto2 img {
-    width:50%;
+.producto2 img
+{
     float: right;
+
+    width: 50%;
 }
 
-.producto2 h3 {
-    width: 45%;
+.producto2 h3
+{
     float: left;
-    background-color: var(--ligth-rose);
+
+    width: 45%;
+
     text-align: center;
+
+    background-color: var(--ligth-rose);
 }
 
-.producto2 p {
+.producto2 p
+{
+    float: left;
+
     width: 45%;
     margin-top: 10px;
-    float: left;
-    background-color: var(--ligth-rose);
     padding: 2%;
+
+    background-color: var(--ligth-rose);
 }
 
 /* BANNER */
 
-.banner p {
-    background-color: rgba(255, 248, 220, 80%);
+.banner p
+{
     width: 90%;
     margin: 0 5% 0  5%;
+
     text-align: center;
+
+    background-color: rgba(255, 248, 220, 80%);
 }
-.banner div .ban{
+.banner div .ban
+{
+    box-sizing: 50px;
+
     background-color: white;
-box-sizing: 50px;}
+}
 /* FOOTER */
 
-footer {
-    background-color: rgb(106, 20, 41);
-    width: 100%;
-    margin-top: 500px;
-    color: white;
+footer
+{
     bottom: 0vw;
 
+    width: 100%;
+    margin-top: 500px;
+
+    color: white;
+    background-color:black;
 }
 
-footer nav ul li {
-    list-style: none;
+footer nav ul li
+{
     display: inline;
+
+    list-style: none;
 }
-footer .mas p{
-text-align: center;
+footer .mas p
+{
+    text-align: center;
 }
 
-footer .copyright p{
+footer .copyright p
+{
     font-size: 10px;
-    text-align: start;
+
     padding: 5%;
+
+    text-align: start;
 }
