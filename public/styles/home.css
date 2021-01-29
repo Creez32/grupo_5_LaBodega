@@ -71,21 +71,21 @@ header nav.navbar {
 }
 
 header nav.login {
+    display: none;
     float: right;
     margin-right: 10px;
-    display: none;
 }
 
 main.main div.img {
-    width: 100%;
     overflow: hidden;
+    width: 100%;
 }
 
 main.main img.fondo {
-    width: 1000px;
-    margin-top: 120px;
     position: relative;
     right: 120px;
+    width: 1000px;
+    margin-top: 120px;
 }
 
 /* PPRODUCTO */
@@ -167,13 +167,13 @@ main.main img.fondo {
 /* FOOTER */
 
 footer {
-    bottom: 0vw;
-    width: 100%;
-    color: white;
-    text-align: center;
-    background-color: black;
-    padding: 2.5%;
     font-family: var(--other-font-family);
+    bottom: 0vh;
+    width: 100%;
+    padding: 2.5%;
+    text-align: center;
+    color: white;
+    background-color: black;
 }
 
 footer div.bloques {
@@ -181,13 +181,13 @@ footer div.bloques {
 }
 
 footer h3 {
-    padding: 10px 0;
     font-size: 25px;
+    padding: 10px 0;
 }
 
 footer h4 {
-    padding: 10px 0;
     font-size: 20px;
+    padding: 10px 0;
 }
 
 footer p {
@@ -204,14 +204,14 @@ footer h4.ocultar {
 
 footer a {
     font-size: 20px;
-    color: var(--light-gray);
-    transition: all 0.3s;
+    transition: all .3s;
     text-decoration: underline transparent white;
+    color: var(--light-gray);
 }
 
 footer a:hover {
-    color: var(--light-purple);
     text-decoration: underline solid 3px var(--light-purple);
+    color: var(--light-purple);
 }
 
 footer iframe {
@@ -234,22 +234,25 @@ footer .redes {
 
 footer .redes i {
     font-size: 40px;
+    margin-bottom: 0;
     padding: 20px;
-    margin-bottom: 0px;
 }
 
 footer .copyright p {
     font-size: 10px;
-    margin: 0;
-    text-align: center;
     width: 100%;
+    margin: 0;
     margin-top: 20px;
+    text-align: center;
 }
 
 @media (min-width: 1024px) {
     main.main img.fondo {
-        margin-top: 120px;
         width: 110%;
+        margin-top: 120px;
+    }
+    header nav.login {
+        display: block;
     }
     /* FOOTER */
     footer .bl {
@@ -276,12 +279,12 @@ footer .copyright p {
         border-bottom: none;
     }
     footer a {
-        color: var(--light-gray);
+        transition: all .3s;
         text-decoration: none;
-        transition: all 0.3s;
+        color: var(--light-gray);
     }
     footer a:hover {
-        color: var(--light-purple);
         text-decoration: underline solid 3px var(--light-purple);
+        color: var(--light-purple);
     }
 }
