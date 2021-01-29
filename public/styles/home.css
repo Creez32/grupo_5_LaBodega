@@ -22,11 +22,7 @@
 
 body {
     font-family: var(--base-font-family);
-    background-image: url('/images/bodega.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: -40vh 27vw;
-    background-size: 260%;
+    background-color: var(--light-gray);
 }
 
 header {
@@ -65,11 +61,12 @@ header .logo {
     border-radius: 50%;
 }
 
-header nav.navbar
-{float: right;
-margin: 30px;
+header nav.navbar {
+    float: right;
+    margin: 30px;
 }
-.navbar-dark .navbar-toggler{
+
+.navbar-dark .navbar-toggler {
     color: black;
 }
 
@@ -79,11 +76,19 @@ header nav.login {
     display: none;
 }
 
-/* PPRODUCTO */
-
-main .main {
-    margin-top: 300px;
+main.main div.img {
+    width: 100%;
+    overflow: hidden;
 }
+
+main.main img.fondo {
+    width: 1000px;
+    margin-top: 120px;
+    position: relative;
+    right: 120px;
+}
+
+/* PPRODUCTO */
 
 .producto1 {
     overflow: hidden;
@@ -164,63 +169,119 @@ main .main {
 footer {
     bottom: 0vw;
     width: 100%;
-    margin-top: 100px;
     color: white;
     text-align: center;
     background-color: black;
     padding: 2.5%;
     font-family: var(--other-font-family);
-
 }
-footer h3{
+
+footer div.bloques {
+    padding: 10;
+}
+
+footer h3 {
     padding: 10px 0;
     font-size: 25px;
 }
+
 footer h4 {
     padding: 10px 0;
     font-size: 20px;
-  }
-  footer p {
+}
+
+footer p {
     font-size: 15px;
-  }
-  footer p.ocultar{
-      display: none;
-  }
-  footer h4.ocultar{
-      display: none;
-  }
-  footer a {
+}
+
+footer p.ocultar {
+    display: none;
+}
+
+footer h4.ocultar {
+    display: none;
+}
+
+footer a {
     font-size: 20px;
     color: var(--light-gray);
     transition: all 0.3s;
     text-decoration: underline transparent white;
-  }
-  footer a:hover {
+}
+
+footer a:hover {
     color: var(--light-purple);
     text-decoration: underline solid 3px var(--light-purple);
-  }
-  footer iframe {
+}
+
+footer iframe {
     display: none;
-  }
-  footer .ubication {
-    padding: 30px 0;
+}
+
+footer .ubication {
+    padding: 10px;
     border-bottom: 1px solid var(--dark-rose);
-  }
-  footer .contacto {
-    padding: 10px 0;
+}
+
+footer .contacto {
+    padding: 10px;
     border-bottom: 1px solid var(--dark-rose);
-  }
-  footer .redes {
-    padding: 10px 0;
-  }
-  footer .redes i {
+}
+
+footer .redes {
+    padding: 10px;
+}
+
+footer .redes i {
     font-size: 40px;
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 footer .copyright p {
     font-size: 10px;
-    margin: 0 2.5% 0 2.5%;
+    margin: 0;
     text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+    main.main img.fondo {
+        margin-top: 120px;
+        width: 110%;
+    }
+    /* FOOTER */
+    footer .bl {
+        display: flex;
+        justify-content: space-around;
+    }
+    footer iframe {
+        display: block;
+        width: 80%;
+        margin: 0 10% 0 10%;
+    }
+    footer h4.ocultar {
+        display: block;
+    }
+    footer p.ocultar {
+        display: block;
+    }
+    footer .ubication {
+        border-right: 1px solid var(--dark-rose);
+        border-bottom: none;
+    }
+    footer .contacto {
+        border-right: 1px solid var(--dark-rose);
+        border-bottom: none;
+    }
+    footer a {
+        color: var(--light-gray);
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    footer a:hover {
+        color: var(--light-purple);
+        text-decoration: underline solid 3px var(--light-purple);
+    }
 }
