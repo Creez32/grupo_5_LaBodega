@@ -9,9 +9,9 @@ module.exports={
         res.render('detail')
     },
     charge:(req,res)=>{
-
+        res.render('productscharges')
     },
     cart:(req,res)=>{
-        
+        res.render('cart')        
     }
 }

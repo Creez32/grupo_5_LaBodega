@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Bodega</title>
+    <script src="https://kit.fontawesome.com/3f21023fe6.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/home.css">
 </head>
@@ -13,32 +14,15 @@
 <body>
 
     <!-- HEADER -->
-    <header class="main-header">
-        <a href="#"><img src="/images/logotipo.jpeg" alt="" class="logo"></a>
-
-        <!-- BARRA DE NAVEGACION -->
-        <nav class="login">
-            <ul>
-                <li><a href="/login">Login</a></li>
-                <li><a href="#">Register</a></li>
-                <li><a href="/cart">Cart</a></li>
-            </ul>
-        </nav>
-        <nav class="nav">
-            <ul>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="/products">Tienda</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Vinos</a></li>
-                <li><a href="#">Bodega</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%- include('./partials/header')  %> 
 
 
     <main class="main">
+        <div class="img">
+            <img src="/images/bodega1.jpg" alt="" class="fondo">
+        </div>
         <!-- PRODUCTO 1 -->
-        <section>
+        <section class="producto">
             <div class="producto1">
                 <h3>hola</h3>
                 <img src="/images/botella sin etiqueta 1.jpg" alt="">
@@ -51,7 +35,7 @@
 
         <!-- PRODUCTO 2 -->
 
-        <section>
+        <section class="producto">
             <div class="producto2">
                 <article>
                     <h3>hola</h3>
@@ -76,25 +60,48 @@
 
     <!-- FOOTER -->
     <footer>
-       <div class="mas">
-            <div class="bodega">
-                <p>BODEGA</p>
+            <div class="bl">
+                <div class="ubication" class="bloques">
+                    <h3>LaBodega</h3>
+                    <p>Ruta 60 y Canal Pescara (5517), Maipú Mendoza, Argentina</p>
+                    <a href="https://goo.gl/maps/84D9DdwhyqKosVPX7">Ver en el mapa</a>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44579.59822603437!2d-68.79201386692151!3d-33.018253329468074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x78070c076c77e1a6!2sTRIVENTO!5e0!3m2!1ses-419!2sar!4v1611807108640!5m2!1ses-419!2sar"
+                        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+                <div class="contacto" class="bloques">
+                    <h4 class="ocultar">Oficina Comercial</h4>
+                    <p class="ocultar">Av. Del Libertador 5936 piso 6 (1428) Capital Federal, Buenos Aires, Argentina</p>
+                    <h4>Puedes contactarte con nosotros por nuestro mail</h4>
+                    <a href="info@labodega.com">info@labodega.com</a>
+                    <h4>O a través de nuestro número</h4>
+                    <a href="tel:+5491123627220">+54 9 11 2362-7220</a>
+                
+                </div>
+                <div class="redes" class="bloques">
+                    <h4 class="ocultar">Horarios de visita</h4>
+                    <p class="ocultar">De 8:00 Am a 20:00 Pm</p>
+                    <h4>Te dejamos nuestras redes para que puedas seguirnos</h4>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5491123627220"><i class="fab fa-whatsapp"></i></a>
+                
+                </div>
             </div>
-            <div class="horarios">
-                <P>HORARIOS</P>
-            </div>
-            <div class="redes">
-                <p>REDES</p>
-            </div>
-       </div>
+            
 
-        
         <div class="copyright">
-<p>Copyright © 2021 La Bodega - Todos los derechos reservados - Beber con moderación. Prohibida su venta a menores de 18 años.</p>
+            <p>Copyright © 2021 La Bodega - Todos los derechos reservados - Beber con moderación. Prohibida su venta a
+                menores de 18 años.</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 
 
 </body>
 
-</html>
+</html>     
