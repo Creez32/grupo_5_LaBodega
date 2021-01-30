@@ -1,0 +1,258 @@
+/*====== Fonts ======*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@200;400;600&display=swap');
+/*====== Variables ======*/
+
+:root {
+    --rose: #84142d;
+    --dark-rose: #44000d;
+    --light-purple: #917dc9;
+    --purple: #644e9b;
+    --light-gray: #ebebeb;
+    --ligth-rose: #965d62;
+    --base-font-family: 'Montserrat';
+    --other-font-family: 'Cinzel';
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: var(--base-font-family);
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+    background-color: black;
+}
+
+header nav ul li {
+    display: inline;
+    list-style: none;
+}
+
+header nav ul li a {
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+header nav {
+    overflow: hidden;
+}
+
+header .logo {
+    float: left;
+    width: 90px;
+    margin: 15px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+}
+
+header nav.navbar {
+    float: right;
+    margin: 30px;
+}
+
+.navbar-dark .navbar-toggler {
+    color: black;
+}
+
+header nav.login {
+    display: none;
+    float: right;
+    margin-right: 10px;
+}
+
+main.main {
+    margin-top: 200px;
+    background-image: url(/images/bodega.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* CARRITO */
+
+div.carrito {
+    background-color: rgba(255, 248, 220, 80%);
+    width: 90%;
+    margin: 10px 5% 0 5%;
+    text-align: center;
+    font-size: 15px;
+}
+
+div.carrito ul {
+    margin-top: 20px;
+}
+
+div.carrito ul li {
+    display: inline;
+    list-style: none;
+    padding: 5px;
+}
+
+.cart {
+    background-color: var(--light-purple);
+    color: var(--light-gray);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background-size: 100px;
+}
+
+div.botoncarrito {
+    text-align: center;
+}
+
+/* RESUMEN */
+
+div.resumen {
+    background-color: rgba(255, 248, 220, 80%);
+    width: 60%;
+    margin: 0 20% 10px 20%;
+    padding: 5%;
+}
+
+div.resumen .cart {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    font-family: var(--other-font-family);
+    bottom: 0vh;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+footer div.bloques {
+    padding: 10;
+}
+
+footer h3 {
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+footer h4 {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+footer p.ocultar {
+    display: none;
+}
+
+footer h4.ocultar {
+    display: none;
+}
+
+footer a {
+    font-size: 20px;
+    transition: all .3s;
+    text-decoration: underline transparent white;
+    color: var(--light-gray);
+}
+
+footer a:hover {
+    text-decoration: underline solid 3px var(--light-purple);
+    color: var(--light-purple);
+}
+
+footer iframe {
+    display: none;
+}
+
+footer .ubication {
+    padding: 10px;
+    border-bottom: 1px solid var(--dark-rose);
+}
+
+footer .contacto {
+    padding: 10px;
+    border-bottom: 1px solid var(--dark-rose);
+}
+
+footer .redes {
+    padding: 10px;
+}
+
+footer .redes i {
+    font-size: 40px;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+footer .copyright p {
+    font-size: 10px;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    main.main img.fondo {
+        width: 110%;
+        margin-top: 120px;
+    }
+    header nav.login {
+        display: block;
+    }
+    /* FOOTER */
+    footer {
+        z-index: 1;
+    }
+    footer .bl {
+        display: flex;
+        justify-content: space-around;
+    }
+    footer iframe {
+        display: block;
+        width: 80%;
+        margin: 0 10% 0 10%;
+    }
+    footer h4.ocultar {
+        display: block;
+    }
+    footer p.ocultar {
+        display: block;
+    }
+    footer .ubication {
+        border-right: 1px solid var(--dark-rose);
+        border-bottom: none;
+    }
+    footer .contacto {
+        border-right: 1px solid var(--dark-rose);
+        border-bottom: none;
+    }
+    footer a {
+        transition: all .3s;
+        text-decoration: none;
+        color: var(--light-gray);
+    }
+    footer a:hover {
+        text-decoration: underline solid 3px var(--light-purple);
+        color: var(--light-purple);
+    }
+}
