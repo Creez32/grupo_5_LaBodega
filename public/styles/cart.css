@@ -23,12 +23,10 @@
 body {
     font-family: var(--base-font-family);
     position: relative;
-    background-color: var(--light-gray);
 }
 
 header {
     position: fixed;
-    z-index: 1;
     top: 0;
     overflow: hidden;
     box-sizing: border-box;
@@ -77,16 +75,59 @@ header nav.login {
     margin-right: 10px;
 }
 
-main.main div.img {
-    overflow: hidden;
-    width: 100%;
+main.main {
+    margin-top: 200px;
+    background-image: url(/images/bodega.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-main.main img.fondo {
-    position: relative;
-    right: 120px;
-    width: 1000px;
-    margin-top: 120px;
+/* CARRITO */
+
+div.carrito {
+    background-color: rgba(255, 248, 220, 80%);
+    width: 90%;
+    margin: 10px 5% 0 5%;
+    text-align: center;
+    font-size: 15px;
+}
+
+div.carrito ul {
+    margin-top: 20px;
+}
+
+div.carrito ul li {
+    display: inline;
+    list-style: none;
+    padding: 5px;
+}
+
+.cart {
+    background-color: var(--light-purple);
+    color: var(--light-gray);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background-size: 100px;
+}
+
+div.botoncarrito {
+    text-align: center;
+}
+
+/* RESUMEN */
+
+div.resumen {
+    background-color: rgba(255, 248, 220, 80%);
+    width: 60%;
+    margin: 0 20% 10px 20%;
+    padding: 5%;
+}
+
+div.resumen .cart {
+    margin-top: 20px;
+    width: 100%;
 }
 
 /* FOOTER */
@@ -95,7 +136,6 @@ footer {
     font-family: var(--other-font-family);
     bottom: 0vh;
     width: 100%;
-    padding: 2.5%;
     text-align: center;
     color: white;
     background-color: black;
@@ -180,6 +220,9 @@ footer .copyright p {
         display: block;
     }
     /* FOOTER */
+    footer {
+        z-index: 1;
+    }
     footer .bl {
         display: flex;
         justify-content: space-around;
