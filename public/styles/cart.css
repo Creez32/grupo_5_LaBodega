@@ -23,7 +23,23 @@
 body {
     font-family: var(--base-font-family);
     position: relative;
+    box-sizing: border-box;
 }
+
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background: rgba(255, 248, 220, 80%)
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--light-purple);
+
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(115, 81, 206);
+}
+
 
 header {
     position: fixed;
@@ -34,6 +50,7 @@ header {
     margin: 0;
     text-decoration: none;
     background-color: black;
+    height: 120px;
 }
 
 header nav ul li {
@@ -75,31 +92,32 @@ header nav.login {
     margin-right: 10px;
 }
 
-main.main {
-    margin-top: 200px;
-    background-image: url(/images/bodega.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 /* CARRITO */
 
 div.carrito {
     background-color: rgba(255, 248, 220, 80%);
-    width: 90%;
-    margin: 10px 5% 0 5%;
-    text-align: center;
-    font-size: 15px;
+    width: 80%;
+    margin: 10px 10% 0 10%;
+    text-align: justify;
+    font-size: 13px;
 }
 
 div.carrito ul {
     margin-top: 20px;
-}
+    padding: 0;
+    text-align: center;
+    }
 
 div.carrito ul li {
     display: inline;
     list-style: none;
-    padding: 5px;
+margin: 0 2% 0 2%;}
+
+div.productos {
+    height: 300px;
+    background-color: rgba(255, 248, 220, 80%);
+    width: 80%;
+    margin: 0 10% 0 10%;
 }
 
 .cart {
@@ -114,6 +132,7 @@ div.carrito ul li {
 
 div.botoncarrito {
     text-align: center;
+    margin-top: 20px;
 }
 
 /* RESUMEN */
@@ -128,6 +147,18 @@ div.resumen {
 div.resumen .cart {
     margin-top: 20px;
     width: 100%;
+}
+
+div.fondo {
+    margin: 0 auto;
+    background-image: url(/images/bodega.jpg);
+    background-position: 50%;
+    background-size: cover;
+    display: table;
+    height: 100%;
+    width: 100%;
+    margin-top: 120px;
+    background-attachment: fixed;
 }
 
 /* FOOTER */
@@ -218,6 +249,21 @@ footer .copyright p {
     }
     header nav.login {
         display: block;
+    }
+    div.fondo {
+        box-sizing: border-box;
+        display: flex;
+    }
+    div.car {
+        width: 50%;
+        margin: 0;
+    }
+    div.resumen {
+        width: 40%;
+        margin: 0;
+        float: right;
+        margin: 20px 5% 0 5%;
+        height: 300px;
     }
     /* FOOTER */
     footer {
