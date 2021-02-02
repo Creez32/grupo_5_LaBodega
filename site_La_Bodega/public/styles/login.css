@@ -5,7 +5,6 @@ body {
     font-family: "Montserrat";
     padding: 0;
     width: 100%;
-    background-repeat: no-repeat;
     background-size: 130%;
     
 }
@@ -14,6 +13,7 @@ img{
     display:block;
     margin:auto;
     }
+
 .logo a {
     margin: auto;
     background-image: url(https://image.freepik.com/foto-gratis/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
@@ -92,6 +92,7 @@ form.register button {
     font-family: "montserrat";
     font-size: 25px;
     text-align: center;
+    padding: 10px;
     
 }
 
