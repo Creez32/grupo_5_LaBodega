@@ -5,10 +5,10 @@
     <%- include('./partials/head')  %>
     <title>Detalle de producto</title>
     <link rel="stylesheet" href="/styles/detail.css">
+    <link rel="stylesheet" href="/styles/footer.css">
 </head>
 
 <body>
-    <%- include('./partials/header')  %> 
 
     <main>
         <section>
@@ -25,18 +25,28 @@
                             <div class="box">
                                 <h3>$3000</h3>
                                 <p>precio por caja 6 botellas</p>
-                                <button class="cart">
-                                    agregar al carrito
-                                    <i class="fas fa-shopping-cart"></i>
-                                </button>
+                                <div>
+                                    <button class="more">-</button>
+                                    <input type="text" class="number">
+                                    <button class="more">+</button>
+                                    <button class="cart">
+                                        agregar al carrito
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
                             </div>
                             <div class="box">
                                 <h3>$500</h3>
                                 <p>precio por botella</p>
-                                <button class="cart">
-                                    agregar al carrito
-                                    <i class="fas fa-shopping-cart"></i>
-                                </button>
+                                <div>
+                                    <button class="more">-</button>
+                                    <input type="text" class="number">
+                                    <button class="more">+</button>
+                                    <button class="cart">
+                                        agregar al carrito
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -154,6 +164,7 @@
             </div>
         </section>
     </main>
+    
     <%- include('./partials/footer')  %> 
     
 </body>

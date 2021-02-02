@@ -99,12 +99,6 @@ header{
   border: none;
   border-radius: 10px;
 }
-footer{
-  width: 100%;
-  height: 200px;
-  background-color: grey;
-  text-align: center ;
-}
 
 @media (min-width: 768px){
   .banner{
@@ -113,5 +107,63 @@ footer{
 }
 
 @media (min-width: 1024px) {
-  
+  /* Services */
+  .services{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .services .item {
+    margin-bottom: 0px;
+    width: 23%;
+  }
+  /* Productos */
+  .Products h2{
+    padding: 10px 5px 0 5px;
+    text-align: center;
+    font-family: var(--other-font-family);
+  }
+  .Products p{
+    padding: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: var(--other-font-family);
+  }
+  .Products .product-box{
+    text-align: center;
+    background-color: var(--light-gray);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 400px;
+  }
+  .Products .product-box_image{
+    margin-bottom: 5px;
+  }
+  .Products img{
+    width: 70%;
+  }
+  .Products .botones{
+    margin: 10 auto;
+  }
+  .Products .buy{
+    font-size: 0.8em;
+    margin: none;
+    background-color: var(--ligth-rose);
+    color: var(--light-gray);
+    border: none;
+    border-radius: 10px;
+    margin: 0;
+    padding: 5px 15px;
+  }
+  .Products .cart{
+    font-size: 0.8em;
+    margin: none;
+    background-color: var(--light-purple);
+    color: var(--light-gray);
+    border: none;
+    border-radius: 10px;
+    margin: 10;
+    padding: 5px 15px;
+  }
 }
