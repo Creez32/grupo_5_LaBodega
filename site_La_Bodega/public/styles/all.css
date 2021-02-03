@@ -1,0 +1,226 @@
+/*====== Fonts ======*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@200;400;600&display=swap");
+/*====== Variables ======*/
+
+:root {
+    --rose: #84142d;
+    --dark-rose: #44000d;
+    --light-purple: #917dc9;
+    --purple: #644e9b;
+    --light-gray: #ebebeb;
+    --ligth-rose: #965d62;
+    --base-font-family: "Montserrat";
+    --other-font-family: "Cinzel";
+}
+
+/* Base */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background: rgba(255, 248, 220, 80%);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--light-purple);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(115, 81, 206);
+}
+
+/* Header */
+
+header {
+    font-family: var(--base-font-family);
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+    background-color: black;
+}
+
+header nav ul.icon {
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 10px;
+    list-style: none;
+}
+
+nav ul li a i {
+    font-size: 25px;
+    margin-left: 10px;
+    transition: all .3s;
+    color: var(--light-gray);
+}
+
+nav ul li a i:hover {
+    color: var(--light-purple);
+}
+
+header .logo {
+    width: 90px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+}
+
+.navbar-dark .navbar-toggler {
+    color: black;
+}
+
+/* Footer */
+
+footer {
+    font-family: var(--other-font-family);
+    width: 100%;
+    text-align: center;
+    color: var(--light-gray);
+    background-color: black;
+}
+
+footer h4 {
+    font-size: 10px;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+footer a {
+    font-size: 10px;
+    transition: all .3s;
+    text-decoration: underline transparent white;
+    color: var(--light-gray);
+}
+
+footer a:hover {
+    text-decoration: underline solid 3px var(--light-purple);
+    color: var(--light-purple);
+}
+
+footer iframe {
+    display: none;
+}
+
+footer .ubication {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--dark-rose);
+    justify-content: center;
+}
+
+footer .contacto {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--dark-rose);
+    justify-content: center;
+}
+
+footer .redes {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--dark-rose);
+    justify-content: center;
+}
+
+footer .redes i {
+    font-size: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+p.copyright {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    /* Footer */
+    footer .bloques {
+        display: flex;
+        justify-content: space-around;
+    }
+    footer .ubication {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        border-bottom: none;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    footer .contacto {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        border-right: 2px solid var(--dark-rose);
+        border-bottom: none;
+        border-left: 2px solid var(--dark-rose);
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    footer .redes {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        border-bottom: none;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    footer .redes i {
+        font-size: 40px;
+        margin-bottom: 0;
+        padding: 20px;
+    }
+    footer iframe {
+        display: block;
+        margin: auto;
+    }
+    footer h4 {
+        font-size: 15px;
+        padding: 10px 0;
+    }
+    footer p {
+        font-size: 10px;
+    }
+    footer a {
+        font-size: 10px;
+        transition: all .3s;
+        text-decoration: underline transparent white;
+        color: var(--light-gray);
+    }
+    footer a:hover {
+        text-decoration: underline solid 3px var(--light-purple);
+        color: var(--light-purple);
+    }
+}

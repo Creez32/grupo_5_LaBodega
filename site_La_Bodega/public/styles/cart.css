@@ -1,47 +1,11 @@
-/*====== Fonts ======*/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@200;400;600&display=swap');
-/*====== Variables ======*/
-
-:root {
-    --rose: #84142d;
-    --dark-rose: #44000d;
-    --light-purple: #917dc9;
-    --purple: #644e9b;
-    --light-gray: #ebebeb;
-    --ligth-rose: #965d62;
-    --base-font-family: 'Montserrat';
-    --other-font-family: 'Cinzel';
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-
 body {
     font-family: var(--base-font-family);
     position: relative;
     box-sizing: border-box;
 }
 
-
-body::-webkit-scrollbar{
-    width: 10px;
-    background: rgba(255, 248, 220, 80%)
-}
-
-body::-webkit-scrollbar-thumb{
-    background: var(--light-purple);
-
-}
-body::-webkit-scrollbar-thumb:hover {
-    background: rgb(115, 81, 206);
-}
-
-
 header {
+    font-family: var(--base-font-family);
     position: fixed;
     top: 0;
     overflow: hidden;
@@ -50,19 +14,29 @@ header {
     margin: 0;
     text-decoration: none;
     background-color: black;
-    height: 120px;
+}
+
+header nav ul.icon {
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
 }
 
 header nav ul li {
     display: inline;
+    margin-left: 10px;
     list-style: none;
 }
 
-header nav ul li a {
-    font-size: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
+nav ul li a i {
+    font-size: 25px;
+    margin-left: 10px;
+    transition: all .3s;
+    color: var(--light-gray);
+}
+
+nav ul li a i:hover {
+    color: var(--light-purple);
 }
 
 header nav {
@@ -70,118 +44,111 @@ header nav {
 }
 
 header .logo {
-    float: left;
     width: 90px;
-    margin: 15px;
+    margin: 10px;
     border: 2px solid #ccc;
     border-radius: 50%;
 }
 
-header nav.navbar {
-    float: right;
-    margin: 30px;
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .navbar-dark .navbar-toggler {
     color: black;
 }
 
-header nav.login {
-    display: none;
-    float: right;
-    margin-right: 10px;
-}
-
 /* CARRITO */
 
 div.carrito {
-    background-color: rgba(255, 248, 220, 80%);
+    font-size: 13px;
     width: 80%;
     margin: 10px 10% 0 10%;
     text-align: justify;
-    font-size: 13px;
+    background-color: rgba(255, 248, 220, 80%);
 }
 
 div.carrito ul {
     margin-top: 20px;
     padding: 0;
     text-align: center;
-    }
+}
 
 div.carrito ul li {
     display: inline;
+    margin: 0 2% 0 2%;
     list-style: none;
-margin: 0 2% 0 2%;}
+}
 
 div.productos {
-    height: 300px;
-    background-color: rgba(255, 248, 220, 80%);
     width: 80%;
+    height: 300px;
     margin: 0 10% 0 10%;
+    background-color: rgba(255, 248, 220, 80%);
 }
 
 .cart {
-    background-color: var(--light-purple);
-    color: var(--light-gray);
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
     margin-bottom: 20px;
+    padding: 10px;
+    color: var(--light-gray);
+    border: none;
+    border-radius: 10px;
+    background-color: var(--light-purple);
     background-size: 100px;
 }
 
 div.botoncarrito {
-    text-align: center;
     margin-top: 20px;
+    text-align: center;
 }
 
 /* RESUMEN */
 
 div.resumen {
-    background-color: rgba(255, 248, 220, 80%);
     width: 60%;
     margin: 0 20% 10px 20%;
     padding: 5%;
+    background-color: rgba(255, 248, 220, 80%);
 }
 
 div.resumen .cart {
-    margin-top: 20px;
     width: 100%;
+    margin-top: 20px;
 }
 
 div.fondo {
+    display: table;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     background-image: url(/images/bodega.jpg);
+    background-attachment: fixed;
     background-position: 50%;
     background-size: cover;
-    display: table;
-    height: 100%;
-    width: 100%;
-    margin-top: 120px;
-    background-attachment: fixed;
 }
 
 @media (min-width: 1024px) {
     main.main img.fondo {
-        width: 110%;
-        margin-top: 120px;
+        width: 100%;
     }
     header nav.login {
         display: block;
     }
     div.fondo {
-        box-sizing: border-box;
         display: flex;
+        box-sizing: border-box;
     }
     div.car {
         width: 50%;
         margin: 0;
     }
     div.resumen {
-        width: 40%;
-        margin: 0;
         float: right;
-        margin: 20px 5% 0 5%;
+        width: 40%;
         height: 300px;
+        margin: 0;
+        margin: 20px 5% 0 5%;
     }
 }

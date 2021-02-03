@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/admin.css">
-<h1>Carga de Productos</h1>
-<div class="carga">
-<form action="">
-    <label for="nombre">Nombre</label>
-    <input type="text" name="nombre"><br><br>
-    <label for="descripcion">Descripcion</label>
-    <textarea name="mensaje"></textarea><br><br>
-    <label for="sector">Sector</label>
-    <select name="sector"id="">
-        <option value="par">Tintos</option>
-        <option value="piz">Blancos</option>
-        <option value="san">Rosados</option>
-        <option value="vin">Espumantes</option>
-                    </select><br><br>
+  <title>Detalle de producto</title>
+  <script src="https://kit.fontawesome.com/3f21023fe6.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/carga.css">
+  <link rel="stylesheet" href="/styles/all.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <%- include('./partials/header') %>
+
+
+  <main>
+    <div class="fondo">
+        <div class="carga">
+          <form action="">
+            <div class="logo"><a href="/"><img src="/images/Logotipo.jpeg" alt="La Bodega"></a></div>
+            <h1>Carga de Productos</h1>
+    
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre"><br><br>
+            <label for="descripcion">Descripción</label>
+            <textarea name="mensaje"></textarea><br><br>
+            <label for="sector">Sector</label>
+            <select name="sector" id="">
+                <option value="tin">Tintos</option>
+                <option value="blan">Blancos</option>
+                <option value="ros">Rosados</option>
+                <option value="esp">Espumantes</option>
+            </select><br><br>
             <label for="precio">Precio</label>
-        <input type="number" name="precio"><br><br>
+            <input type="number" name="precio"><br><br>
 
-        <input type='file' name='foto'>
+            <input type='file' name='foto'><br><br>
 
-        <input class="boton" type="submit" value="Cargar Producto">
+            <input class="boton" type="submit" value="Cargar Producto">
 
-</form>
+          </form>
+        </div>
+    </div>
+    
+  </main>
 
-</div>
+  <%- include('./partials/footer') %>
+</body>
 </html>
