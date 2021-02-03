@@ -25,66 +25,11 @@ body {
     background-color: var(--light-gray);
 }
 
-header {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow: hidden;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    text-decoration: none;
-    background-color: black;
-}
 
-header nav ul li {
-    display: inline;
-    list-style: none;
-}
-
-header nav ul li a {
-    font-size: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-}
-
-header nav {
-    overflow: hidden;
-}
-
-header .logo {
-    float: left;
-    width: 90px;
-    margin: 15px;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-}
-
-header nav.navbar {
-    float: right;
-    margin: 30px;
-}
-
-.navbar-dark .navbar-toggler {
-    color: black;
-}
-
-header nav.login {
-    display: none;
-    float: right;
-    margin-right: 10px;
-}
-
-main.main div.img {
-    overflow: hidden;
-    width: 100%;
-}
 
 main.main img.fondo {
     position: relative;
-    right: 120px;
-    width: 1000px;
+    width: 100%;
     margin-top: 120px;
 }
 

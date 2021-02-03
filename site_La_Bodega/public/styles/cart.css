@@ -26,20 +26,18 @@ body {
     box-sizing: border-box;
 }
 
-
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 10px;
     background: rgba(255, 248, 220, 80%)
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
     background: var(--light-purple);
-
 }
+
 body::-webkit-scrollbar-thumb:hover {
     background: rgb(115, 81, 206);
 }
-
 
 header {
     position: fixed;
@@ -50,19 +48,30 @@ header {
     margin: 0;
     text-decoration: none;
     background-color: black;
-    height: 120px;
+    font-family: var(--base-font-family);
+}
+
+header nav ul.icon {
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
 }
 
 header nav ul li {
     display: inline;
     list-style: none;
+    margin-left: 10px;
 }
 
-header nav ul li a {
-    font-size: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
+nav ul li a i {
+    margin-left: 10px;
+    font-size: 25px;
+    color: var(--light-gray);
+    transition: all 0.3s;
+}
+
+nav ul li a i:hover {
+    color: var(--light-purple);
 }
 
 header nav {
@@ -70,26 +79,20 @@ header nav {
 }
 
 header .logo {
-    float: left;
     width: 90px;
-    margin: 15px;
+    margin: 10px;
     border: 2px solid #ccc;
     border-radius: 50%;
 }
 
-header nav.navbar {
-    float: right;
-    margin: 30px;
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .navbar-dark .navbar-toggler {
     color: black;
-}
-
-header nav.login {
-    display: none;
-    float: right;
-    margin-right: 10px;
 }
 
 /* CARRITO */
@@ -106,12 +109,13 @@ div.carrito ul {
     margin-top: 20px;
     padding: 0;
     text-align: center;
-    }
+}
 
 div.carrito ul li {
     display: inline;
     list-style: none;
-margin: 0 2% 0 2%;}
+    margin: 0 2% 0 2%;
+}
 
 div.productos {
     height: 300px;

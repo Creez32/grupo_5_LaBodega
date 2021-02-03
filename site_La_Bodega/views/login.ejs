@@ -5,10 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro La Bodega </title>
+    <script src="https://kit.fontawesome.com/3f21023fe6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/login.css">
+    <link rel="stylesheet" href="/styles/headerFooter.css">
+
+
 </head>
 
 <body>
+
+    <%- include('./partials/header')  %> 
+
     <div class="logo"><a href="/"><img src="/images/Logotipo.jpeg" alt="La Bodega"></a></div>
 
     <div class="form">
@@ -225,6 +233,7 @@
             <button type="submit"> ¡CREAR CUENTA! </button>
         </form>
     </div>
+    <%- include('./partials/footer')  %> 
 
 </body>
 
