@@ -165,86 +165,6 @@ div.fondo {
     background-attachment: fixed;
 }
 
-/* FOOTER */
-
-footer {
-    font-family: var(--other-font-family);
-    bottom: 0vh;
-    width: 100%;
-    text-align: center;
-    color: white;
-    background-color: black;
-}
-
-footer div.bloques {
-    padding: 10;
-}
-
-footer h3 {
-    font-size: 25px;
-    padding: 10px 0;
-}
-
-footer h4 {
-    font-size: 20px;
-    padding: 10px 0;
-}
-
-footer p {
-    font-size: 15px;
-}
-
-footer p.ocultar {
-    display: none;
-}
-
-footer h4.ocultar {
-    display: none;
-}
-
-footer a {
-    font-size: 20px;
-    transition: all .3s;
-    text-decoration: underline transparent white;
-    color: var(--light-gray);
-}
-
-footer a:hover {
-    text-decoration: underline solid 3px var(--light-purple);
-    color: var(--light-purple);
-}
-
-footer iframe {
-    display: none;
-}
-
-footer .ubication {
-    padding: 10px;
-    border-bottom: 1px solid var(--dark-rose);
-}
-
-footer .contacto {
-    padding: 10px;
-    border-bottom: 1px solid var(--dark-rose);
-}
-
-footer .redes {
-    padding: 10px;
-}
-
-footer .redes i {
-    font-size: 40px;
-    margin-bottom: 0;
-    padding: 20px;
-}
-
-footer .copyright p {
-    font-size: 10px;
-    width: 100%;
-    margin: 0;
-    margin-top: 20px;
-    text-align: center;
-}
 
 @media (min-width: 1024px) {
     main.main img.fondo {
@@ -268,41 +188,5 @@ footer .copyright p {
         float: right;
         margin: 20px 5% 0 5%;
         height: 300px;
-    }
-    /* FOOTER */
-    footer {
-        z-index: 1;
-    }
-    footer .bl {
-        display: flex;
-        justify-content: space-around;
-    }
-    footer iframe {
-        display: block;
-        width: 80%;
-        margin: 0 10% 0 10%;
-    }
-    footer h4.ocultar {
-        display: block;
-    }
-    footer p.ocultar {
-        display: block;
-    }
-    footer .ubication {
-        border-right: 1px solid var(--dark-rose);
-        border-bottom: none;
-    }
-    footer .contacto {
-        border-right: 1px solid var(--dark-rose);
-        border-bottom: none;
-    }
-    footer a {
-        transition: all .3s;
-        text-decoration: none;
-        color: var(--light-gray);
-    }
-    footer a:hover {
-        text-decoration: underline solid 3px var(--light-purple);
-        color: var(--light-purple);
     }
 }

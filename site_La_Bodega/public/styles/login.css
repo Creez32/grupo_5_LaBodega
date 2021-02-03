@@ -5,8 +5,11 @@ body {
     font-family: "Montserrat";
     padding: 0;
     width: 100%;
-    background-size: 130%;
+    background-size: cover;
     
+}
+.container{
+    margin-top: 160px;
 }
 
 img{
@@ -39,6 +42,7 @@ div.form {
     margin: auto;
     border-radius: 20px;
     padding: 5px;
+    margin-bottom: 20px;
 }
 
 
@@ -53,7 +57,7 @@ div.form {
     color: #44000d;
 }
 
-form input {
+.container form input {
     font-size: 15px;
     outline: none;
     border-radius: 22px;

@@ -97,6 +97,7 @@ body{
 @media (min-width: 768px){
   .banner{
     display: block;
+    margin-top: 120px;
   }
 }
 
