@@ -1,115 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative:wght@900&display=swap');
-
 body {
-    background-image:url(https://image.freepik.com/foto-gratis/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
-    font-family: "Montserrat";
-    padding: 0;
+    font-family: 'Montserrat';
     width: 100%;
+    padding: 0;
+    background-image: url(https://image.freepik.com/foto-gratis/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
     background-size: cover;
-    
 }
-.container{
+
+.container {
     margin-top: 160px;
 }
 
-img{
-    display:block;
-    margin:auto;
-    }
-
-.logo a {
+img {
+    display: block;
     margin: auto;
-    background-image: url(https://image.freepik.com/foto-gratis/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    
 }
 
+.logo a {
+    width: 100%;
+    margin: auto;
+    background-image: url(https://image.freepik.com/foto-gratis/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 
 .logo img {
     width: 150px;
-    border-radius: 60%;
-    text-align: center;
     width: 150px;
     margin: 50px auto;
-    
-
+    text-align: center;
+    border-radius: 60%;
 }
 
 div.form {
-    background-color: #965d62;
     margin: auto;
-    border-radius: 20px;
-    padding: 5px;
     margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #965d62;
 }
 
-
-
-
 .registrarse {
-    font-family: "montserrat";
+    font-family: 'montserrat';
+    width: 50%;
     margin: 0;
     padding: 0;
-    width: 50%;
-    transition: all 0.5s;
+    transition: all .5s;
     color: #44000d;
 }
 
 .container form input {
     font-size: 15px;
-    outline: none;
-    border-radius: 22px;
-    border-bottom: 5px solid #44000d;
     margin: 30px 0;
     margin-top: 6px;
     text-align: center;
-    
-    
-    
+    border-bottom: 5px solid #44000d;
+    border-radius: 22px;
+    outline: none;
 }
 
-
 form.register button {
+    font-size: 15px;
+    font-weight: 700;
     width: auto;
     padding: 17px 48px;
     text-align: center;
-    border: none;
-    background-color: #917dc9;
-    border-radius: 200px;
-    font-size: 15px;
     letter-spacing: 2px;
-    font-weight: 700;
-    
+    border: none;
+    border-radius: 200px;
+    background-color: #917dc9;
 }
-
-
-
 
 .form {
     max-width: 800px;
     background-color: #965d62;
 }
 
-.register{
-    font-family: "montserrat";
+.register {
+    font-family: 'montserrat';
     font-size: 25px;
-    text-align: center;
     padding: 10px;
-    
+    text-align: center;
 }
 
-.registro{
-    color:#44000d;
+.registro {
     margin: auto;
     text-align: center;
+    color: #44000d;
     border-bottom: 1px solid #44000d;
 }
 
-.titulos{
-    text-align:left;
+.titulos {
     font-size: 10px;
+    text-align: left;
     color: black;
 }
-
