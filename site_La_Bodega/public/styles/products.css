@@ -4,7 +4,7 @@ body {
 
 .banner {
   display: block;
-  margin-top: 125px;
+  margin: 0;
 }
 
 /* Detalles */

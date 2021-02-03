@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 header {
     font-family: var(--base-font-family);
-    position: fixed;
+    position: sticky;
     z-index: 1;
     top: 0;
     overflow: hidden;
