@@ -87,7 +87,38 @@ form.register button {
 }
 
 .titulos {
-    font-size: 10px;
+    font-size: 5px;
     text-align: left;
     color: black;
+}
+
+.ingresar {
+    text-align: left;
+    color: white;
+    font-size: 15px;
+    font-family: "montserrat";
+
+}
+
+.correo {
+    font-size: 15px;
+    padding-top: 0;  
+    font-family: "montserrat";
+    border-bottom: 20px;
+    border-radius: 20px;
+    font-style: italic;
+}
+
+.enviar{
+    font-size: 15px;
+    width: 10%;
+    padding: 5px;
+    text-align: left;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 30px;
+    background-color: transparent;
+    text-align: left;
+   
+    
 }
