@@ -55,7 +55,7 @@ div.form {
     outline: none;
 }
 
-form.register button {
+form button {
     font-size: 15px;
     font-weight: 700;
     width: auto;

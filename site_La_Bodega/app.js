@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 5000
 var indexRouter = require('./routes/index');
-var loginRouter = require('./routes/login');
+var sessionRouter = require('./routes/session');
 var productsRouter = require('./routes/products')
 
 
@@ -14,8 +14,9 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.use('/',indexRouter);
+app.use('/session',sessionRouter);
 app.use('/products',productsRouter);
-app.use('/login',loginRouter);
+
 
 
 
