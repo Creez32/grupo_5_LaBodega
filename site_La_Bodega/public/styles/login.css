@@ -29,8 +29,7 @@ img {
 }
 
 div.form {
-    margin: auto;
-    margin-bottom: 20px;
+    margin: 40px auto;
     padding: 5px;
     border-radius: 20px;
     background-color: #965d62;
@@ -73,6 +72,7 @@ form button {
 }
 
 .register {
+    margin: 20px 0;
     font-family: 'montserrat';
     font-size: 25px;
     padding: 10px;

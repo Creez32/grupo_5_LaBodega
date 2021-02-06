@@ -19,37 +19,73 @@
   <%- include('./partials/header') %>
 
 
-  <main>
-    <div class="fondo">
+    <main>
+      <div class="fondo">
         <div class="carga">
-          <form action="">
-            <div class="logo"><a href="/"><img src="/images/Logotipo.jpeg" alt="La Bodega"></a></div>
-            <h1>Carga de Productos</h1>
-    
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre"><br><br>
-            <label for="descripcion">Descripción</label>
-            <textarea name="mensaje"></textarea><br><br>
-            <label for="sector">Sector</label>
-            <select name="sector" id="">
-                <option value="tin">Tintos</option>
-                <option value="blan">Blancos</option>
-                <option value="ros">Rosados</option>
-                <option value="esp">Espumantes</option>
-            </select><br><br>
-            <label for="precio">Precio</label>
-            <input type="number" name="precio"><br><br>
+          <form action="" method="GET">
+            <div class="contenedor">
+              <div class="content">
+                <h1>Carga de Productos</h1>
 
-            <input type='file' name='foto'><br><br>
+                <div class="ingreso">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" name="nombre">
+                </div>
 
-            <input class="boton" type="submit" value="Cargar Producto">
+                <div class="ingreso">
+                  <label for="descripcion">Descripción</label>
+                  <textarea name="mensaje"></textarea>
+                </div>
+                <div class="ingreso">
+                  <label for="sector">Sector</label>
+                  <select name="sector" id="">
+                    <option value="tin">Tintos</option>
+                    <option value="blan">Blancos</option>
+                    <option value="ros">Rosados</option>
+                    <option value="esp">Espumantes</option>
+                  </select>
+                </div>
 
+                <div class="mb-3 content">
+                  <label for="formFileSm" class="form-label image">Imagen</label>
+                  <input class="form-control form-control-sm" id="formFileSm image" type="file">
+                </div>
+              </div>
+              <div class="content">
+                <h1>Detalles extras</h1>
+                <div class="ingreso">
+                  <label for="time">Tiempo en botella</label>
+                  <input type="text" name="time">
+                </div>
+                <div class="ingreso">
+                  <label for="locate">Origen</label>
+                  <input type="text" name="locate">
+                </div>
+                <div class="ingreso">
+                  <label for="variety">Varietal</label>
+                  <input type="text" name="variety">
+
+                </div>
+                <div class="ingreso">
+                  <label for="precio">Precio Caja</label>
+                  <input type="number" name="precio">
+
+                </div>
+                <div class="ingreso">
+                  <label for="precio">Precio Botella</label>
+                  <input type="number" name="precio">
+
+                </div>
+                <button type="submit">Cargar Productos</button>
+              </div>
+            </div>
           </form>
         </div>
-    </div>
-    
-  </main>
+      </div>
 
-  <%- include('./partials/footer') %>
+    </main>
+
+    <%- include('./partials/footer') %>
 </body>
+
 </html>
