@@ -1,0 +1,10 @@
+[{
+    "id": 10,
+    "name": "Melany",
+    "last-name":"Lopez",
+    "date of birth":"10/10/1999",
+    "gender":"femenino",
+    "email": "mail@mail",
+    "password": "contraseña"
+  }
+]

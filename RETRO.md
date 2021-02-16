@@ -1,6 +1,6 @@
-# Retrospectiva 1
+# RETROSPECTIVA 1
 
-## Seguir haciendo
+## Seguir haciendo.
 
 ● Las reuniones en los horarios pactados.
 
@@ -8,7 +8,7 @@
 
  ● Dividir tareas de forma equitatitiva.
 
-## Hacer más
+## Hacer más.
 
 ● Tener más comunicación.
 
@@ -16,7 +16,7 @@
 
  ● Buscar más información y ejemplos para mejorar nuestro proyecto.
 
-## Empezar a hacer
+## Empezar a hacer.
 
 ● Poner fechas límite a cada una de las tareas.
 
@@ -24,7 +24,7 @@
 
  ● Usar mas medios de comunicación.
 
-## Dejar de hacer
+## Dejar de hacer.
 
 ● Desordenar el código.
 
@@ -32,10 +32,55 @@
 
  ● Interrumpir al otro cuando esta dando su punto de vista.
 
-## Hacer menos
+## Hacer menos.
 
 ● Faltar a clases.
 
  ● Cometer errores de tipeo y faltas de ortografía.
 
  ● Dejar cosas sin definir en el momento en que se hablan.
+
+
+ # RETROSPECTIVA 2 
+
+ ## Seguir haciendo.
+
+ ● Las reuniones.
+
+ ● Trabajar de manera responsable sobre el proyecto.
+  
+ ● Seguir dividiendo tareas de forma equitativa.
+
+ ● Contar con la ayuda de los demas integrantes cuando uno tenga dificultas.
+
+ ## Hacer mas.
+
+ ● Seguir trabajando para no interrumpir a los demas.
+
+ ● Ordenar mas las etiquetas del codigo.
+
+ ● Buscar mas informacion y ejemplos para mejorar nuestra pagina.
+
+ ## Empezar a hacer.
+
+ ● Poner fechas limites en las entregas.
+
+ ● Hacer un resumen en cada reunion.
+
+ ● Definir un scrum master en el grupo.
+
+ ## Dejar de hacer.
+
+ ● Desordenar el codigo.
+
+ ● Dejar de postergar las tareas.
+
+ ● No leer los pdf con detenimiento.
+
+ ## Hacer menos.
+
+ ● No quedarse hasta tan tarde haciendo el codigo (Solo si es una emergencia).
+
+ ● Dejar cosas sin definir en el momento en el que se hablan.
+
+ 
