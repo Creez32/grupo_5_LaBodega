@@ -7,16 +7,11 @@
 ## Cristian Elias:
  ● 23 años, Técnico en electronica. Programador FullStack con Digital House y Fundación Formar.     
 
-## Leila Jara:
-● 26 años, estudiante en Fundación Formar Desarrollo Web en Digital House.    
-
 ## Leandro Daniel Avendaño: 
 ● 22 años , estudiante de Contador Público y Lic. en Administración en Facultad de Cs. Económicas UBA Y Desarrollo Web Full Stack en Digital House y Fundación Formar.
  
 ## Melany Lopez:
 ● 21 años, estudiante de Tecnicatura en Cosmetología Facial y Corporal en Facultad de Cs. Médicas UBA y Desarrollo Web en Digital House y Fundación Formar.
-
-
 
 
 ## ***¡Bienvenidos a La Bodega!***
