@@ -67,6 +67,7 @@ h3 {
 
 .product .description {
   padding: 0 10% 0 10%;
+  margin: 20px 0;
 }
 
 .product .services .item {
@@ -197,7 +198,7 @@ h3 {
     display: inline;
   }
   .product .image {
-    width: 50%;
+    width: 60%;
   }
   .product .name {
     margin: 20px;
@@ -258,7 +259,7 @@ h3 {
     padding: 0;
   }
   .product img {
-    max-width: 300px;
+    max-width: 350px;
     padding: 1%;
   }
   .product .image {

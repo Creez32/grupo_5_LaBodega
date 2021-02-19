@@ -11,7 +11,7 @@
 		"time": "4 Meses",
 		"color": "Rojo",
 		"origin": "Valle de uco",
-		"img" : "Tinto.png"
+		"img" : "Tinto2.png"
     },
 	{
 		"id": 2,
@@ -25,7 +25,7 @@
 		"time": "4 Meses",
 		"color": "Tinto",
 		"origin": "Valle de uco",
-		"img" : "Tinto.png"
+		"img" : "Tinto2.png"
 	  },
 	  {
 		"id": 3,
