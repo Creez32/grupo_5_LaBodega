@@ -36,13 +36,9 @@ body {
   border-bottom: 1px solid var(--dark-rose);
 }
 
-.Products {
-  margin-bottom: 30px;
-}
-
 .Products h2 {
   font-family: var(--other-font-family);
-  padding: 20px 10px;
+  padding: 10px 10px;
   text-align: center;
 }
 
@@ -84,7 +80,7 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
   /* Services */
   .services {
     display: flex;
@@ -108,7 +104,6 @@ body {
     text-align: center;
   }
   .Products .product-box {
-    height: 400px;
     margin: 20px;
     padding: 20px;
     text-align: center;

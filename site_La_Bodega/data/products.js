@@ -1,3 +1,15 @@
-const fs = require('fs');
+const fs = require("fs");
+const path = require('path');
 
-module.exports = JSON.parse(fs.readFileSync(__dirname + '/products.json', 'utf-8'))
+const products_db = path.join('data','Products.json');
+
+module.exports = {
+    getProducts: ()=> JSON.parse(fs.readFileSync(products_db, "utf-8")),
+    setProducts: (data) => {
+        fs.writeFileSync(
+            products_db,
+            JSON.stringify(data, null, 2), //null y 2 deja indentado de forma legible el JSON
+            "utf-8"
+        );
+    },
+};

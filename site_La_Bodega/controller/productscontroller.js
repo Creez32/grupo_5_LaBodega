@@ -1,12 +1,38 @@
-const products = require('../data/products')
+const {getProducts} = require('../data/products');
+
+const products = getProducts();
 
 
 module.exports={
     list: (req,res)=>{
-        res.render('products')
+        const tintos = products.filter((products)=>{
+            return products.type === 'Tinto'
+        });
+        const blancos = products.filter((products)=>{
+            return products.type === 'Blanco'
+        });
+        const espumantes = products.filter((products)=>{
+            return products.type === 'Espumante'
+        });
+        res.render('products',{
+            tintos,blancos,espumantes
+        })
     },
     detail: (req, res)=>{
-        res.render('detail')
+        let product = products.find(product => {
+			return product.id == req.params.id
+        })
+        let cantidad = products.length
+        
+        let random = () => Math.floor(Math.random() * cantidad)
+
+        const recomendados = products.filter((products)=>{
+            return products.type === 'Espumante'
+        });
+
+        res.render('detail',{
+            product,recomendados
+        })
     },
     charge:(req,res)=>{
         res.render('productscharges')

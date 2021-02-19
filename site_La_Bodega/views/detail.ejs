@@ -20,11 +20,11 @@
                     </div>
                     <div class="text">
                         <div class="name">
-                            <h2>LaBodega Cabernet</h2>
+                            <h2><%= product.name %> </h2>
                         </div>
                         <div class="price">
                             <div class="box">
-                                <h3>$3000</h3>
+                                <h3>$<%= product.price_box %> </h3>
                                 <p>precio por caja 6 botellas</p>
                                 <div>
                                     <button class="more">-</button>
@@ -37,7 +37,7 @@
                                 </div>
                             </div>
                             <div class="box">
-                                <h3>$500</h3>
+                                <h3>$<%= product.price_unit %></h3>
                                 <p>precio por botella</p>
                                 <div>
                                     <button class="more">-</button>
@@ -54,15 +54,7 @@
                 </div>
                 <div class="box">
                     <div class="description">
-                        <p>Somos unos de los orgullosos centros elaboradores a nivel nacional de este mágico y cada vez
-                            más famoso producto. Numerosas son las firmas que lo ofrecen creándose un consorcio.
-                            Las bodegas deleitan a un público de cada más vez más adeptos a esta alegre y deliciosa
-                            bebida. Se trata de un vino blanco espumante (obtenido de manera natural) aunque también
-                            tiene su variedad en rosado. Se elabora principalmente de 3 tipos de uva: Chardonay, Pinot
-                            Noire y Pinot Meunier y las variedades más elaboradas son: Extra Brut, Brut, Extra Sec, Sec
-                            y Demi Sec.
-                            Caminos del espumante Suma otro atractivo a la oferta de turismo aventura y naturaleza que
-                            atrae numerosos visitantes al sur de Mendoza.</p>
+                        <p><%= product.detail %></p>
                     </div>
                 </div>
                 <div class="services">
@@ -119,11 +111,11 @@
                         <li>Origen</li>
                     </ul>
                     <ul>
-                        <li>100% malbec</li>
-                        <li>Rojo</li>
-                        <li>2019</li>
-                        <li>4 meses</li>
-                        <li>Valle de uco</li>
+                        <li><%= product.variety %> </li>
+                        <li><%= product.color %> </li>
+                        <li><%= product.year %> </li>
+                        <li><%= product.time %> </li>
+                        <li><%= product.origin %> </li>
                     </ul>
 
                 </div>
@@ -132,36 +124,16 @@
         <section class="relacionated">
             <h3>Productos Relacionados</h2>
             <div class="cards">
-
-                <a href="">
+                <% recomendados.forEach(recomendado => { %>
+                 
+                <a href="<%= recomendado.id %>">
                     <div class="productosRelacionados">
-                        <img src="/images/botella sin etiqueta 1.jpg" alt="">
-                        <h4>Nombre de producto</h4>
-                        <h4>Precio</h4>
+                        <img src="/images/Botellas/<%= recomendado.img %>" alt="">
+                        <h4><%= recomendado.name %>  </h4>
+                        <h4>$<%= recomendado.price_unit %> </h4>
                     </div>
                 </a>
-                <a href="">
-                    <div class="productosRelacionados">
-                        <img src="/images/botella sin etiqueta 2.jpg" alt="">
-                        <h4>Nombre de producto</h4>
-                        <h4>Precio</h4>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="productosRelacionados">
-                        <img src="/images/botella sin etiqueta 1.jpg" alt="">
-                        <h4>Nombre de producto</h4>
-                        <h4>Precio</h4>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="productosRelacionados">
-                        <img src="/images/botella sin etiqueta 2.jpg" alt="">
-                        <h4>Nombre de producto</h4>
-                        <h4>Precio</h4>
-                    </div>
-                </a>
-
+                <% }) %>
             </div>
         </section>
     </main>
