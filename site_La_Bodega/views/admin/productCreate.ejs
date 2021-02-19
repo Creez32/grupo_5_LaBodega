@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle de producto</title>
+  <script src="https://kit.fontawesome.com/3f21023fe6.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/admin.css">
+  <link rel="stylesheet" href="/styles/all.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <%- include('./partials/header') %>
+
+
+    <main>
+      <div class="fondo">
+        <div class="carga">
+          <div class="container">
+          <form action="/admin/products" method="POST" enctype="multipart/form-data">
+              <div class="content">
+                <h1>Modificar datos</h1>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="name" placeholder="Nombre" name="name" >
+                  <label for="name">Nombre</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="description" placeholder="Descripción" name="description" >
+                  <label for="description">Descripción</label>
+                </div>
+
+                <div class="ingreso">
+                  <label for="sector">Sector</label>
+                  <select name="sector" id="">
+                    <option value="tin">Tintos</option>
+                    <option value="blan">Blancos</option>
+                    <option value="ros">Rosados</option>
+                    <option value="esp">Espumantes</option>
+                  </select>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <div class="">
+                    <label for="" class="text-right">Imagen</label>
+                    <input class="form-control" type="file" id="formFile" name="image">
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <h1>Detalles extras</h1>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="time" placeholder="Tiempo en botella" name="time">
+                  <label for="time">Tiempo en botella</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="origin" placeholder="Origen" name="origin" >
+                  <label for="origin">Origen</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="Varietalorigin" placeholder="Varietal" name="Varietal" >
+                  <label for="Varietalorigin">Varietal</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="price" placeholder="Precio Caja" name="price" >
+                  <label for="price">Precio Caja</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="price1" placeholder="Precio Botella" name="price1" >
+                  <label for="price1">Precio Botella</label>
+                <button type="submit">Guardar cambios</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </main>
+
+    <%- include('./partials/footer') %>
+</body>
+
+</html>
