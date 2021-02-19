@@ -1,3 +1,15 @@
 const fs = require('fs');
+const path = require('path');
 
-module.exports = JSON.parse(fs.readFileSync(__dirname + '/products.json', 'utf-8'))
+const wines = path.join('data','products.json');
+
+module.exports = {
+    getWines: ()=> JSON.parse(fs.readFileSync( wines, 'utf-8')),
+    setWines: (data) => {
+        fs.writeFileSync(
+            wines,
+            JSON.stringify(data, null, 2), 
+            "utf-8"
+        );
+    },
+}

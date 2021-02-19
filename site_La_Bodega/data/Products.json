@@ -1,9 +1,49 @@
 [
-	{
-		"id": 1,
-		"name": "Vino Especial",
-		"description": "Vino Rojo de Mendoza. Proveniente de una de las regiones más frías del Valle de Uco. Vinculado a la identidad de los suelos aluviales de nuestra provincia, Fósil es algo inerte, antiguo, algo a explorar o redescubrir.",
-		"price": 12000,
-		"image": "botella sin etiqueta 1"
-    }
+  {
+    "id": 1,
+    "name": "Vino Especial 1",
+    "description": "Vino Rojo de Mendoza. Proveniente de una de las regiones más frías del Valle de Uco. Vinculado a la identidad de los suelos aluviales de nuestra provincia, Fósil es algo inerte, antiguo, algo a explorar o redescubrir.",
+    "price": 12000,
+    "image": "wine01",
+    "price1": 12222,
+    "time": "2 meses",
+    "origin": "cordoba",
+    "varietal": "aaaa",
+    "sector": "Tintos"
+  },
+  {
+    "id": 2,
+    "name": "Vino Especial 1",
+    "description": "Vino Rojo de Mendoza. Proveniente de una de las regiones más frías del Valle de Uco. Vinculado a la identidad de los suelos aluviales de nuestra provincia, Fósil es algo inerte, antiguo, algo a explorar o redescubrir.",
+    "price": 12000,
+    "image": "wine02",
+    "price1": 12222,
+    "time": "2 meses",
+    "origin": "cordoba",
+    "varietal": "aaaa",
+    "sector": "Tintos"
+  },
+  {
+    "id": 3,
+    "name": "Vino Especial 1",
+    "description": "Vino Rojo de Mendoza. Proveniente de una de las regiones más frías del Valle de Uco. Vinculado a la identidad de los suelos aluviales de nuestra provincia, Fósil es algo inerte, antiguo, algo a explorar o redescubrir.",
+    "price": 12000,
+    "image": "wine01",
+    "price1": 12222,
+    "time": "2 meses",
+    "origin": "cordoba",
+    "varietal": "aaaa",
+    "sector": "Tintos"
+  },
+  {
+    "id": 4,
+    "name": "vino prueba",
+    "description": "muy rico",
+    "price": "100",
+    "price1": "500",
+    "image": "image1613694613444.jpg",
+    "time": "10000 años",
+    "origin": "marte",
+    "sector": "blan"
+  }
 ]
