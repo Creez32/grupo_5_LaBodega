@@ -191,6 +191,7 @@ h3 {
   .product img {
     width: 100%;
     padding: 1%;
+    max-width: 300px;
   }
   .product .image {
     display: inline;
@@ -226,6 +227,7 @@ h3 {
   .cards {
     flex-direction: row;
     padding: 20px 0;
+    justify-content: space-between;
   }
   .cards a {
     border-bottom: none;
@@ -235,13 +237,14 @@ h3 {
   }
   .productosRelacionados img {
     width: 80%;
+    max-width: 300px;
     padding: 10px;
   }
 }
 
 /* Escritorio */
 
-@media (min-width: 1024px) {
+@media (min-width: 990px) {
   .product .first {
     display: flex;
     flex-direction: row;
@@ -255,17 +258,16 @@ h3 {
     padding: 0;
   }
   .product img {
-    width: 55%;
+    max-width: 300px;
     padding: 1%;
   }
   .product .image {
     display: flex;
-    width: 50%;
-    height: 500px;
     justify-content: center;
   }
   .extra {
     display: flex;
+    justify-content: space-around;
   }
   .extra .opinions {
     width: 60%;

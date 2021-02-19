@@ -235,7 +235,7 @@
 		"time": "4 Meses",
 		"color": "Tinto",
 		"origin": "Valle de uco",
-		"img" : "champagne.jpg"
+		"img" : "Champagne3.jpg"
 	  },
 	  {
 		"id": 18,
@@ -277,6 +277,6 @@
 		"time": "4 Meses",
 		"color": "Rose",
 		"origin": "Luján de Cuyo",
-		"img" : "Champagne3.png"
+		"img" : "Champagne3.jpg"
 	  }
 ]

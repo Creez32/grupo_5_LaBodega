@@ -1,6 +1,6 @@
-const {getProducts} = require('../data/products');
+const {getWines} = require('../data/products');
 
-const products = getProducts();
+const products = getWines();
 
 
 module.exports={
