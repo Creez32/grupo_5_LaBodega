@@ -23,20 +23,12 @@ module.exports = {
             }
         });
 
-        const {name, description, price, price1,time, origin, varietal, sector, } = req.body;
+        const {name, detail, price_box, price_unit, type, variety, year, time,color,origin} = req.body;
         let image = req.files[0].filename;
 
         let wine = {
             id: lastID + 1,
-            name,
-            description,
-            price,
-            price1,
-            image,
-            time,
-            origin,
-            varietal,
-            sector,
+            name,detail, price_box, price_unit, type, variety, year, time,color,origin,image
             
         }
 
@@ -55,7 +47,7 @@ module.exports = {
     },
     updateWine : (req,res,next) => {
 
-        const {name, description, price, price1,time, origin, varietal, sector} = req.body;
+        const {name, detail, price_box, price_unit, type, variety, year, time,color,origin} = req.body;
         let image = req.files[0].filename;
 
 
@@ -67,15 +59,16 @@ module.exports = {
                 }
 
                 wine.id = +req.params.id;
-                wine.name = name;
-                wine.description = description;
-                wine.price = price;
-                wine.price1 = price1;
-                wine.image= image   ;
-                wine.time =time;
-                wine.origin=origin;
-                wine.varietal=varietal;
-                wine.sector=sector
+                wine.name=name, 
+                wine.detail=detail, 
+                wine.price_box=price_box,
+                wine.price_unit=price_unit, 
+                wine.type=type, 
+                wine.variety=variety, 
+                wine.year=year, 
+                wine.time=time,
+                wine.color=color,
+                wine.origin=origin
             }
         });
 
