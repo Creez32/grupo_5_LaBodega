@@ -34,17 +34,17 @@
                 </div>
 
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="description" placeholder="Descripción" name="description" value="<%= wine.description %> ">
-                  <label for="description">Descripción</label>
+                  <input type="text" class="form-control" id="detail" placeholder="Descripción" name="detail" value="<%= wine.detail %> ">
+                  <label for="detail">Descripción</label>
                 </div>
 
                 <div class="ingreso">
                   <label for="sector">Sector</label>
-                  <select name="sector" id="">
-                    <option value="tin">Tintos</option>
-                    <option value="blan">Blancos</option>
-                    <option value="ros">Rosados</option>
-                    <option value="esp">Espumantes</option>
+                  <select name="type" id="" value="<%= wine.type %> ">
+                    <option value="Tinto">Tintos</option>
+                    <option value="Blanco">Blancos</option>
+                    <option value="Rosado">Rosados</option>
+                    <option value="Espumante">Espumantes</option>
                   </select>
                 </div>
 
@@ -66,16 +66,20 @@
                   <label for="origin">Origen</label>
                 </div>
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="Varietalorigin" placeholder="Varietal" name="Varietal" value="<%= wine.varietal %> ">
-                  <label for="Varietalorigin">Varietal</label>
+                  <input type="text" class="form-control" id="year" placeholder="Año" name="year" value="<%= wine.year %> ">
+                  <label for="year">Año</label>
                 </div>
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="price" placeholder="Precio Caja" name="price" value="<%= wine.price %> ">
-                  <label for="price">Precio Caja</label>
+                  <input type="text" class="form-control" id="variety" placeholder="Varietal" name="variety" value="<%= wine.variety %> ">
+                  <label for="variety">Varietal</label>
                 </div>
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="price1" placeholder="Precio Botella" name="price1" value="<%= wine.price1 %> ">
-                  <label for="price1">Precio Botella</label>
+                  <input type="text" class="form-control" id="price_unit" placeholder="Precio Caja" name="price_unit" value="<%= wine.price_unit %> ">
+                  <label for="price_unit">Precio Caja</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="price_box" placeholder="Precio Botella" name="price_box" value="<%= wine.price_box %> ">
+                  <label for="price_box">Precio Botella</label>
                 <button type="submit">Guardar cambios</button>
               </div>
             </div>
