@@ -50,8 +50,8 @@
 
                 <div class="form-floating mb-3">
                   <div class="">
-                    <label for="" class="text-right">Imagen actual: <%= wine.image %></label>
-                    <input class="form-control" type="file" id="formFile" name="image">
+                    <label for="" class="text-right">imagen actual: <%= wine.img %></label>
+                    <input class="form-control" type="file" id="formFile" name="img">
                   </div>
                 </div>
               </div>
@@ -84,7 +84,7 @@
                 <div class="form-floating mb-3">
                   <input type="text" class="form-control" id="price_box" placeholder="Precio Botella" name="price_box" value="<%= wine.price_box %> ">
                   <label for="price_box">Precio Botella</label>
-                <button type="submit">Guardar cambios</button>
+                <button class="btn btn-success" type="submit">Guardar cambios</button>
               </div>
             </div>
           </form>

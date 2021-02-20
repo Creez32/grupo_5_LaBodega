@@ -11,10 +11,10 @@ const {createWine,deleteWine,editWine,listWine,storeWine,updateWine} =adminContr
 
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, 'public/images/wines')
+      cb(null, 'public/images/botellas')
     },
     filename: function (req, file, cb) {
-      cb(null, file.fieldname + '' + Date.now() + path.extname(file.originalname))
+      cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
     }
   })
 

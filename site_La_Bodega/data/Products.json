@@ -11,7 +11,7 @@
     "time": "4 Meses",
     "color": "Rojo",
     "origin": "Valle de uco",
-    "image": "Tinto2.png"
+    "img": "Tinto2.png"
   },
   {
     "id": 2,
@@ -25,7 +25,7 @@
     "time": "4 Meses",
     "color": "Tinto",
     "origin": "Valle de uco",
-    "image": "Tinto2.png"
+    "img": "Tinto2.png"
   },
   {
     "id": 3,
@@ -39,7 +39,7 @@
     "time": "2 Meses",
     "color": "Tinto",
     "origin": "Valle de uco",
-    "image": "Tinto2.png"
+    "img": "Tinto2.png"
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@
     "time": "5 Meses",
     "color": "Tinto",
     "origin": "Valle de uco",
-    "image": "Tinto2.png"
+    "img": "Tinto2.png"
   },
   {
     "id": 5,
@@ -67,7 +67,7 @@
     "time": "3 Meses",
     "color": "Tinto",
     "origin": "Valle de uco",
-    "image": "Tinto2.png"
+    "img": "Tinto2.png"
   },
   {
     "id": 6,
@@ -81,7 +81,7 @@
     "time": "3 Meses",
     "color": "Tinto",
     "origin": "Valle de uco",
-    "image": "Tinto2.png"
+    "img": "Tinto2.png"
   },
   {
     "id": 7,
@@ -95,7 +95,7 @@
     "time": "4 Meses",
     "color": "Tinto",
     "origin": "Valle de uco",
-    "image": "Tinto2.png"
+    "img": "Tinto2.png"
   },
   {
     "id": 8,
@@ -109,7 +109,7 @@
     "time": "4 Meses",
     "color": "Tinto",
     "origin": "Valle de uco",
-    "image": "Tinto2.png"
+    "img": "Tinto2.png"
   },
   {
     "id": 9,
@@ -123,7 +123,7 @@
     "time": "4 Meses",
     "color": "Blanco",
     "origin": "Valle de uco",
-    "image": "White.jpg"
+    "img": "White.jpg"
   },
   {
     "id": 10,
@@ -137,7 +137,7 @@
     "time": "4 Meses",
     "color": "Blanco",
     "origin": "Valle de uco",
-    "image": "White.jpg"
+    "img": "White.jpg"
   },
   {
     "id": 11,
@@ -151,7 +151,7 @@
     "time": "4 Meses",
     "color": "Blanco",
     "origin": "Valle de uco",
-    "image": "White.jpg"
+    "img": "White.jpg"
   },
   {
     "id": 12,
@@ -165,7 +165,7 @@
     "time": "4 Meses",
     "color": "Blanco",
     "origin": "Valle de uco",
-    "image": "White2.jpg"
+    "img": "White2.jpg"
   },
   {
     "id": 13,
@@ -179,7 +179,7 @@
     "time": "4 Meses",
     "color": "Blanco",
     "origin": "Valle de uco",
-    "image": "White2.jpg"
+    "img": "White2.jpg"
   },
   {
     "id": 14,
@@ -193,7 +193,7 @@
     "time": "4 Meses",
     "color": "Blanco",
     "origin": "Valle de uco",
-    "image": "White2.jpg"
+    "img": "White2.jpg"
   },
   {
     "id": 15,
@@ -207,7 +207,7 @@
     "time": "4 Meses",
     "color": "Blanco",
     "origin": "Valle de uco",
-    "image": "White4.jpg"
+    "img": "White4.jpg"
   },
   {
     "id": 16,
@@ -221,7 +221,7 @@
     "time": "4 Meses",
     "color": "Blanco",
     "origin": "Valle de uco",
-    "image": "White4.jpg"
+    "img": "White4.jpg"
   },
   {
     "id": 17,
@@ -235,7 +235,7 @@
     "time": "4 Meses",
     "color": "Tinto",
     "origin": "Valle de uco",
-    "image": "Champagne3.jpg"
+    "img": "Champagne3.jpg"
   },
   {
     "id": 18,
@@ -249,7 +249,7 @@
     "time": "4 Meses",
     "color": "Tinto",
     "origin": "Valle de uco",
-    "image": "Champagne2.png"
+    "img": "Champagne2.png"
   },
   {
     "id": 19,
@@ -263,27 +263,20 @@
     "time": "4 Meses",
     "color": "Tinto",
     "origin": "Valle de uco",
-    "image": "Champagne2.png"
+    "img": "Champagne2.png"
   },
-  {
-    "id": 20,
-    "name": "Veribet",
-    "price_box": 11999,
-    "price_unit": 2099,
-    "type": "Espumante",
-    "variety": "Dulce",
-    "detail": "Es un vino espumante con un profundo color rosa dorado. Con una nariz compleja, viva y suave. Intensos aromas de dulce de membrillo, ciruela, durazno, cereza negra y frutos secos dan paso a sutiles notas de moka y pan tostado. En boca tiene un espectro aromático muy amplio que se expresa en un paladar delicioso, rico y preciso. Tiene una longitud notable, marcada por un acabado salino y agradable acidez.",
-    "year": 2016,
-    "time": "4 Meses",
-    "color": "Rose",
-    "origin": "Luján de Cuyo",
-    "image": "Champagne3.jpg"
-  },
-  {
-    "id": 21,
-    "name": "prueba",
-    "image": "image1613780147521.jpg",
-    "time": "2",
-    "origin": "2000"
-  }
+    {
+      "id": 20,
+      "name": "Veribet",
+      "price_box": 11999,
+      "price_unit": 2099,
+      "type": "Espumante",
+      "variety": "Dulce",
+      "detail": "Es un vino espumante con un profundo color rosa dorado. Con una nariz compleja, viva y suave. Intensos aromas de dulce de membrillo, ciruela, durazno, cereza negra y frutos secos dan paso a sutiles notas de moka y pan tostado. En boca tiene un espectro aromático muy amplio que se expresa en un paladar delicioso, rico y preciso. Tiene una longitud notable, marcada por un acabado salino y agradable acidez.",
+      "year": 2016,
+      "time": "4 Meses",
+      "color": "Rose",
+      "origin": "Luján de Cuyo",
+      "img": "Champagne3.jpg"
+    }
 ]

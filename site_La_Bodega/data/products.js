@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require('path');
 
-const products_db = path.join('data','Products.json');
+const products_db = path.join('data','products.json');
 
 module.exports = {
     getWines: ()=> JSON.parse(fs.readFileSync(products_db, "utf-8")),
