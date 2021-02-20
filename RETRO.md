@@ -83,4 +83,45 @@
 
  ● Dejar cosas sin definir en el momento en el que se hablan.
 
+
+ # RETROSPECTIVA 3
+
+ ## Seguir haciendo.
+
+ ● Las reuniones.
+
+ ● Trabajar de manera responsable sobre el proyecto.
+  
+ ● Seguir dividiendo tareas de forma equitativa.
+
+ ● Contar con la ayuda de los demas integrantes cuando uno tenga dificultas.
+
+ ## Hacer mas.
+
+ ● Seguir trabajando para no interrumpir a los demas.
+
+ ● Ordenar mas las etiquetas del codigo.
+
+ ● Buscar mas informacion y ejemplos para mejorar nuestra pagina.
+
+ ## Empezar a hacer.
+
+ ● Aprender a usar base de datos
+
+ ● Ordenar mas el codigo
+
+ ## Dejar de hacer.
+
+ ● Desordenar el codigo.
+
+ ● Dejar de postergar las tareas.
+
+ ● No leer los pdf con detenimiento.
+
+ ## Hacer menos.
+
+ ● No quedarse hasta tan tarde haciendo el codigo (Solo si es una emergencia).
+
+ ● Dejar cosas sin definir en el momento en el que se hablan.
+
  
