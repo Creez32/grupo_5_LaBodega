@@ -23,11 +23,20 @@ module.exports = {
             }
         });
 
-        const {name, detail, price_box, price_unit, type, variety, year, time,color,origin,img} = req.body;
+        const {name, detail, price_box, price_unit, type, variety, year, time,color,origin} = req.body;
 
         let wine = {
             id: lastID + 1,
-            name,detail, price_box, price_unit, type, variety, year, time,color,origin,img: req.files[0].filename
+            name,
+            detail,
+            price_box,
+            price_unit,
+            type, variety,
+            year,
+            time,
+            color,
+            origin,
+            img: req.files[0].filename
 
             
         }

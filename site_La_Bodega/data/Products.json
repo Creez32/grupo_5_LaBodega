@@ -265,18 +265,18 @@
     "origin": "Valle de uco",
     "img": "Champagne2.png"
   },
-    {
-      "id": 20,
-      "name": "Veribet",
-      "price_box": 11999,
-      "price_unit": 2099,
-      "type": "Espumante",
-      "variety": "Dulce",
-      "detail": "Es un vino espumante con un profundo color rosa dorado. Con una nariz compleja, viva y suave. Intensos aromas de dulce de membrillo, ciruela, durazno, cereza negra y frutos secos dan paso a sutiles notas de moka y pan tostado. En boca tiene un espectro aromático muy amplio que se expresa en un paladar delicioso, rico y preciso. Tiene una longitud notable, marcada por un acabado salino y agradable acidez.",
-      "year": 2016,
-      "time": "4 Meses",
-      "color": "Rose",
-      "origin": "Luján de Cuyo",
-      "img": "Champagne3.jpg"
-    }
+  {
+    "id": 20,
+    "name": "Veribet",
+    "price_box": 11999,
+    "price_unit": 2099,
+    "type": "Espumante",
+    "variety": "Dulce",
+    "detail": "Es un vino espumante con un profundo color rosa dorado. Con una nariz compleja, viva y suave. Intensos aromas de dulce de membrillo, ciruela, durazno, cereza negra y frutos secos dan paso a sutiles notas de moka y pan tostado. En boca tiene un espectro aromático muy amplio que se expresa en un paladar delicioso, rico y preciso. Tiene una longitud notable, marcada por un acabado salino y agradable acidez.",
+    "year": 2016,
+    "time": "4 Meses",
+    "color": "Rose",
+    "origin": "Luján de Cuyo",
+    "img": "Champagne3.jpg"
+  }
 ]
