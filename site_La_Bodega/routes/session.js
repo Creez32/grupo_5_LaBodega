@@ -8,3 +8,4 @@ router.get('/login', sessionController.login);
 router.get('/register', sessionController.register);
 
 module.exports = router;
+

@@ -34,6 +34,45 @@ login: (req, res) =>{
     }
 }
 }
+processLogin : (req, res) => {
+    let errores = validationResult(req);
+
+    const {email, pass, recordar} = req.body;
+    
+    if(!errores.isEmpty()){
+        res.render('login',{
+            errores : errores.errors
+        })
+    }else{
+        let result = users_db.find(user => user.email === email);
+
+        if(result){
+            if(bcrypt.compareSync(pass.trim(), result.pass)){
+
+                req.session.user = {
+                    id : result.id,
+                    username : result.username,
+                }
+
+                if(recordar){
+                    res.cookie('userLaBodega',req.session.user,{
+                        maxAge : 1000 * 60
+                    })
+                }
+
+                res.redirect('/profile')
+            }
+        }
+        res.render('login', {
+            errores : [
+                {
+                    msg : "credenciales inválidas"
+                }
+            ]
+        })
+    }
+};
+
 
 
 
