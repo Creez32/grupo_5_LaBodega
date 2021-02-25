@@ -1,10 +1,28 @@
 [{
-    "id": 10,
+    "id": 1,
     "name": "Melany",
     "last-name":"Lopez",
     "date of birth":"10/10/1999",
     "gender":"femenino",
-    "email": "mail@mail",
-    "password": "contraseña"
+    "email": "melany_melu_2009@hotmail.com",
+    "password": "melu1999"
+  },
+  {
+    "id": 2,
+    "name": "Cristian",
+    "last-name":"Elias",
+    "date of birth":"28/04/1997",
+    "gender":"masculino",
+    "email": "cristiannicolas32@hotmail.com",
+    "password": "critian123"
+  },
+  {
+    "id": 3,
+    "name": "Leandro",
+    "last-name":"Avendaño",
+    "date of birth":"03/06/1998",
+    "gender":"masculino",
+    "email": "leandro98av@gmail.com",
+    "password": "leandro987"
   }
 ]
