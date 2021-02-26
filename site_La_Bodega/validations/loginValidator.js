@@ -2,8 +2,10 @@ const {check} = require('express-validator');
 
 module.exports = [
     check('email')
-    .isEmail().withMessage('El email debe ser válido'),
+    .notEmpty().withMessage('El email es requerido')
+    .isEmail().withMessage('El email debe ser valido'),
 
-    check('password')
-    .notEmpty().withMessage('La constraseña es requerida')
+    check('pass')
+    .notEmpty().withMessage('La contraseña es requerida')
+
 ]
