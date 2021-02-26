@@ -25,12 +25,14 @@
                 <form class="register"  action="" method="POST">
                     <div class="email">
                         <p class="email">¿Cuál es tu correo electronico?</p>
-                        <input type="email" name="email" id="email" placeholder="Correo Electrónico">
+                        <input type="email" name="email" id="email" placeholder="Correo Electrónico" value="<%= (typeof data!='undefined' && data.email)?data.email : "" %>" placeholder="Ingresa Email" >
+                        <p><%= (typeof errores!='undefined' && errores.email)?errores.email.msg : "" %></p>
                     </div>
 
                     <div class="contraseña">
                         <p class="contraseña">Crea una contraseña:</p>
-                        <input type="password" name="email" id="password" placeholder="Contraseña">
+                        <input type="password" name="email" id="password" placeholder="Contraseña" value="<%= (typeof data!='undefined' && data.pass)?data.pass : "" %>"placeholder="Ingresa Password">
+                        <p><%= (typeof errores!='undefined' && errores.pass)?errores.pass.msg : "" %></p>
                     </div>
                     <div class="recordarme">
                         <p class="recordarme">Recordarme</p>
