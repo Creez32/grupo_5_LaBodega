@@ -1,5 +1,7 @@
 const express = require('express');
 const methodOverride = require('method-override');
+const session = require('express-session');
+const cookieParser = require('cookie-parser');
 
 const app = express();
 const port = 5000
@@ -8,6 +10,9 @@ const indexRouter = require('./routes/index');
 const sessionRouter = require('./routes/session');
 const productsRouter = require('./routes/products')
 const adminRouter = require('./routes/adminRouter');
+
+let cookieChek = require('./middlewares/cookieCheck.js')
+let localCheck = require('./middlewares/localCheck')
 
 
 app.set('view engine', 'ejs'); 
@@ -20,7 +25,15 @@ app.use(express.json());
 
 app.use(methodOverride('_method'));
 
+app.use(cookieParser());
 
+app.use(session({
+    secret : "este es un mensaje secreto"
+  }))
+
+
+app.use(cookieChek)
+app.use(localCheck)
 
 app.use('/',indexRouter);
 app.use('/session',sessionRouter);

@@ -1,0 +1,26 @@
+body{
+    font-family: 'Montserrat';
+    width: 100%;
+    padding: 0;
+    background-image: url(https://image.freepik.com/foto-gratis/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
+    background-size: cover;
+    color: white;
+}
+main{
+
+}
+.basic{
+
+}
+.basic .image{
+    width: 400px;
+}
+.basic .image img{
+    width: 50%;
+}
+.basic .name{
+
+}
+.basic .name h2{
+
+}

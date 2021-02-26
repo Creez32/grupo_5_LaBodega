@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head')  %>
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/profile.css">
+    <link rel="stylesheet" href="/styles/all.css">
+</head>
+<body>
+        <!-- HEADER -->
+    <%- include('./partials/header')  %> 
+
+    <main>
+        <h1>Profile </h1>
+
+        <section class="basic">                  
+                <img src="/image/<%= user.img %> " alt="img">
+                <br>
+                <p>Nombre: <span><%= user.name %> <%= user.lastName %></span></p>
+        </section>
+
+        <section class="data">
+            <div>
+                <h2>Mail</h2>
+                <h2><%= user.email %></h2>
+            </div>
+            <div>
+                <h2>Direccion</h2>
+                <h2><%= user.address %></h2>
+            </div>
+        </section>
+
+        <a href="/users/logout">Cerrar sesion</a>
+    </main>
+
+        <!-- FOOTER -->
+    <%- include('./partials/footer') %>
+</body>
+</html>
