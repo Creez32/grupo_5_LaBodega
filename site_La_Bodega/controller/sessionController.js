@@ -29,7 +29,7 @@ module.exports = {
             }
         });
 
-        const passHash = bcrypt.hashSync('password', 10)
+        const passHash = bcrypt.hashSync(password, 12)
 
         const newUser = {
             id: +lastID + 1,
