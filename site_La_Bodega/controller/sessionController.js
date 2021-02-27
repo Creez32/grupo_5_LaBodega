@@ -20,7 +20,7 @@ module.exports = {
 
     },
     processRegister: (req, res) => {
-        const { name, lastName, email, password } = req.body;
+        const { name, lastName, email, password,avatar,gender,address} = req.body;
 
         let lastID = 0;
         users.forEach(user => {
@@ -36,8 +36,11 @@ module.exports = {
             name,
             lastName,
             email,
+            address,
+            gender,
             password: passHash,
-            avatar: req.files[0].filemane
+            avatar: req.files[0].filemane,
+            avatar
         }
         users.push(newUser)
         setUsers(users);

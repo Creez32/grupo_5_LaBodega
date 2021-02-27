@@ -17,7 +17,7 @@
 
     <%- include('../partials/header') %>
 
-        
+
         <div class="container">
 
             <div class="form">
@@ -32,14 +32,33 @@
                 <form class="register" action="" method="POST" enctype="multipart/form-data">
                     <div class="nombre">
                         <p>¿Cuál es tu nombre?</p>
-                        <input type="text" name="name" id="name" placeholder="Nombre" value="<%= (typeof data!='undefined' && data.nombre)?data.nombre : "" %>"  id="" placeholder="Nombre">
-                        <p><%= (typeof errores!='undefined' && errores.nombre)?errores.nombre.msg : "" %></p>
+                        <input type="text" name="name" id="name" placeholder="Nombre"
+                            value="<%= (typeof data!='undefined' && data.nombre)?data.nombre : "" %>" id=""
+                            placeholder="Nombre">
+                        <p>
+                            <%= (typeof errores!='undefined' && errores.nombre)?errores.nombre.msg : "" %>
+                        </p>
 
                     </div>
                     <div class="apellido">
                         <p>¿Cuál es tu apellido?</p>
-                        <input type="text" name="lastName" id="lastName" placeholder="Apellido" value="<%= (typeof data!='undefined' && data.apellido)?data.apellido : "" %>"  placeholder="Apellido">
-                        <p><%= (typeof errores!='undefined' && errores.apellido)?errores.apellido.msg : "" %></p>
+                        <input type="text" name="lastName" id="lastName" placeholder="Apellido"
+                            value="<%= (typeof data!='undefined' && data.apellido)?data.apellido : "" %>"
+                            placeholder="Apellido">
+                        <p>
+                            <%= (typeof errores!='undefined' && errores.apellido)?errores.apellido.msg : "" %>
+                        </p>
+                    </div>
+                    <label for="genero" class="form-label">genero:</label>
+                    <select class="form-select" name="gender" value=" " id="gender" required size="1">
+                        <option class="form-option" value=""></option>
+
+                        <option class="form-option" value="M">Masculino</option>
+                        <option class="form-option" value="F">Femenino</option>
+                    </select>
+                    <div class="address">
+                        <p>¿Cuál es tu dirección?</p>
+                        <input type="text" name="address" id="address" placeholder="Dirección">
                     </div>
 
                     <p>¿Cuál es tu fecha de nacimiento?</p>
@@ -223,27 +242,40 @@
 
                     <div class="email">
                         <p class="email">¿Cuál es tu correo electronico?</p>
-                        <input type="email" name="email" id="email" placeholder="Correo Electrónico" value="<%= (typeof data!='undefined' && data.email)?data.email : "" %>" placeholder="Ingresa tu email">
-              
+                        <input type="email" name="email" id="email" placeholder="Correo Electrónico"
+                            value="<%= (typeof data!='undefined' && data.email)?data.email : "" %>"
+                            placeholder="Ingresa tu email">
 
-                        <p><%= (typeof errores!='undefined' && errores.email)?errores.email.msg : "" %></p>
+
+                        <p>
+                            <%= (typeof errores!='undefined' && errores.email)?errores.email.msg : "" %>
+                        </p>
                     </div>
 
                     <div class="contraseña">
                         <p class="contraseña">Crea una contraseña:</p>
-                        <input type="password" name="password" id="password" placeholder="Contraseña" value="<%= (typeof data!='undefined' && data.pass)?data.pass : "" %>"placeholder="Ingresa Password">
-                        <p><%= (typeof errores!='undefined' && errores.password)?errores.password.msg : "" %></p>
+                        <input type="password" name="password" id="password" placeholder="Contraseña"
+                            value="<%= (typeof data!='undefined' && data.pass)?data.pass : "" %>"
+                            placeholder="Ingresa Password">
+                        <p>
+                            <%= (typeof errores!='undefined' && errores.password)?errores.password.msg : "" %>
+                        </p>
                     </div>
 
 
                     <div class="repetir contraseña">
                         <p>Repetir Contraseña:</p>
-                        <input type="password" name="password" id="password-repeat" placeholder="Repetir Contraseña"  value="<%= (typeof data!='undefined' && data.pass2)?data.password-repeat : "" %>" placeholder="Repetir contraseña">
+                        <input type="password" name="password" id="password-repeat" placeholder="Repetir Contraseña"
+                            value="<%= (typeof data!='undefined' && data.pass2)?data.password-repeat : "" %>"
+                            placeholder="Repetir contraseña">
 
-                        <p><%= (typeof errores!='undefined' && errores.password-repeat)?errores.password-repeat.msg : "" %></p>
+                        <p>
+                            <%= (typeof errores!='undefined' && errores.password-repeat)?errores.password-repeat.msg
+                                : "" %>
+                        </p>
                     </div>
                     <div class="avatar">
-                        <input type="file" name="avatar">
+                        <input type="file" name="avatar" required>
                     </div>
                     <button type="submit"> ¡CREAR CUENTA! </button>
 
@@ -252,8 +284,8 @@
                             <p>¿Ya tienes cuenta? Ingresa Aqui</p>
                         </a>
                     </div>
-                    
-            
+
+
                 </form>
             </div>
         </div>
