@@ -29,7 +29,7 @@
                     </div>
                     <h1>¡Bienvenid@, crea tu cuenta aqui!</h1>
                 </div>
-                <form class="register" action="link/?_method=POST" method="POST">
+                <form class="register" action="link/?_method=POST" method="POST" enctype="multipart/form-data">
                     <div class="nombre">
                         <p>¿Cuál es tu nombre?</p>
                         <input type="text" name="name" id="name" placeholder="Nombre" value="<%= (typeof data!='undefined' && data.nombre)?data.nombre : "" %>"  id="" placeholder="Nombre">
@@ -38,7 +38,7 @@
                     </div>
                     <div class="apellido">
                         <p>¿Cuál es tu apellido?</p>
-                        <input type="text" name="last-name" id="last-name" placeholder="Apellido" value="<%= (typeof data!='undefined' && data.apellido)?data.apellido : "" %>"  placeholder="Apellido">
+                        <input type="text" name="lastName" id="lastName" placeholder="Apellido" value="<%= (typeof data!='undefined' && data.apellido)?data.apellido : "" %>"  placeholder="Apellido">
                         <p><%= (typeof errores!='undefined' && errores.apellido)?errores.apellido.msg : "" %></p>
                     </div>
 
@@ -231,16 +231,19 @@
 
                     <div class="contraseña">
                         <p class="contraseña">Crea una contraseña:</p>
-                        <input type="password" name="email" id="password" placeholder="Contraseña" value="<%= (typeof data!='undefined' && data.pass)?data.pass : "" %>"placeholder="Ingresa Password">
+                        <input type="password" name="password" id="password" placeholder="Contraseña" value="<%= (typeof data!='undefined' && data.pass)?data.pass : "" %>"placeholder="Ingresa Password">
                         <p><%= (typeof errores!='undefined' && errores.password)?errores.password.msg : "" %></p>
                     </div>
 
 
                     <div class="repetir contraseña">
                         <p>Repetir Contraseña:</p>
-                        <input type="password" name="email" id="password-repeat" placeholder="Repetir Contraseña"  value="<%= (typeof data!='undefined' && data.pass2)?data.password-repeat : "" %>" placeholder="Repetir contraseña">
+                        <input type="password" name="password" id="password-repeat" placeholder="Repetir Contraseña"  value="<%= (typeof data!='undefined' && data.pass2)?data.password-repeat : "" %>" placeholder="Repetir contraseña">
 
                         <p><%= (typeof errores!='undefined' && errores.password-repeat)?errores.password-repeat.msg : "" %></p>
+                    </div>
+                    <div class="avatar">
+                        <input type="file" name="avatar">
                     </div>
                     <button type="submit"> ¡CREAR CUENTA! </button>
 

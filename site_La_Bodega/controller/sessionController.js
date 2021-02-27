@@ -1,7 +1,9 @@
 const fs = require('fs');
 const bcrypt = require('bcrypt');
 
-let usuarios = JSON.parse(fs.readFileSync('./data/users.json', 'utf-8'));
+const { getUsers, setUsers } = require('../data/users');
+
+const users = getUsers();
 
 const { validationResult } = require('express-validator')
 module.exports = {
@@ -17,12 +19,33 @@ module.exports = {
         });
 
     },
-    processRegister:(req,res) =>{
+    processRegister: (req, res) => {
+        const { name, lastName, email, password } = req.body;
 
-    },  
-    login: (req, res) => {
-        res.render('users/login')
+        let lastID = 0;
+        users.forEach(user => {
+            if (user.id > lastID) {
+                lastID = user.id
+            }
+        });
+
+        const passHash = bcrypt.hashSync('password', 10)
+
+        const newUser = {
+            id: +lastID + 1,
+            name,
+            lastName,
+            email,
+            password: passHash,
+            avatar: req.files[0].filemane
+        }
+        users.push(newUser)
+        setUsers(users);
+
+        res.redirect('/session/login')
+
     },
+
     processLogin: (req, res) => {
         let errores = validationResult(req);
 
@@ -42,7 +65,7 @@ module.exports = {
                         id: result.id,
                         name: result.name,
                         lastName: result.lastName,
-                        img : result.img,
+                        img: result.img,
                         address: result.address
 
                     }
@@ -65,13 +88,13 @@ module.exports = {
             })
         }
     },
-    profile: (req,res)=>{
+    profile: (req, res) => {
         res.render('users/profile')
     },
-    logout: (req,res) =>{
+    logout: (req, res) => {
         req.session.destroy();
-        if(req.cookies.userComision5){
-            res.cookie('userComision5','', {maxAge: -1})
+        if (req.cookies.userComision5) {
+            res.cookie('userComision5', '', { maxAge: -1 })
         }
         res.redirect('/')
     }

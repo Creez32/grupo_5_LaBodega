@@ -1,3 +1,15 @@
-const fs = require('fs');
+const fs = require("fs");
+const path = require('path');
 
-module.exports = JSON.parse(fs.readFileSync(__dirname + '/users.json', 'utf-8'))
+const users_db = path.join('data','users.json');
+
+module.exports = {
+    getUsers: ()=> JSON.parse(fs.readFileSync(users_db, "utf-8")),
+    setUsers: (data) => {
+        fs.writeFileSync(
+            users_db,
+            JSON.stringify(data, null, 2), //null y 2 deja indentado de forma legible el JSON
+            "utf-8"
+        );
+    },
+};

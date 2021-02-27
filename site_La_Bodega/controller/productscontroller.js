@@ -34,9 +34,6 @@ module.exports={
             product,recomendados
         })
     },
-    charge:(req,res)=>{
-        res.render('productscharges')
-    },
     cart:(req,res)=>{
         res.render('cart')        
     }
