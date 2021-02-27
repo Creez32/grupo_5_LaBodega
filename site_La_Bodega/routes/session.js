@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 const path = require('path');
 
+
 const {login,processLogin,register,processRegister,profile,logout} = require('../controller/sessionController');
 
 const registerValidator = require('../validations/registerValidator')

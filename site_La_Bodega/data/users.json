@@ -1,34 +1,35 @@
-[{
+[
+  {
     "id": 1,
     "name": "Melany",
-    "lastName":"Lopez",
-    "date of birth":"10/10/1999",
-    "gender":"femenino",
+    "lastName": "Lopez",
+    "date of birth": "10/10/1999",
+    "gender": "femenino",
     "email": "melany_melu_2009@hotmail.com",
     "password": "melu1999",
     "address": "avenida siempre viva 1213",
-    "img" : "profile1"
+    "img": "profile1"
   },
   {
     "id": 2,
     "name": "Cristian",
-    "lastName":"Elias",
-    "date of birth":"28/04/1997",
-    "gender":"masculino",
+    "lastName": "Elias",
+    "date of birth": "28/04/1997",
+    "gender": "masculino",
     "email": "cristiannicolas32@hotmail.com",
     "password": "critian123",
     "address": "avenida siempre viva 1213",
-    "img" : "profile2"
+    "img": "profile2"
   },
   {
     "id": 3,
     "name": "Leandro",
-    "lastName":"Avendaño",
-    "date of birth":"03/06/1998",
-    "gender":"masculino",
+    "lastName": "Avendaño",
+    "date of birth": "03/06/1998",
+    "gender": "masculino",
     "email": "leandro98av@gmail.com",
     "password": "leandro987",
     "address": "avenida siempre viva 1213",
-    "img" : "profile3"
+    "img": "profile3"
   }
 ]
