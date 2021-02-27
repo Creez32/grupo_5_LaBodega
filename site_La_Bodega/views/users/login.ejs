@@ -32,7 +32,7 @@
                     <div class="contraseña">
                         <p class="contraseña">Crea una contraseña:</p>
                         <input type="password" name="email" id="password" placeholder="Contraseña" value="<%= (typeof data!='undefined' && data.pass)?data.pass : "" %>"placeholder="Ingresa Password">
-                        <p><%= (typeof errores!='undefined' && errores.pass)?errores.pass.msg : "" %></p>
+                        <p><%= (typeof errores!='undefined' && errores.password)?errores.password.msg : "" %></p>
                     </div>
                     <div class="recordarme">
                         <p class="recordarme">Recordarme</p>
