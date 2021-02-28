@@ -31,5 +31,12 @@
     "password": "leandro987",
     "address": "avenida siempre viva 1213",
     "img": "profile3"
+  },
+  {
+    "id": 4,
+    "name": "Melany Aldana",
+    "lastName": "Lopez Jara",
+    "email": "melany_melu_2009@hotmail.com",
+    "password": "$2b$12$wjish1xQLVHe6JYUvtBw7esMPulQWHwZGWUktR0xY.W9V9uM4U2ha"
   }
 ]
