@@ -7,6 +7,7 @@ const users = getUsers();
 
 const { validationResult } = require('express-validator')
 module.exports = {
+    
 
     login: (req, res) => {
         res.render('users/login', {
@@ -71,7 +72,7 @@ module.exports = {
                     }
 
                     if (recordar) {
-                        res.cookie('userLaBodega', req.session.user, {
+                        res.cookie('userComision5', req.session.user, {
                             maxAge: 1000 * 60
                         })
                     }
