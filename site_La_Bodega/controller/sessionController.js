@@ -41,7 +41,6 @@ module.exports = {
             gender,
             password: passHash,
             avatar: req.files[0].filemane,
-            avatar
         }
         users.push(newUser)
         setUsers(users);
