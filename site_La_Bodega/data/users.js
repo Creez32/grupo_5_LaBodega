@@ -8,7 +8,7 @@ module.exports = {
     setUsers: (data) => {
         fs.writeFileSync(
             users_db,
-            JSON.stringify(data, null, 2), //null y 2 deja indentado de forma legible el JSON
+            JSON.stringify(data, null, 2), 
             "utf-8"
         );
     },

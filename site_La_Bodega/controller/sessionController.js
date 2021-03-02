@@ -21,7 +21,7 @@ module.exports = {
 
     },
     processRegister: (req, res) => {
-        const { name, lastName, email, password,avatar,gender,address} = req.body;
+        const { name, lastName, email, password,gender,address,dateOfBirth,img} = req.body;
 
         let lastID = 0;
         users.forEach(user => {
@@ -32,15 +32,16 @@ module.exports = {
 
         const passHash = bcrypt.hashSync('password', 12)
 
-        const newUser = {
+        let newUser = {
             id: +lastID + 1,
             name,
             lastName,
             email,
             address,
             gender,
+            dateOfBirth,
             password: passHash,
-            avatar: req.files[0].filemane,
+            img: req.files[0].filemane,
         }
         users.push(newUser)
         setUsers(users);
@@ -69,7 +70,9 @@ module.exports = {
                         name: result.name,
                         lastName: result.lastName,
                         img: result.img,
-                        address: result.address
+                        address: result.address,
+                        dateOfBirth: result.dateOfBirth,
+                        img:result.img,
 
                     }
 
