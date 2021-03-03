@@ -22,16 +22,16 @@ module.exports={
         let product = products.find(product => {
 			return product.id == req.params.id
         })
-        let cantidad = products.length
-        
-        let random = () => Math.floor(Math.random() * cantidad)
 
-        const recomendados = products.filter((products)=>{
-            return products.type === 'Espumante'
-        });
+        let aleatorio = [];
+        for (let i = 0; i < 4; i++) {
+            let ran = Math.floor(Math.random()*(products.length))
+            let seleccion = products[ran];
+             aleatorio.push(seleccion);
+            }
 
         res.render('detail',{
-            product,recomendados
+            product,aleatorio
         })
     },
     cart:(req,res)=>{

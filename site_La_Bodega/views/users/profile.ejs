@@ -15,9 +15,9 @@
         <h1>Profile </h1>
 
         <section class="basic">                  
-                <img src="/image/<%= user.img %> " alt="img">
+                <img src="/images/Users/<%= user.img %> " alt="img">
                 <br>
-                <p>Nombre: <span><%= user.name %> <%= user.lastName %></span></p>
+                <p>Nombre: <span><%= user.name %> <%= user.lastName %><%= user.email %></span></p>
         </section>
 
         <section class="data">
@@ -27,7 +27,7 @@
             </div>
         </section>
 
-        <a href="/users/logout">Cerrar sesion</a>
+        <a href="/session/profile/logout">Cerrar sesion</a>
     </main>
 
         <!-- FOOTER -->

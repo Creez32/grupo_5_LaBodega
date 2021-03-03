@@ -6,9 +6,10 @@
     "date of birth": "10/10/1999",
     "gender": "femenino",
     "email": "melany_melu_2009@hotmail.com",
-    "password": "$2b$12$wjish1xQLVHe6JYUvtBw7esMPulQWHwZGWUktR0xY.W9V9uM4U2ha",
+    "pass": "$2b$12$wjish1xQLVHe6JYUvtBw7esMPulQWHwZGWUktR0xY.W9V9uM4U2ha",
     "address": "avenida siempre viva 1213",
-    "img": "profile1"
+    "img": "profile1",
+    "Admin": true
   },
   {
     "id": 2,
@@ -17,9 +18,10 @@
     "date of birth": "28/04/1997",
     "gender": "masculino",
     "email": "cristiannicolas32@hotmail.com",
-    "password": "$2b$12$wl4S0.sT7AUt0A9ayRNnF.QDUurj3hdF6vnxYlbrAcu2JH4Bu6iKi",
+    "pass": "$2b$12$wl4S0.sT7AUt0A9ayRNnF.QDUurj3hdF6vnxYlbrAcu2JH4Bu6iKi",
     "address": "avenida siempre viva 1213",
-    "img": "profile2"
+    "img": "profile2",
+    "Admin": true
   },
   {
     "id": 3,
@@ -28,26 +30,33 @@
     "date of birth": "03/06/1998",
     "gender": "masculino",
     "email": "leandro98av@gmail.com",
-    "password": "leandro987",
+    "pass": "leandro987",
     "address": "avenida siempre viva 1213",
-    "img": "profile3"
+    "img": "profile3",
+    "Admin": true
   },
   {
     "id": 4,
-    "name": "Melany Aldana",
-    "lastName": "Lopez Jara",
-    "email": "melany_melu_2009@hotmail.com",
-    "password": "$2b$12$wjish1xQLVHe6JYUvtBw7esMPulQWHwZGWUktR0xY.W9V9uM4U2ha"
+    "name": "Cristian",
+    "lastName": "Elias",
+    "email": "superfulano@gmail.com",
+    "address": "A del valle 855",
+    "gender": "Masculino",
+    "dateOfBirth": "2010-12-08",
+    "pass": "$2b$12$GRql3h5F2419hFMw2J4EceeS5B6KMAvDz5PpBf5tUuGlCyZtlZF2C",
+    "img": "img-1614794187067.jpg",
+    "Admin": true
   },
   {
     "id": 5,
-    "name": "Mel 2.0",
-    "lastName": "Supermel",
-    "email": "supermel@gmail.com",
-    "address": "casa",
-    "gender": "F",
-    "dateOfBirth": "2010-12-15",
-    "password": "$2b$12$N.IpFBTKv5.qWzLSuPHqaehXmET3MTjgHDtM9vE/9pDv2IrxFAxsu",
-    "img": "img-1614732489022.png"
+    "name": "maxi",
+    "lastName": "demichellis",
+    "email": "maxi@gmail.com",
+    "address": "en su casa",
+    "gender": "Masculino",
+    "dateOfBirth": "2010-12-21",
+    "pass": "$2b$12$SQffQiM7suEd2/KoYOZNqe4EdKkBPuK37g2.4qc4wnJWPuYIHbIku",
+    "img": "img-1614799728545.jpg",
+    "Admin": false
   }
 ]

@@ -7,7 +7,7 @@ const users = getUsers();
 
 const { validationResult } = require('express-validator')
 module.exports = {
-    
+
 
     login: (req, res) => {
         res.render('users/login', {
@@ -21,72 +21,82 @@ module.exports = {
 
     },
     processRegister: (req, res) => {
-        const { name, lastName, email, password,gender,address,dateOfBirth,img} = req.body;
+        let errores = validationResult(req);
+        if (!errores.isEmpty()) {
+            return res.render('users/register', {
+                errores: errores.errors
+            })
+        } else {
+            const { name, lastName, email, pass, gender, address, dateOfBirth } = req.body;
 
-        let lastID = 0;
-        users.forEach(user => {
-            if (user.id > lastID) {
-                lastID = user.id
+            let lastID = 0;
+            users.forEach(user => {
+                if (user.id > lastID) {
+                    lastID = user.id
+                }
+            });
+
+            const passHash = bcrypt.hashSync(pass, 12)
+
+            let newUser = {
+                id: +lastID + 1,
+                name,
+                lastName,
+                email,
+                address,
+                gender,
+                dateOfBirth,
+                pass: passHash,
+                img: req.files[0].filename,
+                Admin : false
             }
-        });
+            users.push(newUser)
+            setUsers(users);
 
-        const passHash = bcrypt.hashSync('password', 12)
-
-        let newUser = {
-            id: +lastID + 1,
-            name,
-            lastName,
-            email,
-            address,
-            gender,
-            dateOfBirth,
-            password: passHash,
-            img: req.files[0].filename
+            return res.redirect('login')
         }
-        users.push(newUser)
-        setUsers(users);
-
-        res.redirect('/session/login')
-
     },
     processLogin: (req, res) => {
         let errores = validationResult(req);
-        const { email, password, recordar } = req.body;
-               
+        const { email, pass, recordar } = req.body;
+
         if (!errores.isEmpty()) {
-            res.render('users/login', {
-                errores: errores.errors
+            return res.render('users/login', {
+                errores: errores.mapped(),
+                data : req.body
             })
         } else {
             let result = users.find(user => user.email === email);
 
             if (result) {
-                if (bcrypt.compareSync(password.trim(), result.password)) {
+                if (bcrypt.compareSync(pass.trim(), result.pass)) {
 
                     req.session.user = {
                         id: result.id,
                         name: result.name,
                         lastName: result.lastName,
+                        email: result.email,
                         img: result.img,
-                        address: result.address,
-                        dateOfBirth: result.dateOfBirth,
+                        admin: result.Admin
                     }
 
                     if (recordar) {
                         res.cookie('LaBodega', req.session.user, {
-                            maxAge: 1000 * 60
+                            maxAge: 1000 * 60 * 60 * 24 * 7
                         })
                     }
 
-                    res.redirect('users/profile')
+                    return res.redirect('profile')
                 }
             }
             res.render('users/login', {
-                errores: [
-                    {
-                        msg: "credenciales inválidas"
-                    }
-                ]
+                errores:{
+                    pass:   
+                        {
+                            msg: 'Credenciales Invalidas'
+                        }
+                },
+                data: req.body
             })
         }
     },

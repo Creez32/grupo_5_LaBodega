@@ -49,13 +49,10 @@
                             <%= (typeof errores!='undefined' && errores.apellido)?errores.apellido.msg : "" %>
                         </p>
                     </div>
-                    <label for="genero" class="form-label">genero:</label>
-                    <select class="form-select" name="gender" value=" " id="gender" required size="1">
-                        <option class="form-option" value=""></option>
-
-                        <option class="form-option" value="Masculino">Masculino</option>
-                        <option class="form-option" value="Femenino">Femenino</option>
-                    </select>
+                    <label for="gender" class="form-label">Genero:</label>
+                    <input type="radio" name="gender" value="Femenino">Femenino
+                    <input type="radio" name="gender" value="Masculino" >Masculino
+                    
                     <div class="address">
                         <p>¿Cuál es tu dirección?</p>
                         <input type="text" name="address" id="address" placeholder="Dirección">
@@ -82,23 +79,23 @@
 
                     <div class="contraseña">
                         <p class="contraseña">Crea una contraseña:</p>
-                        <input type="password" name="password" id="password" placeholder="Contraseña"
+                        <input type="password" name="pass" id="pass" placeholder="Contraseña"
                             value="<%= (typeof data!='undefined' && data.pass)?data.pass : "" %>"
                             placeholder="Ingresa Password">
                         <p>
-                            <%= (typeof errores!='undefined' && errores.password)?errores.password.msg : "" %>
+                            <%= (typeof errores!='undefined' && errores.pass)?errores.pass.msg : "" %>
                         </p>
                     </div>
 
 
                     <div class="repetir contraseña">
                         <p>Repetir Contraseña:</p>
-                        <input type="password" name="password" id="password-repeat" placeholder="Repetir Contraseña"
-                            value="<%= (typeof data!='undefined' && data.pass2)?data.password-repeat : "" %>"
+                        <input type="password" name="pass2" id="pass2" placeholder="Repetir Contraseña"
+                            value="<%= (typeof data!='undefined' && data.pass2)?data.pass2-repeat : "" %>"
                             placeholder="Repetir contraseña">
 
                         <p>
-                            <%= (typeof errores!='undefined' && errores.password-repeat)?errores.password-repeat.msg
+                            <%= (typeof errores!='undefined' && errores.pass2)?errores.pass2.msg
                                 : "" %>
                         </p>
                     </div>

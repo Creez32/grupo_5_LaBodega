@@ -1,11 +1,13 @@
+const fs = require('fs');
 const {check, body} = require('express-validator')
-const {getUsers} = require('../data/users');
-const users = getUsers()
+const users_db = JSON.parse(fs.readFileSync('./data/users.json','utf-8'));
 
 module.exports = [
-    check('username')
-    .notEmpty()
-    .withMessage('El nombre es requerido'),
+    check('name')
+    .notEmpty().withMessage('El nombre es requerido'),
+
+    check('lastName')
+    .notEmpty().withMessage('El apellido es requerido'),
 
     check('pass')
     .isLength({
@@ -13,14 +15,20 @@ module.exports = [
     })
     .withMessage('Minimo de 8 caracteres y un maximo de 12'),
 
-    body('username').custom(value=> {
-        let result = users.find(user => user.username === value.trim());
-
-        if(result){
+    body('email').custom(value=>{
+        let result = users_db.find(user => user.email === value);
+        if (result){
             return false
         }else{
             return true
         }
-    })
-    .withMessage('El username ya esta en uso')
+    }).withMessage('El email ya ha sido utilizado'),
+
+    body('pass2').custom((value,{req}) =>{
+        if (value !== req.body.pass){
+            return false
+        }else{
+            return true
+        }
+    }).withMessage('Las contraseñas no conciden!')
 ]
