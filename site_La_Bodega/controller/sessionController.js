@@ -41,7 +41,7 @@ module.exports = {
             gender,
             dateOfBirth,
             password: passHash,
-            img: req.files[0].filemane,
+            img: req.files[0].filename
         }
         users.push(newUser)
         setUsers(users);
@@ -49,7 +49,6 @@ module.exports = {
         res.redirect('/session/login')
 
     },
-
     processLogin: (req, res) => {
         let errores = validationResult(req);
         const { email, password, recordar } = req.body;
@@ -59,7 +58,7 @@ module.exports = {
                 errores: errores.errors
             })
         } else {
-            let result = users_db.find(user => user.email === email);
+            let result = users.find(user => user.email === email);
 
             if (result) {
                 if (bcrypt.compareSync(password.trim(), result.password)) {
@@ -71,12 +70,10 @@ module.exports = {
                         img: result.img,
                         address: result.address,
                         dateOfBirth: result.dateOfBirth,
-                        img:result.img,
-
                     }
 
                     if (recordar) {
-                        res.cookie('userComision5', req.session.user, {
+                        res.cookie('LaBodega', req.session.user, {
                             maxAge: 1000 * 60
                         })
                     }
@@ -98,8 +95,8 @@ module.exports = {
     },
     logout: (req, res) => {
         req.session.destroy();
-        if (req.cookies.userComision5) {
-            res.cookie('userComision5', '', { maxAge: -1 })
+        if (req.cookies.LaBodega) {
+            res.cookie('LaBodega', '', { maxAge: -1 })
         }
         res.redirect('/')
     }

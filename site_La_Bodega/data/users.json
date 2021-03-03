@@ -38,5 +38,16 @@
     "lastName": "Lopez Jara",
     "email": "melany_melu_2009@hotmail.com",
     "password": "$2b$12$wjish1xQLVHe6JYUvtBw7esMPulQWHwZGWUktR0xY.W9V9uM4U2ha"
+  },
+  {
+    "id": 5,
+    "name": "Mel 2.0",
+    "lastName": "Supermel",
+    "email": "supermel@gmail.com",
+    "address": "casa",
+    "gender": "F",
+    "dateOfBirth": "2010-12-15",
+    "password": "$2b$12$N.IpFBTKv5.qWzLSuPHqaehXmET3MTjgHDtM9vE/9pDv2IrxFAxsu",
+    "img": "img-1614732489022.png"
   }
 ]
