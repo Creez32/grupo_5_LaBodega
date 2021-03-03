@@ -6,7 +6,7 @@
     "date of birth": "10/10/1999",
     "gender": "femenino",
     "email": "melany_melu_2009@hotmail.com",
-    "password": "melu1999",
+    "password": "$2b$12$wjish1xQLVHe6JYUvtBw7esMPulQWHwZGWUktR0xY.W9V9uM4U2ha",
     "address": "avenida siempre viva 1213",
     "img": "profile1"
   },
@@ -17,7 +17,7 @@
     "date of birth": "28/04/1997",
     "gender": "masculino",
     "email": "cristiannicolas32@hotmail.com",
-    "password": "critian123",
+    "password": "$2b$12$wl4S0.sT7AUt0A9ayRNnF.QDUurj3hdF6vnxYlbrAcu2JH4Bu6iKi",
     "address": "avenida siempre viva 1213",
     "img": "profile2"
   },

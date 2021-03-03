@@ -48,9 +48,8 @@ module.exports = {
 
     processLogin: (req, res) => {
         let errores = validationResult(req);
-
         const { email, password, recordar } = req.body;
-
+               
         if (!errores.isEmpty()) {
             res.render('users/login', {
                 errores: errores.errors
@@ -65,8 +64,7 @@ module.exports = {
                         id: result.id,
                         name: result.name,
                         lastName: result.lastName,
-                        img: result.img,
-                        address: result.address
+                        img: result.img
 
                     }
 
