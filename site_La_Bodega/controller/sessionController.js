@@ -7,6 +7,7 @@ const users = getUsers();
 
 const { validationResult } = require('express-validator')
 module.exports = {
+    
 
     login: (req, res) => {
         res.render('users/login', {
@@ -20,7 +21,7 @@ module.exports = {
 
     },
     processRegister: (req, res) => {
-        const { name, lastName, email, password } = req.body;
+        const { name, lastName, email, password,gender,address,dateOfBirth,img} = req.body;
 
         let lastID = 0;
         users.forEach(user => {
@@ -31,13 +32,16 @@ module.exports = {
 
         const passHash = bcrypt.hashSync('password', 12)
 
-        const newUser = {
+        let newUser = {
             id: +lastID + 1,
             name,
             lastName,
             email,
+            address,
+            gender,
+            dateOfBirth,
             password: passHash,
-            avatar: req.files[0].filemane
+            img: req.files[0].filemane,
         }
         users.push(newUser)
         setUsers(users);
@@ -64,12 +68,15 @@ module.exports = {
                         id: result.id,
                         name: result.name,
                         lastName: result.lastName,
-                        img: result.img
+                        img: result.img,
+                        address: result.address,
+                        dateOfBirth: result.dateOfBirth,
+                        img:result.img,
 
                     }
 
                     if (recordar) {
-                        res.cookie('userLaBodega', req.session.user, {
+                        res.cookie('userComision5', req.session.user, {
                             maxAge: 1000 * 60
                         })
                     }

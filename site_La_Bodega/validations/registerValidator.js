@@ -1,6 +1,6 @@
 const {check, body} = require('express-validator')
 const {getUsers} = require('../data/users');
-const users = getUsers
+const users = getUsers()
 
 module.exports = [
     check('username')
@@ -14,7 +14,7 @@ module.exports = [
     .withMessage('Minimo de 8 caracteres y un maximo de 12'),
 
     body('username').custom(value=> {
-        let result = users.find(user => user.username === username.trim());
+        let result = users.find(user => user.username === value.trim());
 
         if(result){
             return false
