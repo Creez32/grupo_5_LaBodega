@@ -36,6 +36,18 @@ module.exports={
     },
     cart:(req,res)=>{
         res.render('cart')        
+    },
+    search:(req,res)=>{
+        const search = req.query.search;
+
+        const resultado = products.filter((products)=>{
+            return products.variety.includes(search)
+        })
+        
+        res.render('search',{
+            title:"Resultado de la búsqueda",
+            resultado
+        })
     }
 
     

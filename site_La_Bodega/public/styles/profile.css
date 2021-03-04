@@ -6,21 +6,49 @@ body{
     background-size: cover;
     color: white;
 }
+.card{
+    background-image: url(https://image.freepik.com/foto-gratis/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg); 
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
 main{
-
+    
+    max-width: 800px;
+    background-color: rgba(255, 248, 220, 0.555);
+    margin: 50px;
+}
+h1{
+    text-align: center;
+    padding: 20px 0;
 }
 .basic{
-
+   text-align: center; 
 }
-.basic .image{
-    width: 400px;
+.basic img{
+    width: 60%;
 }
-.basic .image img{
-    width: 50%;
+.basic p{
+    font-size: 20px;
 }
-.basic .name{
-
+.basic span{
+    margin: 50px;
 }
-.basic .name h2{
-
+.data{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.data p{
+    margin-top: 20px;
+}
+.close{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.close button{
+  padding: 10px;
+  color: var(--light-gray);
+  border: none;
+  border-radius: 10px;
+  background-color: var(--light-purple);
 }
