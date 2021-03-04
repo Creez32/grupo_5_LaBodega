@@ -27,9 +27,9 @@
                                 <h3>$<%= product.price_box %> </h3>
                                 <p>precio por caja 6 botellas</p>
                                 <div>
-                                    <button class="more">-</button>
-                                    <input type="text" class="number">
-                                    <button class="more">+</button>
+                                    <button class="more" onclick="down()">-</button>
+                                    <span id="result" class="number"></span>
+                                    <button class="more" onclick="up()">+</button>
                                     <button class="cart">
                                         agregar al carrito
                                         <i class="fas fa-shopping-cart"></i>
@@ -40,9 +40,9 @@
                                 <h3>$<%= product.price_unit %></h3>
                                 <p>precio por botella</p>
                                 <div>
-                                    <button class="more">-</button>
-                                    <input type="text" class="number">
-                                    <button class="more">+</button>
+                                    <button class="more" onclick="down2()">-</button>
+                                    <span id="result2" class="number"></span>
+                                    <button class="more" onclick="up2()">+</button>
                                     <button class="cart">
                                         agregar al carrito
                                         <i class="fas fa-shopping-cart"></i>
@@ -140,6 +140,8 @@
     
     <%- include('./partials/footer')  %> 
     
+    <script src="/javascript/increase.js"></script>
+    <script src="/javascript/increase2.js"></script>
 </body>
 
 </html>
