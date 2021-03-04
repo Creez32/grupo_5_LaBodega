@@ -2,30 +2,8 @@ body {
     font-family: 'Montserrat';
     width: 100%;
     padding: 0;
-    background-image: url(https://image.freepik.com/foto-gratis/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
+    background-image: url(https://image.freepik.com/foto-gratis/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg); 
     background-size: cover;
-}
-
-
-img {
-    display: block;
-    margin: auto;
-}
-
-.logo a {
-    width: 100%;
-    margin: auto;
-    background-image: url(https://image.freepik.com/foto-gratis/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.logo img {
-    width: 150px;
-    width: 150px;
-    margin: 50px auto;
-    text-align: center;
-    border-radius: 60%;
 }
 
 div.form {

@@ -84,7 +84,7 @@ body {
   /* Services */
   .services {
     display: flex;
-    margin-top: 20px;
+    margin-top: 5px;
     justify-content: space-between;
   }
   .services .item {

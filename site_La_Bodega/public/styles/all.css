@@ -143,14 +143,14 @@ footer .ubication {
     display: flex;
     flex-direction: column;
     padding: 20px 0;
-    border-bottom: 1px solid var(--dark-rose);
+    border-bottom: 1px solid #965d62;
     justify-content: center;
 }
 
 footer .contacto {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid var(--dark-rose);
+    border-bottom: 1px solid #965d62;
     justify-content: center;
 }
 
