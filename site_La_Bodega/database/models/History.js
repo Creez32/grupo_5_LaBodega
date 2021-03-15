@@ -1,5 +1,5 @@
 module.exports= (sequelize,DataTypes) =>{
-    let alias = Carts
+    let alias = History
     
     const cols = {
         id:{
@@ -8,11 +8,11 @@ module.exports= (sequelize,DataTypes) =>{
             autoIncrement: true,
             allowNull: false
         },
-        id_usuario:{
+        usuario_id:{
             type: dataTypes.INTEGER(11),
             allowNull: false
         },
-        id_producto:{
+        producto_id:{
             type: dataTypes.INTEGER(11),
             allowNull: false
         },
@@ -20,9 +20,6 @@ module.exports= (sequelize,DataTypes) =>{
             type: dataTypes.INTEGER(11),
             allowNull: false,
             defaultValue: 1
-        },
-        precio:{
-            
         }
     } 
     
@@ -31,20 +28,18 @@ module.exports= (sequelize,DataTypes) =>{
         timestamps : false,
     }
 
-    const Cart = sequelize.define(alias,cols,config)
+    const History = sequelize.define(alias,cols,config)
 
-    Cart.associate = function(models){
-        Cart.belongsTo(models.Users,{
+    History.associate = function(models){
+        History.belongsTo(models.Users,{
             as: 'users',
             foreingKey : 'id_usuario'
         }),
-        Cart.belongsTo(models.Products,{
+        History.belongsTo(models.Products,{
             as: 'products',
             foreingKey : 'id_producto'
         })
-        
     }
-    
 
-    return Cart;
+    return History;
 }
