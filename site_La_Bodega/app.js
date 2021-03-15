@@ -11,6 +11,8 @@ const sessionRouter = require('./routes/session');
 const productsRouter = require('./routes/products')
 const adminRouter = require('./routes/adminRouter');
 
+
+
 const app = express();
 const port = 5000
 
@@ -32,7 +34,9 @@ app.use(localCheck)
 app.use('/',indexRouter);
 app.use('/session',sessionRouter);
 app.use('/products',productsRouter);
-app.use('/admin',adminRouter)
+app.use('/admin',adminRouter);
+
+
 
 
 app.listen(port, ()=> console.log("El servidor esta corriendo en el puerto " + port))
