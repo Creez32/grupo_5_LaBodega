@@ -1,44 +1,49 @@
 body{
-  height: 100%; 
-  font-family: 'Noto Sans', sans-serif;
-  background-color: #965d62; 
+  font-family: 'Montserrat';
+    width: 100%;
+    padding: 0;
+    background-image: url(https://wallpapercave.com/wp/wp5957209.jpg); 
+    background-size: cover;
+    
+
 }
 
 
 .contact_form{  
-  width: 460px; 
+  width: 800px; 
   height: auto;
   margin: 80px auto;
-  border-radius: 10px;  
+  border-radius: 30px;  
   padding-top: 30px;
   padding-bottom: 20px;  
-  background-color: #fbfbfb; 
-  padding-left: 30px; 
+  background-color:#965d62; 
+  padding-left: 200px;
+   
 }
 
 
 input{
-  background-color: #fbfbfb; 
+  background-color: #fff; 
   width: 408px; 
   height: 40px; 
-  border-radius: 5px;  
+  border-radius: 20px;  
   border-style: solid; 
-  border-width: 1px; 
-  border-color: #ab4493; 
+  border-width: 2px; 
+  border-color: #44000d; 
   margin-top: 10px;  
   padding-left: 10px;
   margin-bottom: 20px; 
+  
 }
 
 
 textarea{
-  background-color: #fbfbfb; 
+  background-color: #fff;
   width: 405px; 
   height: 150px; 
-  border-radius: 5px;  
+  border-radius: 20px;  
   border-style: solid; 
-  border-width: 1px; 
-  border-color: #ab4493; 
+  border-width: 1px;  
   margin-top: 10px;  
   padding-left: 10px;
   margin-bottom: 20px; 
@@ -58,11 +63,10 @@ button{
   padding-right: 5px;   
   margin-bottom: 20px; 
   margin-top: 10px;   
-  text-transform: uppercase;
-  background-color: #ab4493; 
-  border-color: #ab4493; 
+  text-transform:capitalize;
+  background-color: #44000d;  
   border-style: solid; 
-  border-radius: 10px;  
+  border-radius: 20px;  
   width: 420px;   
   cursor: pointer;
 }
@@ -74,34 +78,41 @@ button p{
 
 
 span{
-  color: #ab4493; 
+  color:#44000d
 }
 
 
 .aviso{
-  font-size: 13px;  
-  color: #0e0e0e;  
+  font-size: 20px;  
+  color: #0e0e0e; 
+  padding-left: 50px; 
+  
 }
 
 
 h1{
-  font-size: 39px;  
-  text-align: letf; 
-  padding-bottom: 20px; 
-  color: #ab4493;
+  font-size: 30px;  
+  text-align: left; 
+  padding-bottom: 10px; 
+  padding-left: 80px;
+  color: #44000d;
+  height: auto;
 }
 
 
 h3{
   font-size: 16px; 
-  padding-bottom: 30px;
-  color: #0e0e0e;   
+  padding-bottom: 10px;
+  color:black;
+  
+  
+  
 }
 
 
 p{
   font-size: 14px; 
-  color: #0e0e0e; 
+  color: white; 
 }
 
 
@@ -117,11 +128,11 @@ p{
 
 .formulario input:focus{
   outline:0;
-  border: 1px solid #97d848;
+  
 }
 
 
 .formulario textarea:focus{
   outline:0;
-  border: 1px solid #97d848;
+  
 }

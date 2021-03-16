@@ -65,9 +65,10 @@ form button {
 }
 
 .titulos {
-    font-size: 5px;
+    font-size: 20px;
     text-align: left;
     color: black;
+    padding-left: 130px;
 }
 
 .ingresar {
