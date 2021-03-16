@@ -2,29 +2,52 @@ module.exports= (sequelize,DataTypes) =>{
   let alias = Users
   
   const cols = {
-      id:{
-          type: dataTypes.INTEGER(11),
+    id:{
+          type: dataTypes.INTEGER,
           primaryKey: true,
           autoIncrement: true,
           allowNull: false
-      },
-      usuario_id:{
-          type: dataTypes.INTEGER(11),
+    },
+    name:{
+          type: dataTypes.STRING(45),
           allowNull: false
-      },
-      producto_id:{
-          type: dataTypes.INTEGER(11),
-          allowNull: false
-      },
-      cantidad: {
-          type: dataTypes.INTEGER(11),
-          allowNull: false,
-          defaultValue: 1
-      }
+    },
+    apellido:{
+        type: dataTypes.STRING(45),
+        allowNull: false
+    },
+    direccion:{
+        type: dataTypes.STRING(150),
+        allowNull: false
+    },
+    email:{
+        type: dataTypes.STRING(45),
+        allowNull: false
+    },
+    password:{
+        type: dataTypes.STRING(45),
+        allowNull: false
+    },
+    avatar:{
+        type: dataTypes.STRING(45),
+        allowNull: false
+    },
+    fecha:{
+        type: dataTypes.STRING(45),
+        allowNull: false
+    },
+    created_at:{
+        type: dataTypes.TIMESTAMP,
+        allowNull: false
+    },
+    updated_at:{
+        type: dataTypes.TIMESTAMP,
+        allowNull: false
+    }
   } 
   
   let  config = {
-      tableName : 'Users',
+      tableName : 'users',
       timestamps : true
   }
 

@@ -40,7 +40,7 @@ module.exports= (sequelize,DataTypes) =>{
             type: dataTypes.STRING(45),
             allowNull: false
         },
-        image:{
+        imagen:{
             type: dataTypes.STRING(45),
             allowNull: false
         },
@@ -51,7 +51,7 @@ module.exports= (sequelize,DataTypes) =>{
     } 
     
     let  config = {
-        tableName : 'carts',
+        tableName : 'products',
         timestamps : false,
     }
 

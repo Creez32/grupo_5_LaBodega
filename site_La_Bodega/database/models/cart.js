@@ -3,26 +3,27 @@ module.exports= (sequelize,DataTypes) =>{
     
     const cols = {
         id:{
-            type: dataTypes.INTEGER(11),
+            type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true,
             allowNull: false
         },
         id_usuario:{
-            type: dataTypes.INTEGER(11),
+            type: dataTypes.INTEGER,
             allowNull: false
         },
         id_producto:{
-            type: dataTypes.INTEGER(11),
+            type: dataTypes.INTEGER,
             allowNull: false
         },
         cantidad: {
-            type: dataTypes.INTEGER(11),
+            type: dataTypes.INTEGER,
             allowNull: false,
             defaultValue: 1
         },
         precio:{
-            
+            type: dataTypes.INTEGER,
+            allowNull: false,
         }
     } 
     

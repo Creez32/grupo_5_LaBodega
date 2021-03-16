@@ -38,7 +38,7 @@ module.exports={
         res.render('cart')        
     },
     search:(req,res)=>{
-        /* const search = req.query.search;
+        const search = req.query.search;
 
         const resultado = products.filter((products)=>{
             return products.variety.includes(search)
@@ -47,21 +47,22 @@ module.exports={
         res.render('search',{
             title:"Resultado de la búsqueda",
             resultado
-        }) */
-        let buscar = db.Products.findAll({
+        })
+        /* let buscar = db.Products.findAll({
             where: {
                 [Op.or]: [
                     { 'name': { [Op.substring]: req.query.buscar} },
                     { 'detail': { [Op.substring]: req.query.buscar } },
                 ]
             },
-        })
+        }) */
 
         res.render('search',{
             title:"Resultado de la búsqueda",
             buscar
+        })
 
     }
-
+    
     
 }
