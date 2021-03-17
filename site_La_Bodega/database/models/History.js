@@ -1,5 +1,5 @@
 module.exports= (sequelize,dataTypes) =>{
-    let alias = History
+    let alias = "History"
     
     const cols = {
         id:{
@@ -26,7 +26,7 @@ module.exports= (sequelize,dataTypes) =>{
             allowNull: false,
         },
         date:{
-            type: dataTypes.DATETIME,
+            type: dataTypes.DATE,
             allowNull: false,
         },
         quantity: {
@@ -37,7 +37,7 @@ module.exports= (sequelize,dataTypes) =>{
     
     
     let  config = {
-        tableName : 'history',
+        tableName : 'purchase_history',
         timestamps : false,
     }
 

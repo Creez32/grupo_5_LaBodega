@@ -1,5 +1,5 @@
 module.exports= (sequelize,dataTypes) =>{
-  let alias = Users
+  let alias = "Users"
   
   const cols = {
     id:{
@@ -37,11 +37,11 @@ module.exports= (sequelize,dataTypes) =>{
         allowNull: false
     },
     created_at:{
-        type: dataTypes.TIMESTAMP,
+        type: dataTypes.DATE,
         allowNull: false
     },
     updated_at:{
-        type: dataTypes.TIMESTAMP,
+        type: dataTypes.DATE,
         allowNull: false
     }
   } 
@@ -53,15 +53,15 @@ module.exports= (sequelize,dataTypes) =>{
 
   const Users = sequelize.define(alias,cols,config)
 
-  User.associate = function(models){
-      User.belongsToMany(models.Products,{ //Nombre del alias del modelo
+  Users.associate = function(models){
+      Users.belongsToMany(models.Products,{ //Nombre del alias del modelo
           as: 'carrito',
           through : 'carts', //nombre de la tabla en la base de datos
           foreingKey: 'id_usuario',
           otherKey: 'id_producto',
           timestamps: true
       }),
-      User.belongsToMany(models.Products,{ //Nombre del alias del modelo
+      Users.belongsToMany(models.Products,{ //Nombre del alias del modelo
         as: 'history',
         through : 'purchase_history', //nombre de la tabla en la base de datos
         foreingKey: 'id_usuario',
