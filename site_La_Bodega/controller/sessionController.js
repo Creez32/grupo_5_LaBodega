@@ -48,8 +48,12 @@ module.exports = {
                 avatar,
                 fecha: dateOfBirth
             })
-                .then(() => res.redirect('/users/login'))
-                .catch(error => res.send(error))
+                .then(() => {
+                res.redirect('/users/login')})
+                
+
+                .catch(error =>{
+                     res.send(error)})
         }
         /* let newUser = {
             id: +lastID + 1,

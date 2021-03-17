@@ -2,6 +2,7 @@ const express = require('express');
 const methodOverride = require('method-override');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
+require('dotenv').config();
 
 let cookieChek = require('./middlewares/cookieCheck.js')
 let localCheck = require('./middlewares/localCheck')
@@ -10,11 +11,14 @@ const indexRouter = require('./routes/index');
 const sessionRouter = require('./routes/session');
 const productsRouter = require('./routes/products')
 const adminRouter = require('./routes/adminRouter');
+const dbConnectionTest = require('./utils/dbConnectionTest.js');
 
 
 
 const app = express();
 const port = 5000
+
+dbConnectionTest()
 
 app.set('view engine', 'ejs'); 
 app.set('views', __dirname + '/views'); 
