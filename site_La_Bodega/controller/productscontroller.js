@@ -1,8 +1,8 @@
 const {getWines} = require('../data/products');
 
 const products = getWines();
-const {Op, where} = require('sequelize')
-
+/* const {Op, where} = require('sequelize')
+ */
 module.exports={
     list: (req,res)=>{
         const tintos = products.filter((products)=>{
@@ -48,7 +48,7 @@ module.exports={
             title:"Resultado de la búsqueda",
             resultado
         })
-        /* let buscar = db.Products.findAll({
+      /*   let buscar = db.Products.findAll({
             where: {
                 [Op.or]: [
                     { 'name': { [Op.substring]: req.query.buscar} },

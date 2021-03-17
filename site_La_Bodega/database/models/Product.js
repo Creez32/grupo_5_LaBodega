@@ -1,4 +1,4 @@
-module.exports= (sequelize,DataTypes) =>{
+module.exports= (sequelize,dataTypes) =>{
     let alias = Products
     
     const cols = {
@@ -20,7 +20,7 @@ module.exports= (sequelize,DataTypes) =>{
             type: dataTypes.INTEGER,
             allowNull: false,
         },
-        Detail:{
+        detail:{
             type: dataTypes.STRING(500),
             allowNull: false
         },
