@@ -45,7 +45,7 @@ module.exports = {
         
         let img = req.files[0].filename;
 
-        db.Productos.create({
+        db.Products.create({
             name,
             price: price_unit,
             priceBox: price_box,
@@ -79,9 +79,6 @@ module.exports = {
             .catch((error) => {
                 res.send(error)
             })
-
-
-
         /*   const wine = wines.find(wine => wine.id === +req.params.id);
           res.render('admin/productEdit', {
               wine
@@ -90,7 +87,6 @@ module.exports = {
     updateWine: (req, res, next) => {
         const { name, detail, price_box, price_unit, /* type, */ variety, year, time, color, origin } = req.body;
 
-        // NOTA: ¿y type?
         let img = req.files[0].filename;
 
 
@@ -123,10 +119,7 @@ module.exports = {
             })
 
 
-        /* const {name, detail, price_box, price_unit, type, variety, year, time,color,origin} = req.body;
-        let img = req.files[0].filename;
-    
-    
+        /*    
         wines.forEach(wine => {
             if(wine.id === +req.params.id){
     
