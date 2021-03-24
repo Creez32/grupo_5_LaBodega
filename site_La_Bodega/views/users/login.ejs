@@ -20,38 +20,46 @@
             <div class="form">
                 <div class="registro">
                     <h1>Ingresa Aqui</h1>
-                    
+
                 </div>
-                <form class="register"  action="" method="POST">
+                <form class="register" action="" method="POST">
                     <div class="email">
                         <p class="email">¿Cuál es tu correo electronico?</p>
-                        <input type="email" name="email" id="email" placeholder="Correo Electrónico" value="<%= (typeof data!='undefined' && data.email)?data.email : "" %>" placeholder="Ingresa Email" >
-                        <p><%= (typeof errores!='undefined' && errores.email)?errores.email.msg : "" %></p>
+                        <input type="email" name="email" id="email" placeholder="Correo Electrónico"
+                            value="<%= (typeof data!='undefined' && data.email)?data.email : "" %>"
+                            placeholder="Ingresa Email">
+                        <p>
+                            <%= (typeof errores!='undefined' && errores.email)?errores.email.msg : "" %>
+                        </p>
                     </div>
 
                     <div class="contraseña">
                         <p class="contraseña">Crea una contraseña:</p>
-                        <input type="password" name="pass" id="pass" placeholder="Contraseña" value="<%= (typeof data!='undefined' && data.pass)?data.pass : "" %>"placeholder="Ingresa Password">
-                        <p><%= (typeof errores!='undefined' && errores.pass)?errores.pass.msg : "" %></p>
+                        <input type="password" name="pass" id="pass" placeholder="Contraseña"
+                            value="<%= (typeof data!='undefined' && data.pass)?data.pass : "" %>"
+                            placeholder="Ingresa Password">
+                        <p>
+                            <%= (typeof errores!='undefined' && errores.pass)?errores.pass.msg : "" %>
+                        </p>
                     </div>
                     <div class="recordarme">
                         <p class="recordarme">Recordarme</p>
                         <input type="checkbox" name="recordar" id="recordar">
                     </div>
-        <button type="submit">Ingresar</button>
+                    <button type="submit">Ingresar</button>
                     <div class="ingresar">
                         <a href="/session/register">
                             <p>¿No tienes cuenta? Ingresa Aqui</p>
                         </a>
-                        
+
                     </div>
                 </form>
             </div>
         </div>
-    
+
 
         <%- include('../partials/footer') %>
-       
+
 </body>
 
 </html>
