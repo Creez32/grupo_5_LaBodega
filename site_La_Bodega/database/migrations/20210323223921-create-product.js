@@ -36,6 +36,10 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
+      origin: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
       colorId: {
         type: Sequelize.INTEGER,
         references:{

@@ -16,7 +16,7 @@
             <div class="product">
                 <div class="first">
                     <div class="image">
-                        <img src="/images/Botellas/<%= product.img %> " alt="">
+                        <img src="/images/Botellas/<%= product.imagen %> " alt="">
                     </div>
                     <div class="text">
                         <div class="name">
@@ -24,7 +24,7 @@
                         </div>
                         <div class="price">
                             <div class="box">
-                                <h3>$<%= product.price_box %> </h3>
+                                <h3>$<%= product.priceBox %> </h3>
                                 <p>precio por caja 6 botellas</p>
                                 <div>
                                     <button class="more" onclick="down()">-</button>
@@ -37,7 +37,7 @@
                                 </div>
                             </div>
                             <div class="box">
-                                <h3>$<%= product.price_unit %></h3>
+                                <h3>$<%= product.price %></h3>
                                 <p>precio por botella</p>
                                 <div>
                                     <button class="more" onclick="down2()">-</button>
@@ -111,8 +111,8 @@
                         <li>Origen</li>
                     </ul>
                     <ul>
-                        <li><%= product.variety %> </li>
-                        <li><%= product.color %> </li>
+                        <li><%= product.category %> </li>
+                        <li><%= product.color.name %> </li>
                         <li><%= product.year %> </li>
                         <li><%= product.time %> </li>
                         <li><%= product.origin %> </li>
@@ -128,9 +128,9 @@
                  
                 <a href="<%= recomendado.id %>">
                     <div class="productosRelacionados">
-                        <img src="/images/Botellas/<%= recomendado.img %>" alt="">
+                        <img src="/images/Botellas/<%= recomendado.imagen %>" alt="">
                         <h4><%= recomendado.name %>  </h4>
-                        <h4>$<%= recomendado.price_unit %> </h4>
+                        <h4>$<%= recomendado.price %> </h4>
                     </div>
                 </a>
                 <% }) %>

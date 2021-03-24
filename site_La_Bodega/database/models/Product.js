@@ -27,6 +27,7 @@ module.exports = (sequelize, DataTypes) => {
     year: DataTypes.INTEGER,
     time: DataTypes.STRING,
     imagen: DataTypes.STRING,
+    origin: DataTypes.STRING,
     colorId: DataTypes.INTEGER,
     categoryId: DataTypes.INTEGER
   }, {
