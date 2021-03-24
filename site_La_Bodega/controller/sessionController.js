@@ -1,7 +1,8 @@
-/* const fs = require('fs'); */
+const db = require('../database/models');
 const { validationResult } = require('express-validator')
 const bcrypt = require('bcrypt');
-const db = require('../database/models');
+
+
 
 module.exports = {
 
@@ -21,17 +22,19 @@ module.exports = {
         let errores = validationResult(req);
         if (errores.isEmpty()) {
             const { name, lastName, email, pass, /* gender, */ address, dateOfBirth } = req.body;
-            db.Users.create({
+            let img = req.files[0].filename;
+
+            db.User.create({
                 name,
                 apellido: lastName,
                 direccion: address,
                 email,
                 password: bcrypt.hashSync(pass, 12),
-                avatar,
+                avatar: img,
                 fecha: dateOfBirth
             })
                 .then(() => {
-                    res.redirect('/users/login')
+                    res.redirect('/session/login')
                 })
 
 
@@ -41,7 +44,7 @@ module.exports = {
 
 
         } else {
-            return res.render('/users/register', {
+            return res.render('users/register', {
                 errores: errores.mapped(),
                 old: req.body
             })
@@ -60,39 +63,38 @@ module.exports = {
         } else {
 
 
-            db.Users.findOne({
+            db.User.findOne({
                 where: {
                     email
                 }
             })
                 .then((user) => {
-                    if (user) {
-                        if (bcrypt.compareSync(pass.trim(), user.pass)) {
-                            req.session.user = {
-                                id: user.id_User,
-                                name: user.name,
-                                lastName: user.apellido,
-                                email: user.email,
-                                img: user.avatar,
-                            }
-                            if (typeof recordar != 'undefined') {
-                                res.cookie('LaBodega', req.session.user, {
-                                    maxAge: 1000 * 60 * 60 * 24 * 100000
-                                })
-                            }
-                            return res.redirect('profile')
+                    if (user && bcrypt.compareSync(pass.trim(), user.pass)) {
+                        req.session.userL = {
+                            id: user.id,
+                            name: user.name,
+                            lastName: user.apellido,
+                            email: user.email,
+                            img: user.avatar,
                         }
-                    }
-                    res.render('users/login', {
-                        errores:
-                        {
-                            pass: {
-                                msg: 'Credenciales inválidas'
-                            }
-                        },
-                        data: req.body
+                        if (recordar) {
+                            res.cookie('LaBodega', req.session.userL, {
+                                maxAge: 1000 * 60 * 60 * 24 * 100000
+                            })
+                        }
+                        return res.redirect('/seesion/profile')
 
-                    })
+                    } else {
+                        return res.render('users/login', {
+                            errores: {
+                                pass: {
+                                    msg: 'Credenciales inválidas'
+                                }
+                            },
+                            data: req.body
+
+                        })
+                    }
                 })
                 .catch((error) => {
                     res.send(error)

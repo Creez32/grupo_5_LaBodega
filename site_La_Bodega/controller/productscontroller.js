@@ -55,27 +55,18 @@ module.exports={
         
     },
     detail: (req, res)=>{
-        /* let product = products.find(product => {
-			return product.id == req.params.id
-        })
-
-        let aleatorio = [];
-        for (let i = 0; i < 4; i++) {
-            let ran = Math.floor(Math.random()*(products.length))
-            let seleccion = products[ran];
-             aleatorio.push(seleccion);
-            }
-
-        res.render('detail',{
-            product,aleatorio
-        }) */
-        
-        // BASES DE DATOS
-        const {id} = req.params
-        let product = db.Products.findOne({
+            db.Product.findByPk(req.params.id) 
+                .then((product)=>{
+                    res.render('detail', {product})
+                })
+                .catch((error)=>{res.send(error)})
+        }, 
+     
+       /*  const {id} = req.params
+        let product = db.Product.findOne({
             where : id = +id
         })
-        let aleatorio = db.Products.findAll({
+        let aleatorio = db.Product.findAll({
             limit : 4
         })
         Promise.all([aleatorio])
@@ -83,22 +74,13 @@ module.exports={
             res.render('detail',{
                 product,aleatorio
             })
-        })
-    },
+        }) */
+    
     cart:(req,res)=>{
         res.render('cart')        
     },
     search:(req,res)=>{
-        /* const search = req.query.search;
-
-        const resultado = products.filter((products)=>{
-            return products.variety.includes(search)
-        })
-        
-        res.render('search',{
-            title:"Resultado de la búsqueda",
-            resultado
-        }) */
+   
         let buscar = db.Products.findAll({
             where: {
                 [Op.or]: [
