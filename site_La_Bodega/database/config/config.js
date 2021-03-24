@@ -2,7 +2,7 @@ module.exports = {
   development: {
     username: "root",
     password: "root",
-    database: "database_development",
+    database: "Labodega_DB",
     host: "127.0.0.1",
     dialect: "mysql",
   },

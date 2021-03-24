@@ -4,6 +4,6 @@ const {home,contact} = require('../controller/indexController')
 
 /* GET home page. */
 router.get('/', home);
-router.get('/contacto',contact)
+router.get('/contact',contact)
 
 module.exports = router;

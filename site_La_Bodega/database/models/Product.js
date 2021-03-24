@@ -1,83 +1,37 @@
-module.exports= (sequelize,DataTypes) =>{
-    let alias = Products
-    
-    const cols = {
-        id:{
-            type: dataTypes.INTEGER,
-            primaryKey: true,
-            autoIncrement: true,
-            allowNull: false
-        },
-        name:{
-            type: dataTypes.STRING(45),
-            allowNull: false
-        },
-        price:{
-            type: dataTypes.INTEGER,
-            allowNull: false
-        },
-        priceBox: {
-            type: dataTypes.INTEGER,
-            allowNull: false,
-        },
-        Detail:{
-            type: dataTypes.STRING(500),
-            allowNull: false
-        },
-        year:{
-            type: dataTypes.STRING(45),
-            allowNull: false
-        },
-        time:{
-            type: dataTypes.STRING(11),
-            allowNull: false
-        },
-        color:{
-            type: dataTypes.STRING(45),
-            allowNull: false
-        },
-        origin:{
-            type: dataTypes.STRING(45),
-            allowNull: false
-        },
-        imagen:{
-            type: dataTypes.STRING(45),
-            allowNull: false
-        },
-        category_id:{
-            type: dataTypes.INTEGER,
-            allowNull: false
-        }
-    } 
-    
-    let  config = {
-        tableName : 'products',
-        timestamps : false,
+'use strict';
+const {
+  Model
+} = require('sequelize');
+module.exports = (sequelize, DataTypes) => {
+  class Product extends Model {
+    /**
+     * Helper method for defining associations.
+     * This method is not a part of Sequelize lifecycle.
+     * The `models/index` file will call this method automatically.
+     */
+    static associate(models) {
+      Product.belongsTo(models.Color,{
+        as:'color'
+      }),
+      Product.belongsTo(models.Category,{
+        as:'category',
+        foreignKey: 'categoryId'
+      })
     }
-
-    const Products = sequelize.define(alias,cols,config)
-
-    Products.associate = function(models){
-        Products.hasMany(models.Category,{
-            as: 'category',
-            foreingKey : 'id_category',
-            timestamps : false
-        })
-        Products.belongsToMany(models.Users,{
-            as: 'cart',
-            through: 'carts',
-            foreingKey : 'id_producto',
-            otherKey: 'id_usuario',
-            timestamps : false
-        })
-        Products.belongsToMany(models.Users,{
-            as: 'history',
-            through: 'purchase_history',
-            foreingKey : 'id_producto',
-            otherKey: 'id_usuario',
-            timestamps : false
-        })
-    }
-
-    return Products;
-}
+  };
+  Product.init({
+    name: DataTypes.STRING,
+    price: DataTypes.INTEGER,
+    priceBox: DataTypes.INTEGER,
+    detail: DataTypes.STRING,
+    year: DataTypes.INTEGER,
+    time: DataTypes.STRING,
+    imagen: DataTypes.STRING,
+    colorId: DataTypes.INTEGER,
+    categoryId: DataTypes.INTEGER
+  }, {
+    sequelize,
+    modelName: 'Product',
+  });
+  return Product;
+};

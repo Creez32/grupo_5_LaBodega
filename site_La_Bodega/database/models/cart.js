@@ -1,51 +1,26 @@
-module.exports= (sequelize,DataTypes) =>{
-    let alias = Carts
-    
-    const cols = {
-        id:{
-            type: dataTypes.INTEGER,
-            primaryKey: true,
-            autoIncrement: true,
-            allowNull: false
-        },
-        id_usuario:{
-            type: dataTypes.INTEGER,
-            allowNull: false
-        },
-        id_producto:{
-            type: dataTypes.INTEGER,
-            allowNull: false
-        },
-        cantidad: {
-            type: dataTypes.INTEGER,
-            allowNull: false,
-            defaultValue: 1
-        },
-        precio:{
-            type: dataTypes.INTEGER,
-            allowNull: false,
-        }
-    } 
-    
-    let  config = {
-        tableName : 'carts',
-        timestamps : false,
+'use strict';
+const {
+  Model
+} = require('sequelize');
+module.exports = (sequelize, DataTypes) => {
+  class Cart extends Model {
+    /**
+     * Helper method for defining associations.
+     * This method is not a part of Sequelize lifecycle.
+     * The `models/index` file will call this method automatically.
+     */
+    static associate(models) {
+      // define association here
     }
-
-    const Cart = sequelize.define(alias,cols,config)
-
-    Cart.associate = function(models){
-        Cart.belongsTo(models.Users,{
-            as: 'users',
-            foreingKey : 'id_usuario'
-        }),
-        Cart.belongsTo(models.Products,{
-            as: 'products',
-            foreingKey : 'id_producto'
-        })
-        
-    }
-    
-
-    return Cart;
-}
+  };
+  Cart.init({
+    userId: DataTypes.INTEGER,
+    productId: DataTypes.INTEGER,
+    amount: DataTypes.INTEGER,
+    orderId: DataTypes.INTEGER
+  }, {
+    sequelize,
+    modelName: 'Cart',
+  });
+  return Cart;
+};
