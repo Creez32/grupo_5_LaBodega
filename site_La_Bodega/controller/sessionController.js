@@ -62,14 +62,13 @@ module.exports = {
             })
         } else {
 
-
             db.User.findOne({
                 where: {
                     email
                 }
             })
                 .then((user) => {
-                    if (user && bcrypt.compareSync(pass.trim(), user.pass)) {
+                    if (user && bcrypt.compareSync(pass.trim(), user.password)) {
                         req.session.userL = {
                             id: user.id,
                             name: user.name,

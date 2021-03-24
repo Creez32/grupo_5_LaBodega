@@ -63,7 +63,9 @@ module.exports={
                 },
                 include:[
                     {
-                        association : 'category',
+                        association : 'category'
+                    },
+                    {
                         association : 'color'
                     }
                 ]
@@ -75,7 +77,6 @@ module.exports={
         
         Promise.all([product,aleatorio])
         .then(([product,aleatorio]) =>{
-            
             res.render('detail',{
                 product:product,
                 aleatorio:aleatorio
