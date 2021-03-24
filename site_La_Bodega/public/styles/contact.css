@@ -83,7 +83,7 @@ span{
 
 
 .aviso{
-  font-size: 20px;  
+  font-size: 16px;  
   color: #0e0e0e; 
   padding-left: 50px; 
   
@@ -101,7 +101,7 @@ h1{
 
 
 h3{
-  font-size: 16px; 
+  font-size: 20px; 
   padding-bottom: 10px;
   color:black;
   
@@ -111,7 +111,7 @@ h3{
 
 
 p{
-  font-size: 14px; 
+  font-size: 20px; 
   color: white; 
 }
 
