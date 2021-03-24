@@ -62,14 +62,13 @@ module.exports = {
             })
         } else {
 
-
             db.User.findOne({
                 where: {
                     email
                 }
             })
                 .then((user) => {
-                    if (user && bcrypt.compareSync(pass.trim(), user.pass)) {
+                    if (user && bcrypt.compareSync(pass.trim(), user.password)) {
                         req.session.userL = {
                             id: user.id,
                             name: user.name,
@@ -82,7 +81,7 @@ module.exports = {
                                 maxAge: 1000 * 60 * 60 * 24 * 100000
                             })
                         }
-                        return res.redirect('/seesion/profile')
+                        return res.redirect('/session/profile')
 
                     } else {
                         return res.render('users/login', {

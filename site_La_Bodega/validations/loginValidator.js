@@ -19,7 +19,7 @@ module.exports = [
        }else{
            return true
        } */
-       return db.users.findOne({
+       return db.User.findOne({
            where:{
                 email:value
             }
@@ -47,7 +47,7 @@ module.exports = [
         }else{
             return true
         } */
-        return db.users.findrsOne({
+        return db.User.findOne({
             where:{
                  email:req.body.email
              }
