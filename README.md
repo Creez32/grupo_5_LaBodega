@@ -14,6 +14,9 @@
 ● 21 años, estudiante de Tecnicatura en Cosmetología Facial y Corporal en Facultad de Cs. Médicas UBA y Desarrollo Web en Digital House y Fundación Formar.
 
 
+
+
+
 ## ***¡Bienvenidos a La Bodega!***
 
 ![Logo](https://github.com/Creez32/grupo_5_LaBodega/blob/main/Extras/Logotipo.jpeg?raw=true "Logo")
@@ -22,13 +25,7 @@ En esta ocasión les ofrecemos una página pensada y realizada especialmente par
 Contamos con una gran variedad de vinos de alta calidad y al mejor precio del mercado, junto con una fina selección de vinos tintos y blancos.
 En nuestros servicios incluimos un carrito de compras para que puedan seleccionar a gusto nuestros productos y poder adquirirlos desde la comodidad de sus hogares.
 
-## ***¡Tipografias!***
-![Cinzel](https://github.com/Creez32/grupo_5_LaBodega/blob/main/Extras/Fuente-Cinzel.png?raw=true "Cinzel")
 
-![Montserrat](https://github.com/Creez32/grupo_5_LaBodega/blob/main/Extras/Fuente-Montserrat.png?raw=true "Montserrat")
-
-## ***¡Colores!***
-![Colores](https://github.com/Creez32/grupo_5_LaBodega/blob/main/Extras/ColoresLabodega.jpeg?raw=true "Colores")
 
 
 ##  ***¡Paginas Referentes!***
