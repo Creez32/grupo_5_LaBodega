@@ -14,8 +14,7 @@ module.exports = (sequelize, DataTypes) => {
         as:'color'
       }),
       Product.belongsTo(models.Category,{
-        as:'category',
-        foreignKey: 'categoryId'
+        as:'category'
       })
     }
   };
@@ -27,6 +26,7 @@ module.exports = (sequelize, DataTypes) => {
     year: DataTypes.INTEGER,
     time: DataTypes.STRING,
     imagen: DataTypes.STRING,
+    origin: DataTypes.STRING,
     colorId: DataTypes.INTEGER,
     categoryId: DataTypes.INTEGER
   }, {

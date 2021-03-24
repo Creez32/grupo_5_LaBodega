@@ -13,6 +13,7 @@ productos.forEach(producto => {
     year:producto.year,
     time:producto.time,
     imagen:producto.img,
+    origin:producto.origin,
     colorId:faker.random.number({
       min:1,
       max:6

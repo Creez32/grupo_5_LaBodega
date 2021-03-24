@@ -2,7 +2,7 @@ const express = require('express');
 const methodOverride = require('method-override');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
-require('dotenv').config();
+/* require('dotenv').config(); */
 
 let cookieChek = require('./middlewares/cookieCheck.js')
 let localCheck = require('./middlewares/localCheck')

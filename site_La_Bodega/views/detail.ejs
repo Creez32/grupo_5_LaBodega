@@ -111,8 +111,8 @@
                         <li>Origen</li>
                     </ul>
                     <ul>
-                        <li><%= product.variety %> </li>
-                        <li><%= product.color %> </li>
+                        <li><%= product.category.variedad %> </li>
+                        <li><%= product.color.name %> </li>
                         <li><%= product.year %> </li>
                         <li><%= product.time %> </li>
                         <li><%= product.origin %> </li>
@@ -128,9 +128,9 @@
                  
                 <a href="<%= recomendado.id %>">
                     <div class="productosRelacionados">
-                        <img src="/images/Botellas/<%= recomendado.img %>" alt="">
+                        <img src="/images/Botellas/<%= recomendado.imagen %>" alt="">
                         <h4><%= recomendado.name %>  </h4>
-                        <h4>$<%= recomendado.price_unit %> </h4>
+                        <h4>$<%= recomendado.price %> </h4>
                     </div>
                 </a>
                 <% }) %>
