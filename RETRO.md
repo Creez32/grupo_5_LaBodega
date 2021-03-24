@@ -210,6 +210,52 @@
 
  ● Dejar cosas sin definir en el momento en el que se hablan.
 
+
+ # RETROSPECTIVA 6
+
+ ## Seguir haciendo.
+
+ ● Las reuniones.
+
+ ● Trabajar de manera responsable sobre el proyecto.
+  
+ ● Seguir dividiendo tareas de forma equitativa.
+
+ ● Contar con la ayuda de los demas integrantes cuando uno tenga dificultas.
+
+ ## Hacer mas.
+
+ ● Ordenar mas las etiquetas del codigo.
+
+ ● Buscar mas informacion y ejemplos para mejorar nuestra pagina.
+
+ ● Mejorar el codigo
+
+ ## Empezar a hacer.
+
+ ● Controlar mejor los tiempos de cada uno.
+ 
+ ● Poner fecha de vencimiento
+
+
+ ## Dejar de hacer.
+
+ ● Dejar de postergar las tareas.
+
+ ● Mentirle a Vicky en la entrega de los Sprint.
+
+
+
+
+ ## Hacer menos.
+
+ ● No quedarse hasta tan tarde haciendo el codigo (Solo si es una emergencia).
+
+ ● Dejar cosas sin definir en el momento en el que se hablan.
+
+ ● Tardar tanto en entregar el Sprint.
+ 
+
  
 
 

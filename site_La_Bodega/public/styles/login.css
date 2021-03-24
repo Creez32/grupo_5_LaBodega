@@ -2,7 +2,7 @@ body {
     font-family: 'Montserrat';
     width: 100%;
     padding: 0;
-    background-image: url(https://image.freepik.com/foto-gratis/acuarela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg); 
+    background-image: url(https://image.freepik.com/foto-gratis/acuaela-color-rojo-oscuro-textura-fondo-pintado-mano-fondo-color-vino-tinto-acuarela_145343-192.jpg); 
     background-size: cover;
 }
 
@@ -46,7 +46,7 @@ form button {
 
 .form {
     max-width: 800px;
-    background-color: #965d62;
+ background-color:#965d62;;
 }
 
 .register {
@@ -65,9 +65,10 @@ form button {
 }
 
 .titulos {
-    font-size: 5px;
+    font-size: 20px;
     text-align: left;
-    color: black;
+    color: white;
+    padding-left: 130px;
 }
 
 .ingresar {

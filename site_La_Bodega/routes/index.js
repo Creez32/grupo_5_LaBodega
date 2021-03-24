@@ -7,3 +7,5 @@ router.get('/', home);
 router.get('/contact',contact)
 
 module.exports = router;
+
+

@@ -2,8 +2,8 @@ const {getWines} = require('../data/products');
 const db = require('../database/models')
 
 const products = getWines();
-const {Op, where} = require('sequelize')
-
+/* const {Op, where} = require('sequelize')
+ */
 module.exports={
     list: (req,res)=>{
         let tintos = db.Category.findAll(
