@@ -1,16 +1,17 @@
-/* const fs = require('fs');
-const path = require('path');
-
-const {getWines, setWines} = require('../data/products');
-
-const wines = getWines(); */
 const db = require('../database/models')
 
 module.exports = {
     listWine: (req, res) => {
-        res.render('admin/ProductList', {
-            wines
+
+        db.Product.findAll({
+            order: [
+                ['name', 'ASC']
+            ],
         })
+            .then((products) => {
+                res.render('admin/ProductList', { products })
+            })
+            .catch((error) => res.send(error))
     },
     createWine: (req, res) => {
         res.render('admin/productCreate')
@@ -18,26 +19,25 @@ module.exports = {
     },
     storeWine: (req, res, next) => {
 
-        const { name, detail, price_box, price_unit,/*  type, */ variety, year, time, color, origin } = req.body;
+        const { name, detail, priceBox, price ,variety, year, time, color, origin } = req.body;
 
         
         let img = req.files[0].filename;
 
-        db.Products.create({
+        db.Product.create({
             name,
-            price: price_unit,
-            priceBox: price_box,
+            price,
+            priceBox,
             detail,
             year,
             time,
-            color,
+            colorId: color,
             origin,
             imagen: img,
-            category_id: variety,
+            categoryId: variety,
 
         })
-            .then((newWine) => {
-                console.log(newWine);
+            .then(() => {
                 res.redirect('/admin/products');
             })
             .catch((error) => res.send(error));
@@ -46,7 +46,7 @@ module.exports = {
     },
     editWine: (req, res) => {
 
-        db.Products.findByPk(req.params.id)
+        db.Product.findByPk(req.params.id)
             .then((product) => {
                 res.render("admin/productEdit", {
                     product
@@ -58,22 +58,22 @@ module.exports = {
         
     },
     updateWine: (req, res, next) => {
-        const { name, detail, price_box, price_unit, /* type, */ variety, year, time, color, origin } = req.body;
+        const { name, detail, priceBox, price,variety, year, time, color, origin } = req.body;
 
         let img = req.files[0].filename;
 
 
-        db.Products.update({
+        db.Product.update({
             name,
-            price: price_unit,
-            priceBox: price_box,
+            price,
+            priceBox,
             detail,
             year,
             time,
-            color,
+            colorId: color,
             origin,
             imagen: img,
-            category_id: variety,
+            categoryId: variety,
 
 
         },
@@ -92,7 +92,7 @@ module.exports = {
             })
     },
     deleteWine: (req, res) => {
-        db.Products.destroy({
+        db.Product.destroy({
             where: {
                 id: req.params.id
             }

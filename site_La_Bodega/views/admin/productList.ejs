@@ -6,32 +6,32 @@
         <%- include('./partials/header') %>
             <main class="container">
                 <section class="row ">
-                    <% wines.forEach(wine=> { %>
+                    <% products.forEach(product=> { %>
                         <article class="col-12 col-md-4 col-lg-3 ">
                             <ul class="list-group list-group-flush my-3 ">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="/images/Botellas/<%= wine.img %> " alt="" class="card-img-top">
+                                    <img src="/images/Botellas/<%= product.imagen %> " alt="" class="card-img-top">
                                 
                                 <li class="list-group-item">
                                     <h4>
-                                        <%= wine.name %>
+                                        <%= product.name %>
                                     </h4>
                                 </li>
                                 <li class="list-group-item">
                                     <h6>
-                                        $<%= wine.price_unit %>
+                                        $<%= product.price %>
                                     </h6>
                                 </li>
                                 <li class="list-group-item"><a href="" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal-<%= wine.id %> ">
-                                        <%= wine.type %>
+                                        data-bs-target="#exampleModal-<%= product.id %> ">
+                                        <%= product.type %>
                                     </a></li>
                                 <li class="list-group-item">
                                     <div class="m-2 d-flex justify-content-around">
-                                        <form action="/admin/products/<%= wine.id %>/edit">
+                                        <form action="/admin/products/<%= product.id %>/edit">
                                             <button class="btn btn-sm btn-success" type="submit">Editar</a></button>
                                         </form>
-                                        <form action="/admin/products/<%= wine.id %>?_method=DELETE" method="POST">
+                                        <form action="/admin/products/<%= product.id %>?_method=DELETE" method="POST">
                                             <button class="btn btn-sm btn-danger" type="submit">Eliminar</a></button>
                                         </form>
                                     </div>
