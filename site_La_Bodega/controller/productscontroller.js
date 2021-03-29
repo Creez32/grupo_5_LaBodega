@@ -2,7 +2,10 @@ const {getWines} = require('../data/products');
 const db = require('../database/models')
 
 const products = getWines();
-const {Op, where} = require('sequelize')
+const {Op, where} = require('sequelize');
+const { random } = require('faker');
+const Sequelize = require('sequelize')
+
 
 module.exports={
     list: (req,res)=>{
@@ -72,7 +75,11 @@ module.exports={
             }
         )
         let aleatorio = db.Product.findAll({
+            order : [
+                [Sequelize.literal('RAND()')]
+            ],
             limit : 4
+            
         })
         
         Promise.all([product,aleatorio])
@@ -94,17 +101,9 @@ module.exports={
                     [Op.or]: [
                         { 'name': { [Op.substring]: req.query.buscar} },
                         { 'detail': { [Op.substring]: req.query.buscar } },
-                        { 'category': {[Op.substring]: req.query.buscar} },
+                        { 'variety': {[Op.substring]: req.query.buscar} },
                     ]
-                },
-                include:[
-                    {
-                        association : 'category'
-                    },
-                    {
-                        association : 'color'
-                    }
-                ]
+                }
             }
         )
         res.send(buscar)
