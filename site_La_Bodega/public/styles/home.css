@@ -3,9 +3,10 @@ body {
     background-color: var(--light-gray);
 }
 
-main.main img.fondo {
-    position: relative;
+.img {
     width: 100%;
+    height: 700px;
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%,var(--light-gray) 98%), url('../images/bodega1.jpg');
 }
 
 /* PPRODUCTO */
@@ -89,15 +90,15 @@ main.main img.fondo {
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:40px;
-	right:40px;
+	bottom:20px;
+	right:30px;
 	background-color: #84142d;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
-  font-size:30px;
+    font-size:30px;
 	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+    z-index:100;
 }
 
 .my-float{

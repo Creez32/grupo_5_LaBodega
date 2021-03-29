@@ -4,5 +4,8 @@ module.exports={
     },
     contact: (req,res) =>{
         res.render ('contact')
+    },
+    bodega:(req,res) => {
+        res.render ('bodega')
     }
 }

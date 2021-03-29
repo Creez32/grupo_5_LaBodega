@@ -59,7 +59,7 @@ body::-webkit-scrollbar-thumb:hover {
 header {
     font-family: var(--base-font-family);
     position: sticky;
-    z-index: 1;
+    z-index: 1000 !important;
     top: 0;
     overflow: hidden;
     box-sizing: border-box;
@@ -172,9 +172,9 @@ p.copyright {
     margin: 0;
 }
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
+    display: none; 
+    position: fixed; 
+    bottom: 90px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
@@ -183,7 +183,7 @@ p.copyright {
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 50%; /* Rounded corners */
     font-size: 20px; /* Increase font size */
   }
   
@@ -250,3 +250,16 @@ p.copyright {
         color: var(--light-purple);
     }
 }
+
+@keyframes wipe-in-up {
+    from {
+      clip-path: inset(100% 0 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  [transition-style="in:wipe:up"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
+  }

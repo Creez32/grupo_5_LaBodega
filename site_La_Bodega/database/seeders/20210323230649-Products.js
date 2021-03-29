@@ -9,6 +9,7 @@ productos.forEach(producto => {
     name:producto.name,
     price:producto.price_unit,
     priceBox:producto.price_box,
+    variety: producto.variety,
     detail:producto.detail,
     year:producto.year,
     time:producto.time,

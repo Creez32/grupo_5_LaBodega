@@ -88,15 +88,26 @@ module.exports={
     },
     search:(req,res)=>{
 
-        let buscar = db.Products.findAll({
-            where: {
-                [Op.or]: [
-                    { 'name': { [Op.substring]: req.query.buscar} },
-                    { 'detail': { [Op.substring]: req.query.buscar } },
+        let buscar = db.Product.findAll(
+            {
+                where: {
+                    [Op.or]: [
+                        { 'name': { [Op.substring]: req.query.buscar} },
+                        { 'detail': { [Op.substring]: req.query.buscar } },
+                        { 'category': {[Op.substring]: req.query.buscar} },
+                    ]
+                },
+                include:[
+                    {
+                        association : 'category'
+                    },
+                    {
+                        association : 'color'
+                    }
                 ]
-            },
-        })
-
+            }
+        )
+        res.send(buscar)
         res.render('search',{
             title:"Resultado de la búsqueda",
             buscar

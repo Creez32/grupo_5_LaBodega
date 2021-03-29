@@ -20,6 +20,10 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false
       },
+      variety :{
+        type: Sequelize.STRING,
+        allowNull: false
+      },
       detail: {
         type: Sequelize.STRING(1000),
         allowNull: false
