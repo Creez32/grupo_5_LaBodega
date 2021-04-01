@@ -40,15 +40,20 @@
                 </div>
 
                 <div class="ingreso">
-                  <label for="variety">Categoría</label>
-                  <select name="variety" id="variety">
+                  <label for="categoría">Categoría</label>
+                  <select name="categoría" id="categoría">
                     <option value="1">Tintos</option>
                     <option value="2">Blancos</option>
                     <option value="3">Espumantes</option>
                   </select>
-                  <span id="errorVariety" class="text-danger"></span>
+                  <span id="errorCategoría" class="text-danger"></span>
                 </div>
 
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" name="variedad" id="variedad" placeholder="variedad" >
+                  <label for="variedad">Variedad</label>
+                  <span id="errorVariedad" class="text-danger"></span>
+                </div>
                 <div class="form-floating mb-3">
                   <div class="">
                     <input class="form-control" type="file" id="formFile" name="img" accept="image/*" required>

@@ -9,6 +9,19 @@ var storage = multer.diskStorage({
       cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
     }
   })
+/*   const fileFilter = function(req, file,callback) {
+    if(!file.originalname.match(/\.(jpg|jpeg|png|gif|webp)$/)){
+        req.fileValidationError = "Solo imágenes";
+        return callback(null,false,req.fileValidationError);
+    }
+    callback(null,true);
+}
+
+const upload =  multer({
+    storage,
+    fileFilter
+}) */
+
 
 var upload = multer({ storage: storage })
 

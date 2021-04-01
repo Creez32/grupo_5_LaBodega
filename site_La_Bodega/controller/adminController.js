@@ -19,9 +19,9 @@ module.exports = {
     },
     storeWine: (req, res, next) => {
 
-        const { name, detail, priceBox, price ,variety, year, time, color, origin } = req.body;
+        const { name, detail, priceBox, price, variety, year, time, color, origin, categoria } = req.body;
 
-        
+
         let img = req.files[0].filename;
 
         db.Product.create({
@@ -31,10 +31,11 @@ module.exports = {
             detail,
             year,
             time,
+            variety,
             colorId: color,
             origin,
             imagen: img,
-            categoryId: variety,
+            categoryId: categoria,
 
         })
             .then(() => {
@@ -42,7 +43,18 @@ module.exports = {
             })
             .catch((error) => res.send(error));
 
-    
+        /* errors = errors.mapped();
+        if (req.fileValidationError) {
+            errors = {
+                ...errors,
+                image: {
+                    msg: req.fileValidationError
+                }
+            }
+            console.log(errors)
+        } */
+
+
     },
     editWine: (req, res) => {
 
@@ -55,10 +67,10 @@ module.exports = {
             .catch((error) => {
                 res.send(error)
             })
-        
+
     },
     updateWine: (req, res, next) => {
-        const { name, detail, priceBox, price,variety, year, time, color, origin } = req.body;
+        const { name, detail, priceBox, price, variety, year, time, color, origin } = req.body;
 
         let img = req.files[0].filename;
 
