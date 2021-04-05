@@ -7,6 +7,7 @@ window.onload = function(){
     let Name = qs('#name')
     let Detail = qs('#detail')
     let variety = qs('#variety')
+    let category = qs('#category')
     let img = qs('#formFile')
     let time = qs('#time')
     let Origin = qs('#origin')

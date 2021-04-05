@@ -41,15 +41,19 @@
                 </div>
 
                 <div class="ingreso">
-                  <label for="variety">Categoría</label>
-                  <select name="variety" id="variety" value="<%= product.categoryId %> ">
+                  <label for="category">Categoría</label>
+                  <select name="category" id="category" value="<%= product.categoryId %> ">
                     <option value="1">Tintos</option>
                     <option value="2">Blancos</option>
                     <option value="3">Espumantes</option>
                   </select>
-                  <span id="errorVariety" class="text-danger"></span>
+                  <span id="errorCategory" class="text-danger"></span>
                 </div>
-
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" name="variety" id="variety" placeholder="variety" value="<%= product.variety %> " >
+                  <label for="variety">Variedad</label>
+                  <span id="errorvariety" class="text-danger"></span>
+                </div>
                 <div class="form-floating mb-3">
                   <div class="">
                     <label for="img" class="text-right">imagen actual: <%= product.img %></label>

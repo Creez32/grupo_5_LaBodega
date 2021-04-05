@@ -70,7 +70,7 @@ module.exports = {
 
     },
     updateWine: (req, res, next) => {
-        const { name, detail, priceBox, price, variety, year, time, color, origin } = req.body;
+        const { name, detail, priceBox, price, variety, year, time,category, color, origin } = req.body;
 
         let img = req.files[0].filename;
 
@@ -82,10 +82,11 @@ module.exports = {
             detail,
             year,
             time,
+            variety,
             colorId: color,
             origin,
             imagen: img,
-            categoryId: variety,
+            categoryId: category,
 
 
         },
