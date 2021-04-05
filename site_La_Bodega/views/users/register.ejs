@@ -24,100 +24,98 @@
 
                 <div class="registro">
                     <div class="titulos">
-                        <h3>COMPLETA TUS DATOS PERSONALES</h3>
-
+                        <h1>¡Bienvenid@, crea tu cuenta aqui!</h1>
                     </div>
-                    <h1>¡Bienvenid@, crea tu cuenta aqui!</h1>
-                </div>
-                <form class="register" action="" method="POST" enctype="multipart/form-data">
-                    <div class="nombre">
-                        <p>¿Cuál es tu nombre?</p>
-                        <input type="text" name="name" id="name" placeholder="Nombre"
-                            value="<%= (typeof data!='undefined' && data.nombre)?data.nombre : "" %>" id=""
-                            placeholder="Nombre">
-                        <p>
-                            <%= (typeof errores!='undefined' && errores.nombre)?errores.nombre.msg : "" %>
-                        </p>
+                    <form class="register" action="" method="POST" enctype="multipart/form-data">
+                        <div class="nombre">
+                            <p>¿Cuál es tu nombre?</p>
+                            <input type="text" name="name" id="name" placeholder="Nombre"
+                                value="<%= (typeof data!='undefined' && data.nombre)?data.nombre : "" %>" id=""
+                                placeholder="Nombre">
+                            <p>
+                                <%= (typeof errores!='undefined' && errores.nombre)?errores.nombre.msg : "" %>
+                            </p>
 
-                    </div>
-                    <div class="apellido">
-                        <p>¿Cuál es tu apellido?</p>
-                        <input type="text" name="lastName" id="lastName" placeholder="Apellido"
-                            value="<%= (typeof data!='undefined' && data.apellido)?data.apellido : "" %>"
-                            placeholder="Apellido">
-                        <p>
-                            <%= (typeof errores!='undefined' && errores.apellido)?errores.apellido.msg : "" %>
-                        </p>
-                    </div>
-                    <label for="gender" class="form-label">Genero:</label>
-                    <input type="radio" name="gender" value="Femenino">Femenino
-                    <input type="radio" name="gender" value="Masculino" >Masculino
-                    
-                    <div class="address">
-                        <p>¿Cuál es tu dirección?</p>
-                        <input type="text" name="address" id="address" placeholder="Dirección">
-                    </div>
-                    <label for="dateOfBirth">Fecha de nacimiento:</label>
-
-                    <input type="date" id="start" name="dateOfBirth" id="dateOfBith" min="1920-01-01"
-                        max="2010-12-31">
-
-
-
-
-                    <div class="email">
-                        <p class="email">¿Cuál es tu correo electronico?</p>
-                        <input type="email" name="email" id="email" placeholder="Correo Electrónico"
-                            value="<%= (typeof data!='undefined' && data.email)?data.email : "" %>"
-                            placeholder="Ingresa tu email">
-
-
-                        <p>
-                            <%= (typeof errores!='undefined' && errores.email)?errores.email.msg : "" %>
-                        </p>
-                    </div>
-
-                    <div class="contraseña">
-                        <p class="contraseña">Crea una contraseña:</p>
-                        <input type="password" name="pass" id="pass" placeholder="Contraseña"
-                            value="<%= (typeof data!='undefined' && data.pass)?data.pass : "" %>"
-                            placeholder="Ingresa Password">
-                        <p>
-                            <%= (typeof errores!='undefined' && errores.pass)?errores.pass.msg : "" %>
-                        </p>
-                    </div>
-
-
-                    <div class="repetir contraseña">
-                        <p>Repetir Contraseña:</p>
-                        <input type="password" name="pass2" id="pass2" placeholder="Repetir Contraseña"
-                            value="<%= (typeof data!='undefined' && data.pass2)?data.pass2-repeat : "" %>"
-                            placeholder="Repetir contraseña">
-
-                        <p>
-                            <%= (typeof errores!='undefined' && errores.pass2)?errores.pass2.msg
-                                : "" %>
-                        </p>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <div class="">
-                          <input class="form-control" type="file" id="formFile" name="img" required>
                         </div>
-                      </div>
-                    <button type="submit"> ¡CREAR CUENTA! </button>
+                        <div class="apellido">
+                            <p>¿Cuál es tu apellido?</p>
+                            <input type="text" name="lastName" id="lastName" placeholder="Apellido"
+                                value="<%= (typeof data!='undefined' && data.apellido)?data.apellido : "" %>"
+                                placeholder="Apellido">
+                            <p>
+                                <%= (typeof errores!='undefined' && errores.apellido)?errores.apellido.msg : "" %>
+                            </p>
+                        </div>
+                        <!--  <label for="gender" class="form-label">Genero:</label>
+                    <input type="radio" name="gender" value="Femenino">Femenino
+                    <input type="radio" name="gender" value="Masculino" >Masculino -->
 
-                    <div class="ingresar">
-                        <a href="/session/login">
-                            <p>¿Ya tienes cuenta? Ingresa Aqui</p>
-                        </a>
-                    </div>
+                        <div class="address">
+                            <p>¿Cuál es tu dirección?</p>
+                            <input type="text" name="address" id="address" placeholder="Dirección">
+                        </div>
+                        <label for="dateOfBirth">Fecha de nacimiento:</label>
+
+                        <input type="date" id="start" name="dateOfBirth" id="dateOfBith" min="1920-01-01"
+                            max="2010-12-31">
 
 
-                </form>
+
+
+                        <div class="email">
+                            <p class="email">¿Cuál es tu correo electronico?</p>
+                            <input type="email" name="email" id="email" placeholder="Correo Electrónico"
+                                value="<%= (typeof data!='undefined' && data.email)?data.email : "" %>"
+                                placeholder="Ingresa tu email">
+
+
+                            <p>
+                                <%= (typeof errores!='undefined' && errores.email)?errores.email.msg : "" %>
+                            </p>
+                        </div>
+
+                        <div class="contraseña">
+                            <p class="contraseña">Crea una contraseña:</p>
+                            <input type="password" name="pass" id="pass" placeholder="Contraseña"
+                                value="<%= (typeof data!='undefined' && data.pass)?data.pass : "" %>"
+                                placeholder="Ingresa Password">
+                            <p>
+                                <%= (typeof errores!='undefined' && errores.pass)?errores.pass.msg : "" %>
+                            </p>
+                        </div>
+
+
+                        <div class="repetir contraseña">
+                            <p>Repetir Contraseña:</p>
+                            <input type="password" name="pass2" id="pass2" placeholder="Repetir Contraseña"
+                                value="<%= (typeof data!='undefined' && data.pass2)?data.pass2-repeat : "" %>"
+                                placeholder="Repetir contraseña">
+
+                            <p>
+                                <%= (typeof errores!='undefined' && errores.pass2)?errores.pass2.msg : "" %>
+                            </p>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <div class="">
+                                <input class="form-control" type="file" id="formFile" name="img">
+                            </div>
+                        </div>
+                        <button type="submit"> ¡CREAR CUENTA! </button>
+
+                        <div class="ingresar">
+                            <a href="/session/login">
+                                <p>¿Ya tienes cuenta? Ingresa Aqui</p>
+                            </a>
+                        </div>
+
+
+                    </form>
+                </div>
             </div>
         </div>
         <%- include('../partials/footer') %>
-        
+
+        <script src="/javascript/registerValidation.js"></script>
 </body>
 
 </html>
