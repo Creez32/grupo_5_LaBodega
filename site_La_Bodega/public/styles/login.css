@@ -2,15 +2,18 @@ body {
     font-family: 'Montserrat';
     width: 100%;
     padding: 0;
-    background-image: url(https://wallpapercave.com/wp/wp5957209.jpg); 
+    background-image: url(https://wallpapercave.com/wp/wp5957209.jpg);
     background-size: cover;
+    margin: 0 auto ;
+
 }
 
 div.form {
     margin: 40px auto;
     padding: 5px;
     border-radius: 20px;
-    background-color: #965d62;
+    background-color: rgba(255, 248, 220, 80%);
+    
 }
 
 .registrarse {
@@ -22,7 +25,7 @@ div.form {
     color: #44000d;
 }
 
-.container form input {
+div.form input {
     font-size: 20px;
     margin: 30px 0;
     margin-top: 6px;
@@ -45,8 +48,8 @@ form button {
 }
 
 .form {
-    max-width: 800px;
- background-color:#965d62;;
+    max-width: 600px;
+    background-color: #965d62;
 }
 
 .register {
@@ -61,14 +64,13 @@ form button {
     margin: auto;
     text-align: center;
     color: #44000d;
-    border-bottom: 1px solid #44000d;
 }
 
 .titulos {
     font-size: 20px;
-    text-align: left;
-    color: white;
-    padding-left: 130px;
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid #44000d;
 }
 
 .ingresar {
@@ -76,19 +78,18 @@ form button {
     color: white;
     font-size: 15px;
     font-family: "montserrat";
-
 }
 
 .correo {
     font-size: 15px;
-    padding-top: 0;  
+    padding-top: 0;
     font-family: "montserrat";
     border-bottom: 20px;
     border-radius: 20px;
     font-style: italic;
 }
 
-.enviar{
+.enviar {
     font-size: 15px;
     width: 10%;
     padding: 5px;
@@ -97,7 +98,4 @@ form button {
     border: none;
     border-radius: 30px;
     background-color: transparent;
-    text-align: left;
-   
-    
 }
