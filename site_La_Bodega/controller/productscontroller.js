@@ -93,26 +93,24 @@ module.exports={
     cart:(req,res)=>{
         res.render('cart')        
     },
-    search:(req,res)=>{
-
-        let buscar = db.Product.findAll(
-            {
-                where: {
-                    [Op.or]: [
-                        { 'name': { [Op.substring]: req.query.buscar} },
-                        { 'detail': { [Op.substring]: req.query.buscar } },
-                        { 'variety': {[Op.substring]: req.query.buscar} },
-                    ]
-                }
+    search: (req, res) => {
+        productos = db.Product.findAll({
+            where: {
+             [Op.or] : [
+                { 'name' : { [Op.substring] : `%${req.query.search}%`} },
+                { 'variety' : { [Op.substring] : `%${req.query.search}%` }}
+             ]
             }
-        )
-        res.send(buscar)
-        res.render('search',{
-            title:"Resultado de la búsqueda",
-            buscar
         })
-
-    }
+        Promise.all([productos])
+        .then(([productos]) => {
+            res.render('search',{
+                productos,
+                title : "Resultado de la busqueda"
+            })
+        })
+        
+    },
     
     
 }
