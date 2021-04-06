@@ -256,6 +256,26 @@ p.copyright {
     }
 }
 
+/* Boton */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:30px;
+	background-color: #84142d;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
 @keyframes wipe-in-up {
     from {
       clip-path: inset(100% 0 0 0);
@@ -263,8 +283,9 @@ p.copyright {
     to {
       clip-path: inset(0 0 0 0);
     }
-  }
+}
   
   [transition-style="in:wipe:up"] {
     animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
   }
+

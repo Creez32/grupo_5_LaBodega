@@ -9,6 +9,7 @@ body {
     height: 700px;
     background:linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%,var(--light-gray) 98%), url('../images/bodega/bodega1.png');
     background-position-x: 1100px;
+    
 }
 
 /* PPRODUCTO */
@@ -184,25 +185,7 @@ h3{
     word-spacing: 100vw;
   }
 
-/* Boton */
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:20px;
-	right:30px;
-	background-color: #84142d;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-    font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-    z-index:100;
-}
 
-.my-float{
-	margin-top:16px;
-}
 
 /* Tablet */
 

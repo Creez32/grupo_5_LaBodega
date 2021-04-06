@@ -31,7 +31,8 @@ module.exports = {
                 email,
                 password: bcrypt.hashSync(pass, 12),
                 avatar: img,
-                fecha: dateOfBirth
+                fecha: dateOfBirth,
+                admin: 0
             })
                 .then(() => {
                     res.redirect('/session/login')
@@ -67,37 +68,37 @@ module.exports = {
                     email
                 }
             })
-                .then((user) => {
-                    if (user && bcrypt.compareSync(pass.trim(), user.password)) {
-                        req.session.userL = {
-                            id: user.id,
-                            name: user.name,
-                            lastName: user.apellido,
-                            email: user.email,
-                            img: user.avatar,
-                        }
-                        if (recordar) {
-                            res.cookie('LaBodega', req.session.userL, {
-                                maxAge: 1000 * 60 * 60 * 24 * 100000
-                            })
-                        }
-                        return res.redirect('/session/profile')
-
-                    } else {
-                        return res.render('users/login', {
-                            errores: {
-                                pass: {
-                                    msg: 'Credenciales inválidas'
-                                }
-                            },
-                            data: req.body
-
+            .then((user) => {
+                if (user && bcrypt.compareSync(pass.trim(), user.password)) {
+                    req.session.userL = {
+                        id: user.id,
+                        name: user.name,
+                        lastName: user.apellido,
+                        email: user.email,
+                        img: user.avatar,
+                    }
+                    if (recordar) {
+                        res.cookie('LaBodega', req.session.userL, {
+                            maxAge: 1000 * 60 * 60 * 24 * 100000
                         })
                     }
-                })
-                .catch((error) => {
-                    res.send(error)
-                })
+                    return res.redirect('/session/profile')
+
+                } else {
+                    return res.render('users/login', {
+                        errores: {
+                            pass: {
+                                msg: 'Credenciales inválidas'
+                            }
+                        },
+                        data: req.body
+
+                    })
+                }
+            })
+            .catch((error) => {
+                res.send(error)
+            })
         }
     },
     profile: (req, res) => {
