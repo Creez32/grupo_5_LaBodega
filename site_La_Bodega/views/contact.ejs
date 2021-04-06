@@ -1,72 +1,80 @@
 <html lang="es">
-    <%- include('partials/head.ejs') %>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulario de contacto</title>
-        <script src="https://kit.fontawesome.com/3f21023fe6.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <link rel="stylesheet" href="/styles/contact.css">
-        <link rel="stylesheet" href="/styles/all.css">
-    </head>
+<%- include('partials/head.ejs') %>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <script src="https://kit.fontawesome.com/3f21023fe6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/styles/all.css">
+  </head>
 
 
-<body>  
-  
-  <%- include('./partials/header')  %> 
+  <body>
 
-  <div class="contact_form">
+    <%- include('./partials/header') %>
 
-    <div class="formulario">    
-      <h1>CONTACTANOS</h1>
-        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>      
+      <div class="contact_form">
 
-            
-                <p>
-                  <label for="nombre" class="colocar nombre">Nombre
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                </p>
-              
-                <p>
-                  <label for="email" class="colocar email">Email
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="email" name="introducir email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                </p>
-            
-                <p>
-                  <label for="telefone" class="colocar telefono">Teléfono
-                  </label>
-                    <input type="tel" name="introducir telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>    
-            
-              
-                <p>
-                  <label for="asunto" class="colocar asunto">Asunto
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                </p>    
-              
-                <p>
-                  <label for="mensaje" class="colocar mensaje">Mensaje
-                    <span class="obligatorio">*</span>
-                  </label>                     
-                                    <textarea name="introducir mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                                </p>                    
-              
-                <button type="submit" name="enviar formulario" id="enviar"><p>Enviar</p></button>
+        <div class="formulario">
+          <h1>CONTACTANOS</h1>
+          <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
 
-                <p class="aviso">
-                  <span class="obligatorio"> * </span>los campos son obligatorios.
-                </p>          
-            
 
-    </div>  
-  </div>
-  <%- include('./partials/footer') %>
-</body>
+          <p>
+            <label for="nombre" class="colocar nombre">Nombre
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir nombre" id="nombre" required="obligatorio"
+              placeholder="Escribe tu nombre" class="inputs">
+          </p>
+
+          <p>
+            <label for="email" class="colocar email">Email
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="email" name="introducir email" id="email" required="obligatorio"
+              placeholder="Escribe tu Email" class="inputs">
+          </p>
+
+          <p>
+            <label for="telefone" class="colocar telefono">Teléfono
+            </label>
+            <input type="tel" name="introducir telefono" id="telefono" placeholder="Escribe tu teléfono" class="inputs">
+          </p>
+
+
+          <p>
+            <label for="asunto" class="colocar asunto">Asunto
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir asunto" id="assunto" required="obligatorio"
+              placeholder="Escribe un asunto" class="inputs">
+          </p>
+
+          <p>
+            <label for="mensaje" class="colocar mensaje">Mensaje
+              <span class="obligatorio">*</span>
+            </label>
+            <textarea name="introducir mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+              placeholder="Deja aquí tu comentario..."></textarea>
+          </p>
+
+          <button type="submit" name="enviar formulario" id="enviar" class="boton">
+            <p>Enviar</p>
+          </button>
+
+          <p class="aviso">
+            <span class="obligatorio"> * </span>los campos son obligatorios.
+          </p>
+
+
+        </div>
+      </div>
+      <%- include('./partials/footer') %>
+  </body>
+
 </html>

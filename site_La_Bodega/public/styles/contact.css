@@ -23,7 +23,7 @@ body{
 }
 
 
-input{
+.inputs{
   background-color: #fff; 
   width: 408px; 
   height: 40px; 
@@ -58,7 +58,7 @@ label{
 }
 
 
-button{
+.boton{
   height: 45px; 
   padding-left: 5px;
   padding-right: 5px;   
