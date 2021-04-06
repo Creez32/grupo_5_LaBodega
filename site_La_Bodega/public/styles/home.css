@@ -4,88 +4,187 @@ body {
 }
 
 .img {
+    display: block;
     width: 100%;
     height: 700px;
-    background:linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%,var(--light-gray) 98%), url('../images/bodega1.jpg');
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%,var(--light-gray) 98%), url('../images/bodega/bodega1.png');
+    background-position-x: 1100px;
 }
 
 /* PPRODUCTO */
 
-.producto1 {
-    overflow: hidden;
-    width: 85%;
-    margin: 50px 7.5% 30px 7.5%;
-    padding: 4%;
-    color: white;
-    background-color: rgba(255, 248, 220, 80%);
+.medio{
+  display: flex;
+  margin: 0px 0;
+  flex-direction: column;
+  align-self: center;
 }
-
-.producto1 img {
-    float: left;
-    width: 50%;
-}
-
-.producto1 p {
-    float: right;
-    width: 45%;
-    margin-top: 10px;
-    padding: 2%;
-    background-color: var(--ligth-rose);
-}
-
-.producto1 h3 {
-    float: right;
-    width: 45%;
+.medio .tinto{
+    padding: 20px 30px;
     text-align: center;
-    background-color: var(--ligth-rose);
 }
-
-/* PRODUCTO 2 */
-
-.producto2 {
-    overflow: hidden;
-    width: 85%;
-    margin: 20px 7.5% 30px 7.5%;
-    padding: 4%;
-    color: white;
-    background-color: rgba(255, 248, 220, 80%);
+.medio .tinto .content{
+    padding: 30px;
 }
-
-.producto2 img {
-    float: right;
-    width: 50%;
-}
-
-.producto2 h3 {
-    float: left;
-    width: 45%;
+.medio .blanco{
+    padding: 20px 30px;
+    flex-direction:row-reverse;
+    background-color:rgba(221, 221, 221, 0.6);
     text-align: center;
-    background-color: var(--ligth-rose);
 }
-
-.producto2 p {
-    float: left;
-    width: 45%;
-    margin-top: 10px;
-    padding: 2%;
-    background-color: var(--ligth-rose);
+.medio .blanco .content{
+    padding: 30px;
 }
-
-/* BANNER */
-
-.banner p {
-    width: 90%;
-    margin: 0 5% 0 5%;
+.medio .espumante{
+    padding: 20px 30px;
     text-align: center;
-    background-color: rgba(255, 248, 220, 80%);
+}
+.medio .espumante .content{
+    padding: 30px;
+}
+h3{
+  font-family: var(--other-font-family);
+  padding: 20px;
+  font-size: 40px;
+}
+.boton{
+  margin-bottom: 20px;
+  padding: 10px;
+  color: var(--light-gray);
+  border: none;
+  border-radius: 10px;
+  background-color: var(--light-purple);
+}
+.medio p {
+  padding-bottom: 20px;
+}
+.medio img {
+    width: 200px;
+}
+.bodega .section img{
+    width: 100%;
 }
 
-.banner div .ban {
-    box-sizing: 50px;
-    background-color: white;
-}
+/* Card */
 
+:root{
+    --background-dark: #555555;
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+  }
+  
+  *{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+  }
+  
+  body{
+    height: 100%;
+  }
+  
+  .hero-section{
+    align-items: flex-start;
+    background-image: linear-gradient(15deg, whitesmoke 0%, #d6d6d6 150%);
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    padding: var(--spacing-xxl) var(--spacing-l);
+  }
+  
+  .card-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 100%;
+  }
+  
+  @media(min-width: 540px){
+    .card-grid{
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media(min-width: 960px){
+    .card-grid{
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+  
+  .card{
+    list-style: none;
+    position: relative;
+  }
+  
+  .card:before{
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+  }
+  
+  .card__background{
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--spacing-l);
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: 
+      filter 200ms linear,
+      transform 200ms linear;
+  }
+  .card:hover .card__background{
+    transform: scale(1.05) translateZ(0);
+  }
+  
+  .card-grid:hover > .card:not(:hover) .card__background{
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  }
+  
+  .card__content{
+    left: 0;
+    padding: var(--spacing-l);
+    position: absolute;
+    top: 0;
+  }
+  
+  .card__category{
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+  }
+  
+  .card__heading{
+    color: var(--text-lighter);
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    word-spacing: 100vw;
+  }
 
+/* Boton */
 .float{
 	position:fixed;
 	width:60px;
@@ -103,6 +202,37 @@ body {
 
 .my-float{
 	margin-top:16px;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+    .img{
+        display: block;
+        background:linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%,var(--light-gray) 98%), url('../images/bodega/bodega1.png');
+    }
+    .medio .tinto{
+      display: flex;
+      margin: 0px 0;
+      justify-content: space-around;
+    }
+    .medio .blanco{
+      display: flex;
+      justify-content: space-around;
+    }
+    .medio .espumante{
+      display: flex;
+      justify-content: space-around;
+    }
+    .medio .content{
+      max-width: 500px;
+    }
+}
+
+/* Escritorio */
+
+@media (min-width: 990px) {
+    
 }
 
 
