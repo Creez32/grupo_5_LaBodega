@@ -72,7 +72,7 @@ module.exports = {
     updateWine: (req, res, next) => {
         const { name, detail, priceBox, price, variety, year, time,category, color, origin } = req.body;
 
-        let img = req.files[0].filename;
+        let img = req.files[0] ? req.files[0].filename : undefined;
 
 
         db.Product.update({
