@@ -57,8 +57,9 @@
                         </div>
                         <label for="dateOfBirth">Fecha de nacimiento:</label>
 
-                        <input type="date" id="start" name="dateOfBirth" id="dateOfBith" min="1920-01-01"
-                            max="2010-12-31">
+                        <input type="date" id="start" name="dateOfBirth" id="dateOfBith">
+                            <span id= errorEdad class="text-danger"></span>
+
 
 
 
@@ -103,6 +104,8 @@
                         <div class="form-floating mb-3">
                             <div class="">
                                 <input class="form-control" type="file" id="formFile" name="img">
+                                <span id="errorFoto_x" class="text-danger"></span>
+
                             </div>
                         </div>
                         <button type="submit"> ¡CREAR CUENTA! </button>
