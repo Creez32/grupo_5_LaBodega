@@ -3,12 +3,15 @@ const qs = (e) => document.querySelector(e)
 window.addEventListener('load', () => {
     console.log('Javascript está vinculado correctamente');
 
-    let Foto_x = document.getElementById("Foto_x");
-    let Email = document.getElementById("Email");
-    let Password = document.getElementById("Password");
-    let Password2 = document.getElementById("Password2");
-    let Name = document.getElementById("Name");
-    let Last_name = document.getElementById("Last_name");
+    let formulario  = qs('#form')
+    let Name = qs("#name");
+    let Last_name = qs("#lastName");
+    let Direccion =qs("#address")
+    let Email = qs("#email");
+    let Password = qs("#pass");
+    let Password2 = qs("#pass2");
+    let Foto_x = qs("#formFile");
+    let Edad = qs("#dateOfBirth")
   
 
     /*(inputFoto_x.value) ? inputFoto_x.value = "" : null */
@@ -69,7 +72,7 @@ window.addEventListener('load', () => {
                 Password.classList.add('is-invalid');
                 break;
                 case !regExPass.test(Password.value):
-                    errorPassword.innerHTML = "La contraseña debe tener entre 6 y 8 caracteres y debe contener una mayuscula y una minuscula"
+                    errorPassword.innerHTML = "La contraseña debe tener entre 6 y 8 caracteres y debe contener una mayuscula, una minuscula y un numero"
                     Password.classList.add('is-invalid');
                     break
             default:
@@ -140,7 +143,63 @@ window.addEventListener('load', () => {
         }
 
     })
+    Direccion.addEventListener('blur', () => {
+        switch (true) {
+            case !Direccion.value:
+                errorDireccion.innerHTML = "El campo Direccion es obligatorio";
+                Direccion.classList.add('is-invalid');
+                break;
 
-    
+            default:
+                errorDireccion.innerHTML = "";
+                Direccion.classList.remove('is-invalid');
+                Direccion.classList.add('is-valid');
+                break;
+        }
+
+    })
+
+    Edad.addEventListener('blur',()=>{
+        console.log(moment())
+        switch (true) {
+            case !Edad.value:
+                errorEdad.innerHTML = "El campo Fecha de nacimiento es obligatorio"
+                Edad.classList.add('is-invalid');
+                break;
+        case moment(Edad.value) > moment():
+            errorEdad.innerHTML = "Coloque una fecha adecuada"
+                Edad.classList.add('is-invalid');
+                break;
+                case moment().diff(moment(Edad.value),"years")<18:
+                    errorEdad.innerHTML = "Debe ser mayor de edad para continuar"
+                Edad.classList.add('is-invalid');
+            default:
+                errorEdad.innerHTML = "";
+                Edad.classList.remove('is-invalid');
+                Edad.classList.add('is-valid');
+                break;
+        }
+    })
+
+    formulario.addEventListener('submit',(e)=>{
+
+        e.preventDefault();
+        let error = false
+        let elementForm = formulario.elements;
+
+        for (let index = 0; index < elementForm.length -1; index++) {
+            if(!elementForm[index].value){
+                elementForm[index].classList.add('is-invalid');
+                msgError.innerHTML = 'Los campos señalados son obligatorios'
+                error = true
+            }
+        }
+
+        if(!error){
+            formulario.submit()
+        }
+
+    })
+
 
 })
