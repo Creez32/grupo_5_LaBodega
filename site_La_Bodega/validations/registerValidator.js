@@ -15,6 +15,10 @@ module.exports = [
     })
     .withMessage('Minimo de 8 caracteres y un maximo de 12'),
 
+    check('pass2')
+    .notEmpty().withMessage('Este campo es requerido')
+    .isLength({min : 8, max : 12}).withMessage('La contraseña debe que tener entre 8 y 12 caracteres'),
+
     body('email').custom(value => {
 
         return db.User.findOne({
@@ -36,5 +40,8 @@ module.exports = [
         }else{
             return true
         }
-    }).withMessage('Las contraseñas no conciden!')
+    }).withMessage('Las contraseñas no conciden!'),
+
+    check('dateOfBirth')
+    .notEmpty().withMessage('este campo es requerido'),
 ]

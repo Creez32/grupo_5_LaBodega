@@ -31,6 +31,7 @@
     letter-spacing: 3px;
     text-decoration: underline double;
     font-family: "cinzel";
+    font-size: calc(1em + 1vw)
 }
 .titulo_in{
     display: block;
@@ -43,6 +44,7 @@
     letter-spacing: 3px;
     text-decoration: underline double;
     font-family: "cinzel";
+    font-size: calc(1em + 1vw)
 }
 
 .titulo2 {
@@ -56,6 +58,7 @@
     letter-spacing: 3px;
     text-decoration: underline double;
     font-family: "cinzel";
+    font-size: calc(1em + 1vw)
 }
 .titulo_in2 {
     display: block;
@@ -68,6 +71,7 @@
     letter-spacing: 3px;
     text-decoration: underline double;
     font-family: "cinzel";
+    font-size: calc(1em + 1vw)
 }
 
 
@@ -86,35 +90,38 @@
 
 
 .cuerpo1{
-    font-size: 20px;
-    text-align: justify;
+    
+    text-align: center;
     padding-bottom: 50px; 
     padding-right: 5px;
     width: 60%;
+    font-size: calc(1em + 1vw)
 }
 
 
 .cuerpo2 {
-    font-size: 20px;
-    text-align: justify;
+    
+    text-align: center;
     padding-bottom: 50px;
     width: 60%;
+    font-size: calc(1em + 1vw)
 }
 
 .cuerpo3 {
-    font-size: 20px;
-    text-align: justify;
+    
+    text-align: center;
     padding-bottom: 50px;
     width: 60%;
+    font-size: calc(1em + 1vw)
 }
 
 
 .cuerpo4{
-    font-size: 20px;
-    text-align: justify;
+    text-align: center;
     padding-bottom: 50px;
     border-radius: 10px;
     width: 60%;
+    font-size: calc(1em + 1vw)
 }
 
 
@@ -154,3 +161,4 @@ p {
 .my-float{
 	margin-top:16px;
 }
+

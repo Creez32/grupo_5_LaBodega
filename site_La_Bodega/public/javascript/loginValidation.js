@@ -2,9 +2,9 @@ window.onload = function(){
 
     let formulario = document.getElementById("formulario");  
  
-    let inputEmail = document.getElementById("Email");  
+    let inputEmail = document.getElementById("email");  
  
-    let inputPassword = document.getElementById("password");  
+    let inputPassword = document.getElementById("pass");  
  
     let regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
  

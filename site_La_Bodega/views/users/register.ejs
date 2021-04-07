@@ -21,18 +21,17 @@
 
         <div class="container">
 
-            <div class="form">
+            <div class="form" >
 
                 <div class="registro">
                     <div class="titulos">
                         <h1>¡Bienvenid@, crea tu cuenta aqui!</h1>
                     </div>
-                    <form class="register" action="" method="POST" enctype="multipart/form-data">
+                    <form class="register" action="" method="POST" enctype="multipart/form-data" id="form">
                         <div class="nombre">
                             <p>¿Cuál es tu nombre?</p>
-                            <input type="text" name="name" id="name" placeholder="Nombre"
-                                value="<%= (typeof data!='undefined' && data.nombre)?data.nombre : "" %>" id=""
-                                placeholder="Nombre">
+                            <input type="text" name="name" id="name" placeholder="Nombre" >
+                                <span id= errorName class="text-danger"></span>
                             <p>
                                 <%= (typeof errores!='undefined' && errores.nombre)?errores.nombre.msg : "" %>
                             </p>
@@ -43,22 +42,24 @@
                             <input type="text" name="lastName" id="lastName" placeholder="Apellido"
                                 value="<%= (typeof data!='undefined' && data.apellido)?data.apellido : "" %>"
                                 placeholder="Apellido">
+                                <span id= errorLast_name class="text-danger"></span>
+
                             <p>
                                 <%= (typeof errores!='undefined' && errores.apellido)?errores.apellido.msg : "" %>
                             </p>
                         </div>
-                        <!--  <label for="gender" class="form-label">Genero:</label>
-                    <input type="radio" name="gender" value="Femenino">Femenino
-                    <input type="radio" name="gender" value="Masculino" >Masculino -->
-
+                        
                         <div class="address">
                             <p>¿Cuál es tu dirección?</p>
                             <input type="text" name="address" id="address" placeholder="Dirección">
+                            <span id= errorDireccion class="text-danger"></span>
+
                         </div>
                         <label for="dateOfBirth">Fecha de nacimiento:</label>
 
-                        <input type="date" id="start" name="dateOfBirth" id="dateOfBith" min="1920-01-01"
-                            max="2010-12-31">
+                        <input type="date" name="dateOfBirth" id="dateOfBirth">
+                            <span id= errorEdad class="text-danger"></span>
+
 
 
 
@@ -68,6 +69,7 @@
                             <input type="email" name="email" id="email" placeholder="Correo Electrónico"
                                 value="<%= (typeof data!='undefined' && data.email)?data.email : "" %>"
                                 placeholder="Ingresa tu email">
+                                <span id= errorEmail class="text-danger"></span>
 
 
                             <p>
@@ -80,6 +82,8 @@
                             <input type="password" name="pass" id="pass" placeholder="Contraseña"
                                 value="<%= (typeof data!='undefined' && data.pass)?data.pass : "" %>"
                                 placeholder="Ingresa Password">
+                                <span id= errorPassword class="text-danger"></span>
+
                             <p>
                                 <%= (typeof errores!='undefined' && errores.pass)?errores.pass.msg : "" %>
                             </p>
@@ -91,6 +95,7 @@
                             <input type="password" name="pass2" id="pass2" placeholder="Repetir Contraseña"
                                 value="<%= (typeof data!='undefined' && data.pass2)?data.pass2-repeat : "" %>"
                                 placeholder="Repetir contraseña">
+                                <span id= errorPassword2 class="text-danger"></span>
 
                             <p>
                                 <%= (typeof errores!='undefined' && errores.pass2)?errores.pass2.msg : "" %>
@@ -99,9 +104,12 @@
                         <div class="form-floating mb-3">
                             <div class="">
                                 <input class="form-control" type="file" id="formFile" name="img">
+                                <span id="errorFoto_x" class="text-danger"></span>
+
                             </div>
                         </div>
                         <button type="submit"> ¡CREAR CUENTA! </button>
+                        <span id="msgError" class="text-danger"></span>
 
                         <div class="ingresar">
                             <a href="/session/login">
@@ -115,8 +123,8 @@
             </div>
         </div>
         <%- include('../partials/footer') %>
-
-        <script src="/javascript/registerValidation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+            <script src="/javascript/registerValidation.js"></script>
 </body>
 
 </html>
