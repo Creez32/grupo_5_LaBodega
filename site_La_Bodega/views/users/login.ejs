@@ -32,6 +32,8 @@
                         <p>
                             <%= (typeof errores!='undefined' && errores.email)?errores.email.msg : "" %>
                         </p>
+                        <span id= errorEmail class="text-danger"></span>
+
                     </div>
 
                     <div class="contraseña">
@@ -42,6 +44,8 @@
                         <p>
                             <%= (typeof errores!='undefined' && errores.pass)?errores.pass.msg : "" %>
                         </p>
+                        <span id= errorPassword class="text-danger"></span>
+
                     </div>
                     <div class="recordarme">
                         <p class="recordarme">Recordarme</p>
