@@ -1,4 +1,4 @@
-var score = 0
+var score = 1
 function up(){
   if(score < 30 ){
     score ++;
@@ -13,5 +13,8 @@ function down(){
   document.getElementById("result").innerHTML = score;
 }
 
+addEventListener('load', () => {
+  document.getElementById("result").innerHTML = score;
+})
 
 

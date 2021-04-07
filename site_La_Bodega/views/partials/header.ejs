@@ -32,10 +32,14 @@
                     <input class="form-control me-2" name="search" type="search" placeholder="Buscar productos" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
-                    <ul class="icon">
-                        <li><a href="/session/login"><i class="far fa-user-circle"></i></a></li>
-                        <li><a href="/products/cart"><i class="fas fa-cart-plus"></i></a></li>
-                    </ul>
+                <ul class="icon">
+                    <% if (typeof user == 'undefined') { %>
+                    <li><a href="/session/login"><i class="far fa-user-circle"></i></a></li>
+                    <% } else { %>
+                    <li><a href="/session/login"><img src="/images/Users/<%= user.img %>" class="avatar-header" alt=""></a></li>
+                    <% } %>
+                    <li><a href="/products/cart"><i class="fas fa-cart-plus"></i></a></li>
+                </ul>
             </div>
         </nav>
     </div>

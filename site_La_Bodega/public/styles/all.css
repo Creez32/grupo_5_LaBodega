@@ -276,6 +276,10 @@ p.copyright {
 	margin-top:16px;
 }
 
+.avatar-header {
+    max-width: 50px;
+}
+
 @keyframes wipe-in-up {
     from {
       clip-path: inset(100% 0 0 0);

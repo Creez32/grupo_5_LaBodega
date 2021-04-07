@@ -1,8 +1,8 @@
 module.exports = (req,res,next)=>{
-    if(req.session.user){
-        next()
-    }else{
-        res.redirect('/products')
+    if(req.session.userL){
+        if (req.session.userL.admin == 1){
+            return next()
+        }
     }
-//CAMBIAR LUEGO
+    res.redirect('/products')
 }

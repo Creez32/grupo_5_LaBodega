@@ -76,6 +76,7 @@ module.exports = {
                         lastName: user.apellido,
                         email: user.email,
                         img: user.avatar,
+                        admin: user.admin
                     }
                     if (recordar) {
                         res.cookie('LaBodega', req.session.userL, {

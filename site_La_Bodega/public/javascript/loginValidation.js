@@ -41,6 +41,7 @@ window.onload = function(){
     formulario.onsubmit=(e)=>{
         e.preventDefault();
         let errores = ValidacionLogin();
+        console.log(errores)
         if(!errores.length > 0){
             formulario.submit();
         }
