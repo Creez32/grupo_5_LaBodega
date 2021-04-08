@@ -3,20 +3,23 @@ const qs = (e) => document.querySelector(e)
 window.onload = function(){
     console.log('El javascript fue vinculado con exito!')
 
-    let formulario  = qs('form')
+    let formulario  = qs('#formulario')
     let Name = qs('#name')
     let Detail = qs('#detail')
     let variety = qs('#variety')
-    let category = qs('#category')
+    
     let img = qs('#formFile')
     let time = qs('#time')
     let Origin = qs('#origin')
     let Year = qs('#year')
-    let Color = qs('#color')
+
     let Price = qs('#price')
     let PriceBox = qs('#priceBox')
 
-  /*   (img.value)?img.value = "": null */
+    let elementForm = formulario.elements;
+        console.log(elementForm)
+
+    /* (img.value)?img.value = "": null */
 
     let regLetras = /^[a-zA-Z\sñáéíóúü]*$/
     let regExExtensions = /(.jpg|.jpeg|.png|.gif|.webp)$/i;
@@ -67,6 +70,19 @@ window.onload = function(){
                 break;
         }
     })
+    category.addEventListener('blur',()=>{
+        switch (true) {
+            case !category.value:
+                errorcategory.innerHTML = "La Categoria es ¡OBLIGATORIA!"
+                category.classList.add('is-invalid')
+                break;   
+            default:
+                errorcategory.innerHTML = ""
+                category.classList.remove('is-invalid')
+                category.classList.add('is-valid')
+                break;
+        }
+    })
     time.addEventListener('blur',()=>{
         switch (true) {
             case !time.value:
@@ -100,6 +116,10 @@ window.onload = function(){
                 errorYear.innerHTML = "El año del Vino es ¡OBLIGATORIO!"
                 Year.classList.add('is-invalid')
                 break;
+            case !soloNumeros.test(Price.value):
+                errorPrice.innerHTML = "Solo Numeros por favor"
+                Price.classList.add('is-invalid')
+                break;
             default:
                 errorYear.innerHTML = ""
                 Year.classList.remove('is-invalid')
@@ -107,7 +127,7 @@ window.onload = function(){
                 break;
         }
     })
-    Color.addEventListener('blur',()=>{
+    /* Color.addEventListener('blur',()=>{
         switch (true) {
             case !Color.value:
                 errorColor.innerHTML = "Cual es el color del vino?"
@@ -120,7 +140,7 @@ window.onload = function(){
                 Color.classList.add('is-valid')
                 break;
         }
-    })
+    }) */
     Price.addEventListener('blur',()=>{
         switch (true) {
             case !Price.value:
@@ -204,7 +224,7 @@ window.onload = function(){
         let error = false
         let elementForm = formulario.elements;
 
-        for (let index = 0; index < elementForm.length -1; index++) {
+        for (let index = 1; index < elementForm.length -1; index++) {
             if(!elementForm[index].value){
                 elementForm[index].classList.add('is-invalid');
                 msgError.innerHTML = 'Los campos señalados son obligatorios'

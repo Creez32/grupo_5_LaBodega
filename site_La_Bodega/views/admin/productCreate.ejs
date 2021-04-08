@@ -24,41 +24,14 @@
       <div class="fondo">
         <div class="carga">
           <div class="container">
-          <form action="/admin/products" method="POST" enctype="multipart/form-data">
-              <div class="content">
+          <form action="/admin/products?_method=PUT" method="POST" enctype="multipart/form-data" id='formulario'>
+              
+            <div class="content">
                 <h1>Modificar datos</h1>
 
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="name" placeholder="Nombre" name="name" >
-                  <label for="name">Nombre</label>
-                  <span id="errorName" class="text-danger"></span>
-                </div>
-
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="detail" placeholder="Descripción" name="detail" >
-                  <label for="detail">Descripción</label>
-                  <span id="errorDetail" class="text-danger"></span>
-                </div>
-
-                <div class="ingreso">
-                  <label for="category">categoria</label>
-                  <select name="category" id="category">
-                    <option value="1">Tintos</option>
-                    <option value="2">Blancos</option>
-                    <option value="3">Espumantes</option>
-                  </select>
-                  <span id="errorCategory" class="text-danger"></span>
-                </div>
-
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" name="variety" id="variety" placeholder="variety" >
-                  <label for="variety">Variedad</label>
-                  <span id="errorvariety" class="text-danger"></span>
-                </div>
-                <div class="form-floating mb-3">
                   <div class="">
-                    <input class="form-control" type="file" id="formFile" name="img" accept="image/*" required>
-                    <label for="img" class="custom-file-label">Imagen producto</label>
+                    <input class="form-control" type="file" id="formFile" name="img" accept="image/*">
                     <span id="errorFoto" class="text-danger"></span>
                   </div>
                   <div class="col-4">
@@ -66,6 +39,33 @@
                         <img src="" alt="" id="vistaPrevia" class="img-thumbnail">
                     </div>
                 </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="name" placeholder="Nombre" name="name">
+                  <label for="name">Nombre</label>
+                  <span id="errorName" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="detail" placeholder="Descripción" name="detail">
+                  <label for="detail">Descripción</label>
+                  <span id="errorDetail" class="text-danger"></span>
+                </div>
+
+                <div class="ingreso">
+                  <label for="category">Categoría</label>
+                  <select name="category" id="category">
+                    <option value="1">Tintos</option>
+                    <option value="2">Blancos</option>
+                    <option value="3">Espumantes</option>
+                  </select>
+                  <span id="errorCategory" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" name="variety" id="variety" placeholder="variety">
+                  <label for="variety">Variedad</label>
+                  <span id="errorvariety" class="text-danger"></span>
+                </div>
+                
                 </div>
               </div>
               <div class="content">
@@ -81,20 +81,19 @@
                   <span id="errorOrigin" class="text-danger"></span>
                 </div>
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="year" placeholder="Año" name="year" >
+                  <input type="text" class="form-control" id="year" placeholder="Año" name="year">
                   <label for="year">Año</label>
                   <span id="errorYear" class="text-danger"></span>
                 </div>
                 <div class="ingreso">
                   <label for="color">Color</label>
-                  <select name="color" id="color">
+                  <select name="color" id="" >
                     <option value="1">Rojo</option>
                     <option value="2">Blanco</option>
                     <option value="3">Violeta</option>
                     <option value="4">Rosado</option>
                     <option value="5">Azul</option>
                     <option value="6">Amarillo</option>
-
                   </select>
                   <span id="errorColor" class="text-danger"></span>
                 </div>
@@ -104,10 +103,10 @@
                   <span id="errorPrice" class="text-danger"></span>
                 </div>
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="priceBox" placeholder="Precio Caja" name="priceBox" >
+                  <input type="text" class="form-control" id="priceBox" placeholder="Precio Caja" name="priceBox">
                   <label for="priceBox">Precio Caja</label>
                   <span id="errorPriceBox" class="text-danger"></span>
-                <button class="btn btn-primary" type="submit">Guardar cambios</button>
+                <button class="btn btn-success" type="submit">Guardar cambios</button>
               </div>
             </div>
           </form>

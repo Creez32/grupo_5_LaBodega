@@ -277,7 +277,8 @@ p.copyright {
 }
 
 .avatar-header {
-    max-width: 50px;
+    border-radius: 50%;
+    max-width: 40px;
 }
 
 @keyframes wipe-in-up {

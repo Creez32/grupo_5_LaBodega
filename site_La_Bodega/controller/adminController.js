@@ -70,10 +70,10 @@ module.exports = {
 
     },
     updateWine: (req, res, next) => {
+        
         const { name, detail, priceBox, price, variety, year, time,category, color, origin } = req.body;
 
         let img = req.files[0] ? req.files[0].filename : undefined;
-
 
         db.Product.update({
             name,
@@ -88,7 +88,6 @@ module.exports = {
             imagen: img,
             categoryId: category,
 
-
         },
             {
                 where: {
@@ -96,15 +95,14 @@ module.exports = {
                 }
             })
             .then((result) => {
-
                 res.redirect("/admin/products")
-
             })
             .catch((error) => {
                 res.send(error)
             })
     },
     deleteWine: (req, res) => {
+
         db.Product.destroy({
             where: {
                 id: req.params.id

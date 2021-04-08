@@ -193,6 +193,8 @@ h3{
     .img{
         display: block;
         background:linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%,var(--light-gray) 98%), url('../images/bodega/bodega1.png');
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .medio .tinto{
       display: flex;
