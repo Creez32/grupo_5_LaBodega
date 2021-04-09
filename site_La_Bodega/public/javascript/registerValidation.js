@@ -20,7 +20,18 @@ window.addEventListener('load', () => {
     let regExPass = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,12}$/
     let regExExt = /(.jpg|.jpeg|.png|.gif|.webp)$/i;
 
-
+    Foto_x.addEventListener('blur',function(){
+        switch (true) {
+            case !Foto_x.value:
+                errorFoto_x.innerHTML = "Este campo es obligatorio"
+                Foto_x.classList.add('is-invalid')
+            break
+            default:
+            Foto_x.classList.remove('is-invalid');
+            Foto_x.classList.add('is-valid');
+            errorFoto_x.innerHTML = "";
+        }
+    })
     Foto_x.addEventListener('change', (e) => {
         switch (true) {
             case !regExExt.exec(Foto_x.value):
@@ -49,11 +60,11 @@ window.addEventListener('load', () => {
     Email.addEventListener('blur', () => {
         switch (true) {
             case !Email.value:
-                errorEmail.innerHTML = "El campo email es obligatorio";
+                errorEmail.innerHTML = "El campo Email es obligatorio";
                 Email.classList.add('is-invalid');
                 break;
             case !regExEmail.test(Email.value):
-                errorEmail.innerHTML = "el Email debe ser válido"
+                errorEmail.innerHTML = "El Email debe ser válido"
                 Email.classList.add('is-invalid');
                 break
             default:
@@ -86,11 +97,7 @@ window.addEventListener('load', () => {
     Password2.addEventListener('blur', () => {
         switch (true) {
             case !Password2.value:
-                errorPassword2.innerHTML = "El campo contraseña es obligatorio";
-                Password2.classList.add('is-invalid');
-                break;
-            case !regExPass.test(Password2.value):
-                errorPassword2.innerHTML = "La contraseña debe tener entre 6 y 8 caracteres"
+                errorPassword2.innerHTML ="Debe repetir su contraseña";
                 Password2.classList.add('is-invalid');
                 break;
             case Password2.value != Password.value:
@@ -146,7 +153,7 @@ window.addEventListener('load', () => {
     Direccion.addEventListener('blur', () => {
         switch (true) {
             case !Direccion.value:
-                errorDireccion.innerHTML = "El campo Direccion es obligatorio";
+                errorDireccion.innerHTML = "El campo Dirección es obligatorio";
                 Direccion.classList.add('is-invalid');
                 break;
 
@@ -162,7 +169,7 @@ window.addEventListener('load', () => {
     Edad.addEventListener('blur', () => {
         switch (true) {
             case !Edad.value:
-                errorEdad.innerHTML = "El campo Fecha de nacimiento es obligatorio"
+                errorEdad.innerHTML = "Debe ingresar su fecha de nacimiento"
                 Edad.classList.add('is-invalid');
                 break;
             case moment(Edad.value) > moment():

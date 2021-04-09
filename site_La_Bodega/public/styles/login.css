@@ -27,7 +27,7 @@ div.form {
 
 div.form input {
     font-size: 20px;
-    margin: 30px 0;
+    margin: 30px 0 0 0;
     margin-top: 6px;
     text-align: center;
     border-bottom: 5px solid #44000d;
@@ -98,4 +98,11 @@ form button {
     border: none;
     border-radius: 30px;
     background-color: transparent;
+}
+p.span{
+color: red;
+}
+.text-danger{
+    font-size: 15px;
+
 }

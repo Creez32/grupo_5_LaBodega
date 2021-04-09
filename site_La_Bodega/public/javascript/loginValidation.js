@@ -1,50 +1,65 @@
-window.onload = function(){
+const qs = (e) => document.querySelector(e)
 
-    let formulario = document.getElementById("formulario");  
- 
-    let inputEmail = document.getElementById("email");  
- 
-    let inputPassword = document.getElementById("pass");  
- 
-    let regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
- 
-    let inputErrorEmail = document.getElementById("errorEmail");
- 
-    let inputErrorPass = document.getElementById("errorPassword");
- 
-    function ValidacionLogin(){
-        let errores = [];
-        if(!regexEmail.test(inputEmail.value)){
-         inputEmail.classList.add("is-invalid");
-         inputErrorEmail.classList.add("invalid-feedback");
-         inputErrorEmail.innerHTML="El email no es valido";
-         errores.push("Email");
-        } else {
-            inputEmail.classList.remove("is-invalid");
-            inputErrorEmail.classList.remove("invalid-feedback");
-            inputEmail.classList.add("is-valid");
-            inputErrorEmail.innerHTML="";
+
+window.addEventListener('load', () => {
+    console.log('Javascript está vinculado correctamente');
+
+    let formulario = qs("#form");
+    let Email = qs("#email");
+    let Pass = qs("#pass");
+
+    let regExEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+
+
+
+    Email.addEventListener('blur', () => {
+        switch (true) {
+            case !Email.value:
+                errorEmail.innerHTML = "El email es obligatorio";
+                Email.classList.add('is-invalid');
+                break;
+            case !regExEmail.test(Email.value):
+                errorEmail.innerHTML = "Ingrese un email válido";
+                Email.classList.add('is-invalid');
+                break;
+            default:
+                errorEmail.innerHTML = "";
+                Email.classList.remove('is-invalid');
+                Email.classList.add('is-valid');
+                break;
         }
-        if(inputPassword.value.length < 6 || inputPassword.value.length > 12){
-         inputPassword.classList.add("is-invalid");
-         inputErrorPass.classList.add("invalid-feedback");
-         inputErrorPass.innerHTML="La contraseña tiene que ser  mayor a 8 y menor que 12";
-         errores.push("password");
-        } else {
-            inputPassword.classList.remove("is-invalid");
-            inputErrorPass.classList.remove("invalid-feedback");
-            inputPassword.classList.add("is-valid");
-            inputErrorPass.innerHTML="";
+    })
+
+    Pass.addEventListener('blur', () => {
+        switch (true) {
+            case !Pass.value:
+                errorPass.innerHTML = "La contraseña es obligatorio";
+                Pass.classList.add('is-invalid');
+                break;
+            default:
+                errorPass.innerHTML = "";
+                Pass.classList.remove('is-invalid');
+                Pass.classList.add('is-valid');
+                break;
         }
-        return errores
-    }
-    formulario.onsubmit=(e)=>{
+
+    })
+
+    formulario.addEventListener('submit', (e) => {
+        let error = false;
         e.preventDefault();
-        let errores = ValidacionLogin();
-        console.log(errores)
-        if(!errores.length > 0){
-            formulario.submit();
+        let elementsForm = formulario.elements;
+
+        for (let index = 0; index < elementsForm.length - 2; index++) {
+            if (!elementsForm[index].value) {
+                elementsForm[index].classList.add('is-invalid')
+                msgError.innerHTML = "Los campos señalados son obligatorios"
+                error = true;
+            }
         }
-    }
- }
- 
+        if (!error) {
+            formulario.submit()
+        }
+    })
+})

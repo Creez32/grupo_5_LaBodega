@@ -34,10 +34,12 @@ a {
     text-decoration: none;
     color: black;
 }
-h2{
+
+h2 {
     margin-bottom: 0;
 }
-p{
+
+p {
     margin-bottom: 0;
 }
 
@@ -172,25 +174,25 @@ p.copyright {
     margin: 0;
     font-size: 15px;
 }
+
 #myBtn {
-    display: none; 
-    position: fixed; 
-    bottom: 90px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: var(--light-purple); /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 50%; /* Rounded corners */
-    font-size: 20px; /* Increase font size */
-  }
-  
-  #myBtn:hover {
-    background-color:var(--purple); /* Add a dark-grey background on hover */
-  }
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 4%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color:  var(--light-purple);
+    cursor: pointer;
+    padding: 0px;
+    border-radius: 50%;
+}
+#myBtn i {
+    font-size: 30px;
+
+}
 
 @media (min-width: 768px) {
     /* Footer */
@@ -257,23 +259,23 @@ p.copyright {
 }
 
 /* Boton */
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:20px;
-	right:30px;
-	background-color: #84142d;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-    font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-    z-index:100;
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 3%;
+    color: azure;
+    background-color: #25D366;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
 }
 
-.my-float{
-	margin-top:16px;
+.my-float {
+    margin-top: 16px;
 }
 
 .avatar-header {
@@ -283,14 +285,13 @@ p.copyright {
 
 @keyframes wipe-in-up {
     from {
-      clip-path: inset(100% 0 0 0);
+        clip-path: inset(100% 0 0 0);
     }
     to {
-      clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0);
     }
 }
-  
-  [transition-style="in:wipe:up"] {
-    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
-  }
 
+[transition-style="in:wipe:up"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
+}
