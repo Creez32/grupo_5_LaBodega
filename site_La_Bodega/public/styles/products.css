@@ -74,6 +74,18 @@ body {
   background-color: var(--light-purple);
 }
 
+h2.dont{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.no-results{
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  
+}
+
 @media (min-width: 768px) {
   .banner {
     display: block;

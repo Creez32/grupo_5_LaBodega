@@ -24,7 +24,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/images/bodega 3.jpg" class="d-block w-100" alt="...">
+                        <img src="/images/bodega/bodega 3.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Bodega</h5>
                             <p>Nuestra bodega ofrece a todos aquellos que quieran visitarla una vista unica para
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/images/Dr-Loosen.jpg" class="d-block w-100" alt="...">
+                        <img src="/images/bodega/Persona1.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Vinos</h5>
                             <p>Los vinos que creamos, generan excelencia para todo el pais dejando en claro nuestro
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/images/Presentacion.jpg" class="d-block w-100" alt="...">
+                        <img src="/images/bodega/Dr-Loosen.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Presentacion</h5>
                             <p>Ofrecemos nuestra mejor presentacion reflejandolo en nuestras etiquetas</p>
@@ -79,39 +79,54 @@
         </div>
 
         <div class="Products">
-			<h2 class="title"><%= title %></h2>
-			<div class="container products-wrapper">
-				<div class="row">
-					<% productos.forEach(product=> { %>
-						<div class="col-12 col-sm-6 col-lg-3">
-							<section class="product-box">
-								<a href="detail/<%= product.id %>">
-									<div class="image">
-										<img src="/images/Botellas/<%= product.imagen %> " alt="imagen de producto">
-									</div>
-									<article class="data">
-										<h2>$ <%= product.price %>
-										</h2>
-										<p><%= product.name %></p>
-									</article>
-								</a>
-								<div class="botones">
-									<button class="buy">Comprar</button>
-									<button class="cart"><i class="fas fa-truck"></i> Agregar al carrito</button>
-								</div>
-							</section>
-						</div>
-						<% }) %>
+            <h2 class="title">
+                <%= title %>
+            </h2>
+            <div class="container products-wrapper">
+                <div class="row">
+                    <% productos.forEach(product=> { %>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <section class="product-box">
+                                <a href="detail/<%= product.id %>">
+                                    <div class="image">
+                                        <img src="/images/Botellas/<%= product.imagen %> " alt="imagen de producto">
+                                    </div>
+                                    <article class="data">
+                                        <h2>$ <%= product.price %>
+                                        </h2>
+                                        <p>
+                                            <%= product.name %>
+                                        </p>
+                                    </article>
+                                </a>
+                                <div class="botones">
+                                    <button class="buy">Comprar</button>
+                                    <button class="cart"><i class="fas fa-truck"></i> Agregar al carrito</button>
+                                </div>
+                            </section>
+                        </div>
+                        <% }) %>
 
-                        <% if (!productos.length) { %>
-                            <h2>No se encontraron resultados</h2>
-                        <% } %>
-				</div>
-			</div>
+                            <% if (!productos.length) { %>
+                                <div class="col-12 col-sm-6 col-lg-4 offset-lg-4">
+                                    <section class="product-box">
+                                        <div class="image">
+                                            <img src="/images/bodega/coso.png" alt="">
+                                        </div>
+                                        <article class="data">
+                                            <h2 class="dont">No se encontraron resultados!</h2>
+                                        </article>
+                                    </section>
+                                </div>
 
-		</div>
 
-                <%- include('./partials/footer') %>
+                                <% } %>
+                </div>
+            </div>
+
+        </div>
+
+        <%- include('./partials/footer') %>
 
 
 </body>
