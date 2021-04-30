@@ -2,9 +2,9 @@ body {
     font-family: 'Montserrat';
     width: 100%;
     padding: 0;
-    background-image: url(https://wallpapercave.com/wp/wp5957209.jpg);
     background-size: cover;
     margin: 0 auto ;
+   background-color:  rgba(221, 221, 221, 0.6);
 
 }
 
@@ -12,8 +12,15 @@ div.form {
     margin: 40px auto;
     padding: 5px;
     border-radius: 20px;
-    background-color: rgba(255, 248, 220, 80%);
+    background-color: var(--light-gray);
     
+}
+h1{
+    font-family: var(--other-font-family);
+}
+p{
+    font-family: var(--other-font-family);
+padding: 1.5px;
 }
 
 .registrarse {
@@ -45,6 +52,7 @@ form button {
     border: none;
     border-radius: 200px;
     background-color: #917dc9;
+    margin-bottom: 10px;
 }
 
 .form {
