@@ -10,7 +10,8 @@
 } */
 
 body{
-  background-color: whitesmoke;
+  background-color:  rgba(221, 221, 221, 0.6);
+
 }
 .contact_form{  
   width: 800px; 
@@ -81,7 +82,9 @@ button p{
 
 
 span{
-  color:#44000d
+  color:#44000d;
+  font-family: var(--other-font-family);
+
 }
 
 
@@ -100,6 +103,11 @@ h1{
   padding-left: 80px;
   color: #44000d;
   height: auto;
+
+    font-family: var(--other-font-family);
+    border-bottom: 5px solid #44000d;
+
+
 }
 
 
@@ -107,6 +115,8 @@ h3{
   font-size: 20px; 
   padding-bottom: 10px;
   color:black;
+  font-family: var(--other-font-family);
+
   
   
   
@@ -116,6 +126,8 @@ h3{
 p{
   font-size: 20px; 
   color: white; 
+  font-family: var(--other-font-family);
+
 }
 
 
